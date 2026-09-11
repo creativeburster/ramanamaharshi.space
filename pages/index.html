@@ -417,7 +417,7 @@
                 <p style="margin-top:0.8rem; font-size:0.88rem; color: var(--text-muted);">
                     🔗 姐妹研学站点：<a href="https://chanzong.space/" target="_blank" rel="noopener" style="color: var(--accent); font-weight: 500; text-decoration: underline;">禅宗知识库 (chanzong.space)</a> —— 探究历代祖师典籍、公案机锋与全球禅脉传承图谱
                 </p>
-                <p style="margin-top:1rem; font-size:0.9rem;"><a href="sitemap.html" style="color: var(--text-muted); text-decoration: underline;">🌐 网站地图</a> <span style="margin: 0 1rem;">|</span> <!--email_off--><a href="mailto:591611431@qq.com" style="color: var(--text-muted); text-decoration: underline;">联系我</a> <span style="margin: 0 1rem;">|</span> <a href="#" id="donationBtn" onclick="openDonation();return false;" style="color: var(--text-muted); text-decoration: underline;">🙏 支持本站</a></p>
+                <p style="margin-top:1rem; font-size:0.9rem;"><a href="sitemap.html" style="color: var(--text-muted); text-decoration: underline;">🌐 网站地图</a> <span style="margin: 0 1rem;">|</span> <!--email_off--><a href="#" onclick="openContact();return false;" style="color: var(--text-muted); text-decoration: underline;">✉️ 联系我</a> <span style="margin: 0 1rem;">|</span> <a href="#" id="donationBtn" onclick="openDonation();return false;" style="color: var(--text-muted); text-decoration: underline;">🙏 支持本站</a></p>
             </footer>
         </main>
     </div>
@@ -436,10 +436,92 @@
             el.style.display = 'none';
             document.body.style.overflow = '';
         }
+
+        // 联系表单弹窗
+        function openContact() {
+            var el = document.getElementById('contactBackdrop');
+            if (el) {
+                el.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            }
+        }
+        function closeContact() {
+            var el = document.getElementById('contactBackdrop');
+            if (el) {
+                el.style.display = 'none';
+                document.body.style.overflow = '';
+            }
+        }
+
         document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') closeDonation();
+            if (e.key === 'Escape') {
+                closeDonation();
+                closeContact();
+            }
         });
 
+        // 提交联系表单
+        async function submitContactForm(e) {
+            e.preventDefault();
+            var btn = document.getElementById('contactSubmitBtn');
+            var status = document.getElementById('contactStatus');
+            var name = document.getElementById('contactName').value.trim();
+            var contact = document.getElementById('contactEmail').value.trim();
+            var message = document.getElementById('contactMessage').value.trim();
+
+            if (!name || !contact || !message) return;
+
+            btn.disabled = true;
+            btn.innerText = '正在发送中...';
+            btn.style.opacity = '0.7';
+            status.style.display = 'none';
+
+            try {
+                var res = await fetch('https://formsubmit.co/ajax/591611431@qq.com', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        _subject: '【拉玛那知识库】来自读者 ' + name + ' 的留言',
+                        _template: 'table',
+                        _captcha: 'false',
+                        '读者称呼': name,
+                        '联系方式': contact,
+                        '留言内容': message,
+                        '发送页面': window.location.href,
+                        '发送时间': new Date().toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' })
+                    })
+                });
+
+                var data = await res.json();
+                if (res.ok || data.success === "true") {
+                    status.style.display = 'block';
+                    status.style.background = '#e8f9ee';
+                    status.style.color = '#07c160';
+                    status.innerText = '✅ 发送成功！感谢您的留言，站长会尽快查阅并回复。';
+                    document.getElementById('contactForm').reset();
+                    setTimeout(function() {
+                        closeContact();
+                        status.style.display = 'none';
+                        btn.disabled = false;
+                        btn.innerText = '发送留言';
+                        btn.style.opacity = '1';
+                    }, 2500);
+                } else {
+                    throw new Error(data.message || '发送失败');
+                }
+            } catch (err) {
+                status.style.display = 'block';
+                status.style.background = '#fef2f2';
+                status.style.color = '#ef4444';
+                status.innerHTML = '❌ 发送失败，请检查网络或直接发送邮件至 <a href="mailto:591611431@qq.com" style="color:#ef4444;text-decoration:underline;">591611431@qq.com</a>';
+                btn.disabled = false;
+                btn.innerText = '重试发送';
+                btn.style.opacity = '1';
+            }
+        }
         </script>
     <!-- 合并后的主脚本（已包含搜索功能）  -->
     <script src="bundle.min.js" defer></script>
@@ -604,6 +686,42 @@
                 <span style="font-size:.75rem;font-weight:600;background:#E8F9EE;color:#07c160;padding:.15rem .7rem;border-radius:999px;">微信支付</span>
             </div>
         </div>
+    </div>
+</div>
+
+<!-- 联系表单弹窗 -->
+<div id="contactBackdrop" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.5);backdrop-filter:blur(4px);align-items:center;justify-content:center;" onclick="if(event.target===this)closeContact()">
+    <div style="position:relative;background:#fff;border-radius:16px;padding:2rem 1.8rem;max-width:440px;width:90%;box-shadow:0 20px 60px rgba(0,0,0,.25);text-align:left;animation:slideUp .25s ease;box-sizing:border-box;">
+        <button onclick="closeContact()" aria-label="关闭" style="position:absolute;top:.7rem;right:.8rem;background:none;border:none;font-size:1.2rem;cursor:pointer;color:#888;line-height:1;padding:0.2rem 0.4rem;border-radius:4px;">✕</button>
+        <h3 style="margin:0 0 .4rem;font-size:1.1rem;color:var(--primary, #8B5E0B);text-align:center;">✉️ 联系站长 / 留言反馈</h3>
+        <p style="font-size:.82rem;color:var(--text2, #6B6560);line-height:1.5;margin-bottom:1.2rem;text-align:center;">
+            若有任何心得交流、建议指正或法义探讨，欢迎留言。<br>内容将直呈站长邮箱（591611431@qq.com）。
+        </p>
+        
+        <form id="contactForm" onsubmit="submitContactForm(event)" style="display:flex;flex-direction:column;gap:0.9rem;">
+            <div>
+                <label style="display:block;font-size:0.82rem;color:var(--text, #333);margin-bottom:0.3rem;font-weight:500;">您的称呼 / 昵称 <span style="color:#e53e3e;">*</span></label>
+                <input type="text" id="contactName" name="name" required placeholder="例如：同修道友 / 读者" style="width:100%;box-sizing:border-box;padding:0.6rem 0.8rem;border:1px solid var(--border, #E0D6C8);border-radius:8px;font-size:0.88rem;outline:none;background:var(--bg, #FAF7F2);color:var(--text, #1B1B18);">
+            </div>
+            <div>
+                <label style="display:block;font-size:0.82rem;color:var(--text, #333);margin-bottom:0.3rem;font-weight:500;">您的联系方式 (邮箱 / 微信) <span style="color:#e53e3e;">*</span></label>
+                <input type="text" id="contactEmail" name="email" required placeholder="方便作者查阅后给您回复" style="width:100%;box-sizing:border-box;padding:0.6rem 0.8rem;border:1px solid var(--border, #E0D6C8);border-radius:8px;font-size:0.88rem;outline:none;background:var(--bg, #FAF7F2);color:var(--text, #1B1B18);">
+            </div>
+            <div>
+                <label style="display:block;font-size:0.82rem;color:var(--text, #333);margin-bottom:0.3rem;font-weight:500;">留言内容 <span style="color:#e53e3e;">*</span></label>
+                <textarea id="contactMessage" name="message" required rows="4" placeholder="请在此输入您想交流或反馈的内容..." style="width:100%;box-sizing:border-box;padding:0.6rem 0.8rem;border:1px solid var(--border, #E0D6C8);border-radius:8px;font-size:0.88rem;outline:none;resize:vertical;font-family:inherit;background:var(--bg, #FAF7F2);color:var(--text, #1B1B18);line-height:1.6;"></textarea>
+            </div>
+
+            <div id="contactStatus" style="display:none;font-size:0.85rem;padding:0.6rem 0.8rem;border-radius:6px;text-align:center;line-height:1.5;"></div>
+
+            <button type="submit" id="contactSubmitBtn" style="background:var(--primary, #8B5E0B);color:#fff;border:none;border-radius:8px;padding:0.7rem 1.2rem;font-size:0.92rem;font-weight:500;cursor:pointer;transition:all 0.2s;box-shadow:0 2px 8px rgba(139,94,11,0.25);">
+                发送留言
+            </button>
+
+            <div style="text-align:center;font-size:0.75rem;color:var(--text-muted, #888);margin-top:0.2rem;">
+                若遇网络故障，亦可直接发信至 <a href="mailto:591611431@qq.com" style="color:var(--primary, #8B5E0B);text-decoration:underline;">591611431@qq.com</a>
+            </div>
+        </form>
     </div>
 </div>
 

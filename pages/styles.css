@@ -2117,3 +2117,17 @@ body .lang-toggle,
     }
 }
 
+/* ===== 联系表单弹窗样式 ===== */
+#contactForm input:focus,
+#contactForm textarea:focus {
+    border-color: var(--primary, #8B5E0B) !important;
+    box-shadow: 0 0 0 3px rgba(139, 94, 11, 0.15) !important;
+}
+#contactSubmitBtn:hover {
+    opacity: 0.92;
+    transform: translateY(-1px);
+}
+#contactSubmitBtn:active {
+    transform: translateY(0);
+}
+
