@@ -477,30 +477,25 @@
             status.style.display = 'none';
 
             try {
-                var res = await fetch('https://formsubmit.co/ajax/591611431@qq.com', {
+                var res = await fetch('/api/contact', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
                         'Accept': 'application/json'
                     },
                     body: JSON.stringify({
-                        _subject: '【拉玛那知识库】来自读者 ' + name + ' 的留言',
-                        _template: 'table',
-                        _captcha: 'false',
-                        '读者称呼': name,
-                        '联系方式': contact,
-                        '留言内容': message,
-                        '发送页面': window.location.href,
-                        '发送时间': new Date().toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' })
+                        name: name,
+                        contact: contact,
+                        message: message
                     })
                 });
 
-                var data = await res.json();
-                if (res.ok || data.success === "true") {
+                var data = await res.json().catch(function() { return {}; });
+                if (res.ok && data.success) {
                     status.style.display = 'block';
                     status.style.background = '#e8f9ee';
                     status.style.color = '#07c160';
-                    status.innerText = '✅ 发送成功！感谢您的留言，站长会尽快查阅并回复。';
+                    status.innerText = data.message || '✅ 发送成功！感谢您的留言，站长会尽快查阅并回复。';
                     document.getElementById('contactForm').reset();
                     setTimeout(function() {
                         closeContact();
@@ -508,15 +503,15 @@
                         btn.disabled = false;
                         btn.innerText = '发送留言';
                         btn.style.opacity = '1';
-                    }, 2500);
+                    }, 3500);
                 } else {
-                    throw new Error(data.message || '发送失败');
+                    throw new Error(data.message || '发送失败，请稍后重试');
                 }
             } catch (err) {
                 status.style.display = 'block';
                 status.style.background = '#fef2f2';
                 status.style.color = '#ef4444';
-                status.innerHTML = '❌ 发送失败，请检查网络或直接发送邮件至 <a href="mailto:591611431@qq.com" style="color:#ef4444;text-decoration:underline;">591611431@qq.com</a>';
+                status.innerText = '❌ ' + (err.message || '网络连接异常，请稍后重试');
                 btn.disabled = false;
                 btn.innerText = '重试发送';
                 btn.style.opacity = '1';
@@ -695,7 +690,7 @@
         <button onclick="closeContact()" aria-label="关闭" style="position:absolute;top:.7rem;right:.8rem;background:none;border:none;font-size:1.2rem;cursor:pointer;color:#888;line-height:1;padding:0.2rem 0.4rem;border-radius:4px;">✕</button>
         <h3 style="margin:0 0 .4rem;font-size:1.1rem;color:var(--primary, #8B5E0B);text-align:center;">✉️ 联系站长 / 留言反馈</h3>
         <p style="font-size:.82rem;color:var(--text2, #6B6560);line-height:1.5;margin-bottom:1.2rem;text-align:center;">
-            若有任何心得交流、建议指正或法义探讨，欢迎留言。<br>内容将直呈站长邮箱（591611431@qq.com）。
+            若有任何心得交流、建议指正或法义探讨，欢迎留言。<br>您的留言将直接推送至站长邮箱，感谢您的支持与交流。
         </p>
         
         <form id="contactForm" onsubmit="submitContactForm(event)" style="display:flex;flex-direction:column;gap:0.9rem;">
@@ -719,7 +714,7 @@
             </button>
 
             <div style="text-align:center;font-size:0.75rem;color:var(--text-muted, #888);margin-top:0.2rem;">
-                若遇网络故障，亦可直接发信至 <a href="mailto:591611431@qq.com" style="color:var(--primary, #8B5E0B);text-decoration:underline;">591611431@qq.com</a>
+                🌿 诚心交流 · 直契自性 · 站长查阅后将尽快回复
             </div>
         </form>
     </div>
