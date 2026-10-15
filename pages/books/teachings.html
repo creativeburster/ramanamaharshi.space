@@ -115,11 +115,11 @@
     <meta name="twitter:image" content="https://ramanamaharshi.space/images/og-default.jpg">
 </head>
 <body>
-    <button class="hamburger" onclick="toggleSidebar()" aria-label="打开侧边导航菜单">☰</button>
+    <button class="hamburger" data-nosnippet onclick="toggleSidebar()" aria-label="打开侧边导航菜单">☰</button>
     <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
     <div class="layout">
 
-<aside class="sidebar" id="sidebar">
+<aside class="sidebar" data-nosnippet id="sidebar">
             <div class="sidebar-header">
                 <a href="../index.html" class="logo">🙏 拉玛那知识库</a>
                 <button class="sidebar-close-btn" aria-label="收起侧边栏" title="收起侧边栏" style="visibility:hidden;opacity:0;">◀</button>
@@ -155,7 +155,7 @@
         </aside>
 
         <main class="main-content">
-            <header class="topbar">
+            <header class="topbar" data-nosnippet>
                 <button class="sidebar-open-btn" aria-label="展开侧边栏" title="展开侧边栏">▶</button>
                 <div class="topbar-left">
                     <button class="menu-toggle" onclick="toggleSidebar()" aria-label="切换侧边栏">☰</button>
@@ -182,6 +182,13 @@
                     <p class="subtitle">Teachings in His Own Words | 亚瑟·奥斯本 编</p>
                 </header>
 
+                
+                <div class="provenance-bar" style="margin-bottom:1.5rem;padding:0.75rem 1rem;background:rgba(255,255,255,0.03);border:1px solid var(--border-color);border-radius:8px;font-size:0.85rem;color:var(--text-muted);display:flex;flex-wrap:wrap;gap:1rem;" data-nosnippet>
+                    <span>🏛️ <strong>底本出处</strong>：Sri Ramanasramam (Tiruvannamalai)</span>
+                    <span>📜 <strong>文献体裁</strong>：灵性哲学经典导读与法语汇编</span>
+                    <span>📅 <strong>最近校勘</strong>：2026-10</span>
+                    <span>⚖️ <strong>研学规范</strong>：<a href="../about.html" style="color:inherit;text-decoration:underline;">校勘凡例与版权声明</a></span>
+                </div>
                 <div class="card">
                     <h2 style="color:var(--primary);margin-bottom:1rem;">📚 书籍简介</h2>
                     <p style="margin-bottom:1rem;"><strong>《以言传意》(Teachings in His Own Words)</strong> 是亚瑟·奥斯本编辑的马哈希语录精选。与对谈录不同，这本书完全呈现马哈希的原话，展现他最直接、最核心的教导。</p>
@@ -282,20 +289,21 @@
                     <div class="concept-tags">
                         <a href="../../pdf_content/以言传意.txt" class="tag" download>📄 以言传意原文 (TXT)</a>
                     </div>
+                    <p style="margin-top:0.75rem;font-size:0.85rem;color:var(--text-muted);line-height:1.5;">* 文本整理自印度阿鲁那佳拉静修院（Sri Ramanasramam）官方文献及公有领域历史底本，仅供个人非营利学术研学对勘，详见<a href="../about.html" style="text-decoration:underline;">《校勘凡例与关于本库》</a>。</p>
                 </div>
             </div>
             
                         
     <!-- 上一本 下一本  -->
-    <div class="page-nav">
+    <div class="page-nav" data-nosnippet>
     <a href="reflections.html"><span class="nav-label">← 上一本</span><span class="nav-title">💭 反思录</span></a>
     <a href="surpassing-love.html"><span class="nav-label">下一本 →</span><span class="nav-title">💝 超越爱与恩典</span></a>
 </div>
 
-            <footer class="site-footer">
+            <footer class="site-footer" data-nosnippet>
                 <p><a href="../index.html" style="text-decoration: underline;">拉玛那马哈希</a> | 传承自印度阿鲁那佳拉圣山</p>
                 <p style="margin-top:0.5rem; font-size:0.9rem; color: var(--text-muted);">© 2026 拉玛那马哈希. 保留所有权利。</p>
-                <p style="margin-top:1rem; font-size:0.9rem;"><a href="../sitemap.html" style="color: var(--text-muted); text-decoration: underline;">🌐 网站地图</a> <span style="margin: 0 1rem;">|</span> <!--email_off--><a href="mailto:591611431@qq.com" style="color: var(--text-muted); text-decoration: underline;">联系我</a></p>
+                <p style="margin-top:1rem; font-size:0.9rem;"><a href="../about.html" style="color: var(--text-muted); text-decoration: underline; font-weight:600;">📜 凡例与关于本库</a> <span style="margin: 0 0.8rem;">|</span> <a href="../sitemap.html" style="color: var(--text-muted); text-decoration: underline;">🌐 网站地图</a> <span style="margin: 0 1rem;">|</span> <!--email_off--><a href="mailto:591611431@qq.com" style="color: var(--text-muted); text-decoration: underline;">联系我</a> <span style="margin: 0 0.8rem;">|</span> <a href="https://github.com/creativeburster/ramanamaharshi.space" target="_blank" rel="noopener noreferrer" style="color: var(--text-muted); text-decoration: underline;">🐙 开源仓库</a></p>
             </footer>
         </main>
     </div>

@@ -71,10 +71,10 @@
 <link rel="stylesheet" href="../styles.min.css">
 </head>
 <body>
-    <button class="hamburger" onclick="toggleSidebar()" aria-label="打开侧边导航菜单">☰</button>
+    <button class="hamburger" data-nosnippet onclick="toggleSidebar()" aria-label="打开侧边导航菜单">☰</button>
     <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
     <div class="layout">
-        <aside class="sidebar" id="sidebar" data-chapter-mode="true">
+        <aside class="sidebar" data-nosnippet id="sidebar" data-chapter-mode="true">
             <div class="sidebar-header">
                 <a href="../index.html" class="logo">🙏 拉玛那知识库</a>
                 <button class="sidebar-close-btn" aria-label="收起侧边栏" title="收起侧边栏" style="visibility:hidden;opacity:0;">◀</button>
@@ -103,7 +103,7 @@
             </div>
         </aside>
         <main class="main-content">
-            <header class="topbar">
+            <header class="topbar" data-nosnippet>
                 <button class="sidebar-open-btn" aria-label="展开侧边栏" title="展开侧边栏">▶</button>
                 <div class="topbar-left">
                     <button class="menu-toggle" onclick="toggleSidebar()" aria-label="切换侧边栏">☰</button>
@@ -206,7 +206,7 @@
                     <p style="margin-bottom:1rem;margin-top:1.5rem;"><strong>问：</strong>心智消融后会发生什么？我还能思考、工作、过正常生活吗？</p>
                     <p style="margin-bottom:1rem;"><strong>答：</strong>马哈希以自身为例。他虽然处于深度三摩地，但仍然能够与访客交谈、处理日常事务。心智没有消失，而是变得透明——像清澈的水。它仍然运作，但不再束缚你。这就是"在世而不属于世"的境界。</p>
                 </div>
-                <div class="page-nav">
+                <div class="page-nav" data-nosnippet>
                     <a href="talks-ch1.html"><span class="nav-label">← 上一章</span><span class="nav-title">第1章</span></a>
                     <a href="talks.html"><span class="nav-label">返回书籍</span><span class="nav-title">对谈录全书</span></a>
                     <a href="talks-ch3.html"><span class="nav-label">下一章 →</span><span class="nav-title">第3章</span></a>

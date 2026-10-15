@@ -47,10 +47,10 @@
     <meta name="twitter:image" content="https://ramanamaharshi.space/images/og-default.jpg">
 </head>
 <body>
-    <button class="hamburger" onclick="toggleSidebar()" aria-label="打开侧边导航菜单">☰</button>
+    <button class="hamburger" data-nosnippet onclick="toggleSidebar()" aria-label="打开侧边导航菜单">☰</button>
     <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
     <div class="layout">
-                <aside class="sidebar" id="sidebar">
+                <aside class="sidebar" data-nosnippet id="sidebar">
             <div class="sidebar-header">
                 <a href="../index.html" class="logo">🙏 拉玛那知识库</a>
                 <button class="sidebar-close-btn" aria-label="收起侧边栏" title="收起侧边栏" style="visibility:hidden;opacity:0;">◀</button>
@@ -114,7 +114,7 @@
             </div>
         </aside>
         <main class="main-content">
-            <header class="topbar">
+            <header class="topbar" data-nosnippet>
                 <button class="sidebar-open-btn" aria-label="展开侧边栏" title="展开侧边栏">▶</button><div class="topbar-left"><button class="menu-toggle" onclick="toggleSidebar()" aria-label="切换侧边栏">☰</button><span class="topbar-title">🔮 内在指引者</span></div><nav class="topbar-nav topbar-full"><a href="../index.html">首页</a><a href="../books/index.html">书籍</a><a href="index.html" class="active">概念</a><a href="../methods/index.html">方法</a><a href="../qa/index.html">问答</a><a href="../persons/index.html">人物</a><a href="../graph.html">图谱</a><a href="#" class="lang-toggle" style="border-left:1px solid rgba(255,255,255,.3);" title="切换为繁体中文" onclick="location.href='/zh-TW/'+location.pathname.substring(1);return false;">繁</a></nav></header>
             <div class="content-wrapper">
                 <nav class="breadcrumb"><a href="../index.html">首页</a> / <a href="index.html">核心概念</a> / <span>👁️ 内在指引者 Antaryamin</span></nav>
@@ -140,10 +140,10 @@
 </article>
 
             </div>
-            <footer class="site-footer">
+            <footer class="site-footer" data-nosnippet>
                 <p><a href="../index.html" style="text-decoration: underline;">拉玛那马哈希</a> | 传承自印度阿鲁那佳拉圣山</p>
                 <p style="margin-top:0.5rem; font-size:0.9rem; color: var(--text-muted);">© 2026 拉玛那马哈希. 保留所有权利。</p>
-                <p style="margin-top:1rem; font-size:0.9rem;"><a href="../sitemap.html" style="color: var(--text-muted); text-decoration: underline;">🌐 网站地图</a> <span style="margin: 0 1rem;">|</span> <!--email_off--><a href="mailto:591611431@qq.com" style="color: var(--text-muted); text-decoration: underline;">联系我</a></p>
+                <p style="margin-top:1rem; font-size:0.9rem;"><a href="../about.html" style="color: var(--text-muted); text-decoration: underline; font-weight:600;">📜 凡例与关于本库</a> <span style="margin: 0 0.8rem;">|</span> <a href="../sitemap.html" style="color: var(--text-muted); text-decoration: underline;">🌐 网站地图</a> <span style="margin: 0 1rem;">|</span> <!--email_off--><a href="mailto:591611431@qq.com" style="color: var(--text-muted); text-decoration: underline;">联系我</a> <span style="margin: 0 0.8rem;">|</span> <a href="https://github.com/creativeburster/ramanamaharshi.space" target="_blank" rel="noopener noreferrer" style="color: var(--text-muted); text-decoration: underline;">🐙 开源仓库</a></p>
             </footer>
         </main>
     </div>

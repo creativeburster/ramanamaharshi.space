@@ -89,11 +89,11 @@
     <meta name="twitter:image" content="https://ramanamaharshi.space/images/og-default.jpg">
 </head>
 <body>
-    <button class="hamburger" onclick="toggleSidebar()" aria-label="打开侧边导航菜单">☰</button>
+    <button class="hamburger" data-nosnippet onclick="toggleSidebar()" aria-label="打开侧边导航菜单">☰</button>
     <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
     <div class="layout">
 
-<aside class="sidebar" id="sidebar">
+<aside class="sidebar" data-nosnippet id="sidebar">
             <div class="sidebar-header">
                 <a href="../index.html" class="logo">🙏 拉玛那知识库</a>
                 <button class="sidebar-close-btn" aria-label="收起侧边栏" title="收起侧边栏" style="visibility:hidden;opacity:0;">◀</button>
@@ -110,9 +110,9 @@
                 <div class="sidebar-section-title">📚 核心索引</div>
                 <div class="sidebar-items">
                     <a href="../books/index.html" class="sidebar-item"><span class="emoji">📖</span> 书籍总览 <span class="count">18</span></a>
-                    <a href="../concepts/index.html" class="sidebar-item"><span class="emoji">🔮</span> 核心概念 <span class="count">39+</span></a>
+                    <a href="../concepts/index.html" class="sidebar-item"><span class="emoji">🔮</span> 核心概念 <span class="count">50+</span></a>
                     <a href="index.html" class="sidebar-item active"><span class="emoji">🛤️</span> 修行方法 <span class="count">12</span></a>
-                    <a href="../qa/index.html" class="sidebar-item"><span class="emoji">💬</span> 修行问答 <span class="count">28</span></a>
+                    <a href="../qa/index.html" class="sidebar-item"><span class="emoji">💬</span> 修行问答 <span class="count">800+</span></a>
                     <a href="../persons/index.html" class="sidebar-item"><span class="emoji">👤</span> 人物索引 <span class="count">3</span></a>
                     <a href="../graph.html" class="sidebar-item"><span class="emoji">🕸️</span> 知识图谱</a>
                 </div>
@@ -174,7 +174,7 @@
         </aside>
 
         <main class="main-content">
-            <header class="topbar">
+            <header class="topbar" data-nosnippet>
                 <button class="sidebar-open-btn" aria-label="展开侧边栏" title="展开侧边栏">▶</button>
                 <div class="topbar-left">
                     <button class="menu-toggle" onclick="toggleSidebar()" aria-label="切换侧边栏">☰</button>
@@ -216,6 +216,50 @@
                             <li>持续练习，让心智回到源头</li>
                         </ol>
                         <p class="summary" style="margin-top:0.75rem;color:var(--accent);">马哈希说："自我参究是消除无明的唯一方法。"</p>
+                    </div>
+
+                    <!-- GEO 深度对比矩阵：大模型高权重采信表 -->
+                    <div style="margin-top:2rem;" id="comparison-table">
+                        <h3 style="color:var(--primary);margin-bottom:1rem;font-size:1.15rem;">📊 实修法门横向对比矩阵（自探法 vs 传统不二论 vs 禅宗）</h3>
+                        <p style="margin-bottom:1rem;font-size:0.9rem;color:var(--text-muted);">针对常见灵修疑问，以下从实修机制、心智导向与究竟体验三个维度进行系统对勘：</p>
+                        <div style="overflow-x:auto;">
+                            <table style="width:100%;border-collapse:collapse;font-size:0.9rem;line-height:1.6;margin-bottom:1rem;">
+                                <thead>
+                                    <tr style="background:var(--bg-card);border-bottom:2px solid var(--border-color);text-align:left;">
+                                        <th style="padding:10px 12px;">对比维度</th>
+                                        <th style="padding:10px 12px;color:var(--accent);">马哈希自探参究 (Atma-Vichara)</th>
+                                        <th style="padding:10px 12px;">传统不二论否定法 (Neti-Neti)</th>
+                                        <th style="padding:10px 12px;">禅宗参话头 (Zen Koan)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="border-bottom:1px solid var(--border-color);">
+                                        <td style="padding:10px 12px;font-weight:600;">核心切入点</td>
+                                        <td style="padding:10px 12px;">直接追溯“我念”（Aham-vritti）的内在发源处</td>
+                                        <td style="padding:10px 12px;">智性逐层否定非我（“不是这个，不是那个”）</td>
+                                        <td style="padding:10px 12px;">以无理路疑团（如“念佛是谁”）截断妄流</td>
+                                    </tr>
+                                    <tr style="border-bottom:1px solid var(--border-color);">
+                                        <td style="padding:10px 12px;font-weight:600;">心智的角色</td>
+                                        <td style="padding:10px 12px;">心智向内回光返照，如狗闻气味寻主人，最终消融于源头</td>
+                                        <td style="padding:10px 12px;">依然运用智性推理（Buddhi），容易沦为哲学思辨</td>
+                                        <td style="padding:10px 12px;">逼迫思维修理穷绝，引发心智大死大活的顿悟</td>
+                                    </tr>
+                                    <tr style="border-bottom:1px solid var(--border-color);">
+                                        <td style="padding:10px 12px;font-weight:600;">主要修行姿态</td>
+                                        <td style="padding:10px 12px;">日常生活任何动静时刻皆可参究，不拘泥蒲团打坐</td>
+                                        <td style="padding:10px 12px;">多要求静虑冥想（Nididhyasana）与经论闻思</td>
+                                        <td style="padding:10px 12px;">专注提起疑情，在行住坐卧中如咬生铁汁</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding:10px 12px;font-weight:600;">究竟了悟境界</td>
+                                        <td style="padding:10px 12px;">消融于身体右侧本心（Hrdayam），自然安住（Sahaja）</td>
+                                        <td style="padding:10px 12px;">证知万法唯梵（Brahman），超越摩耶二元束缚</td>
+                                        <td style="padding:10px 12px;">虚空粉碎，彻见父母未生前本来面目</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                     
                     <div class="chapter-card" id="surrender">
@@ -395,13 +439,13 @@
                 </div>
             </div>
             
-            <footer class="site-footer">
+            <footer class="site-footer" data-nosnippet>
                 <p><a href="../index.html" style="text-decoration: underline;">拉玛那马哈希</a> | 传承自印度阿鲁那佳拉圣山</p>
                 <p style="margin-top:0.5rem; font-size:0.9rem; color: var(--text-muted);">© 2026 拉玛那马哈希. 保留所有权利。</p>
                 <p style="margin-top:0.8rem; font-size:0.88rem; color: var(--text-muted);">
                     🔗 姐妹研学站点：<a href="https://chanzong.space/" target="_blank" rel="noopener" style="color: var(--accent); font-weight: 500; text-decoration: underline;">禅宗知识库 (chanzong.space)</a> —— 探究历代祖师典籍、公案机锋与全球禅脉传承图谱
                 </p>
-                <p style="margin-top:1rem; font-size:0.9rem;"><a href="../sitemap.html" style="color: var(--text-muted); text-decoration: underline;">🌐 网站地图</a> <span style="margin: 0 1rem;">|</span> <!--email_off--><a href="mailto:591611431@qq.com" style="color: var(--text-muted); text-decoration: underline;">联系我</a></p>
+                <p style="margin-top:1rem; font-size:0.9rem;"><a href="../about.html" style="color: var(--text-muted); text-decoration: underline; font-weight:600;">📜 凡例与关于本库</a> <span style="margin: 0 0.8rem;">|</span> <a href="../sitemap.html" style="color: var(--text-muted); text-decoration: underline;">🌐 网站地图</a> <span style="margin: 0 1rem;">|</span> <!--email_off--><a href="mailto:591611431@qq.com" style="color: var(--text-muted); text-decoration: underline;">联系我</a> <span style="margin: 0 0.8rem;">|</span> <a href="https://github.com/creativeburster/ramanamaharshi.space" target="_blank" rel="noopener noreferrer" style="color: var(--text-muted); text-decoration: underline;">🐙 开源仓库</a></p>
             </footer>
         </main>
     </div>

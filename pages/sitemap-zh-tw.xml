@@ -15,11 +15,19 @@
   </url>
   <url>
     <loc>https://ramanamaharshi.space/zh-TW/index.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://ramanamaharshi.space/"/>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://ramanamaharshi.space/zh-TW/"/>
+  </url>
+  <url>
+    <loc>https://ramanamaharshi.space/zh-TW/about.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://ramanamaharshi.space/about.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://ramanamaharshi.space/zh-TW/about.html"/>
   </url>
   <url>
     <loc>https://ramanamaharshi.space/zh-TW/books/back-to-heart-ch1.html</loc>

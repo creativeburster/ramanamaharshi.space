@@ -1,7 +1,32 @@
 # Robots.txt for ramanamaharshi.space
-# Vercel部署: rootDirectory=pages, 所以根路径就是 /
+# Cloudflare Pages 部署: rootDirectory=pages
 
 User-agent: *
 Allow: /
+
+# 显式允许主流生成式 AI 搜索引擎实时检索与知识溯源 (GEO / Grounding)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
 Sitemap: https://ramanamaharshi.space/sitemap.xml
 # LLMs.txt for AI agents: https://ramanamaharshi.space/llms.txt
+# LLMs-full.txt: https://ramanamaharshi.space/llms-full.txt
+

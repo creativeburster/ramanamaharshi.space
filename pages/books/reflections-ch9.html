@@ -57,10 +57,10 @@
     <meta name="twitter:image" content="https://ramanamaharshi.space/images/og-default.jpg">
 </head>
 <body>
-    <button class="hamburger" onclick="toggleSidebar()" aria-label="打开侧边导航菜单">☰</button>
+    <button class="hamburger" data-nosnippet onclick="toggleSidebar()" aria-label="打开侧边导航菜单">☰</button>
     <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
     <div class="layout">
-        <aside class="sidebar" id="sidebar" data-chapter-mode="true">
+        <aside class="sidebar" data-nosnippet id="sidebar" data-chapter-mode="true">
             <div class="sidebar-header">
                 <a href="../index.html" class="logo">🙏 拉玛那知识库</a>
                 <button class="sidebar-close-btn" aria-label="收起侧边栏" title="收起侧边栏" style="visibility:hidden;opacity:0;">◀</button>
@@ -102,7 +102,7 @@
         </aside>
 
         <main class="main-content">
-            <header class="topbar">
+            <header class="topbar" data-nosnippet>
                 <button class="sidebar-open-btn" aria-label="展开侧边栏" title="展开侧边栏">▶</button>
                 <div class="topbar-left">
                     <button class="menu-toggle" onclick="toggleSidebar()" aria-label="切换侧边栏">☰</button>
@@ -132,7 +132,7 @@
                 <div class="card">
                     <h2 style="color:var(--primary);margin-bottom:1rem;">📖 章节简介</h2>
                     <p>自我参究不是唯一的道路。马哈希也教导"臣服之道"——完全将自己交托给神或上师。他说："两条路都通向同一个目的地。自我参究是'我是谁？'的道路，臣服是'愿你的旨意成就'的道路。"</p>
-                    <p style="margin-top:1rem;"><strong>臣服的本质：</strong>臣服不是消极的放弃，而是主动地将自我意志消融于更高的存在中。当自我（ego）完全臣服时，它就消失了，只剩下真我。</p>
+                    <p style="margin-top:1rem;"><a href="../about.html" style="color: var(--text-muted); text-decoration: underline; font-weight:600;">📜 凡例与关于本库</a> <span style="margin: 0 0.8rem;">|</span> <strong>臣服的本质：</strong>臣服不是消极的放弃，而是主动地将自我意志消融于更高的存在中。当自我（ego）完全臣服时，它就消失了，只剩下真我。 <span style="margin: 0 0.8rem;">|</span> <a href="https://github.com/creativeburster/ramanamaharshi.space" target="_blank" rel="noopener noreferrer" style="color: var(--text-muted); text-decoration: underline;">🐙 开源仓库</a></p>
                 </div>
                 
                 <!-- 核心洞见  -->
@@ -188,14 +188,14 @@
                 </div>
                 
                 <!-- 上下章导航  -->
-                <div class="page-nav">
+                <div class="page-nav" data-nosnippet>
                     <a href="reflections-ch8.html"><span class="nav-label">← 上一章</span><span class="nav-title">📝 第八章：自我参究</span></a>
                     
                     <a href="reflections.html"><span class="nav-label">返回书籍</span><span class="nav-title">reflections全书</span></a>
 <a href="reflections-ch10.html"><span class="nav-label">下一章 →</span><span class="nav-title">📝 第十章：身体终结</span></a>
                 </div>
                 
-                <footer class="site-footer">
+                <footer class="site-footer" data-nosnippet>
                     <p><a href="../index.html" style="text-decoration: underline;">拉玛那马哈希</a> | 传承自印度阿鲁那佳拉圣山</p>
                     <p style="margin-top:0.5rem; font-size:0.9rem; color: var(--text-muted);">© 2026 拉玛那马哈希. 保留所有权利。</p>
                     <p style="margin-top:1rem; font-size:0.9rem;"><a href="../sitemap.html" style="color: var(--text-muted); text-decoration: underline;">🌐 网站地图</a> <span style="margin: 0 1rem;">|</span> <!--email_off--><a href="mailto:591611431@qq.com" style="color: var(--text-muted); text-decoration: underline;">联系我</a></p>

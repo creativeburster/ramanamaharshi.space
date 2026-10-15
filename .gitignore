@@ -2,6 +2,11 @@ node_modules/
 ebooks/
 .wrangler/
 *.bak
+*.backup
+*.zip
+*.pyc
+__pycache__/
 ramana-kb/
 ramana-kb-1/
 pages/ramana-kb/
+

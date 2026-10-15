@@ -76,11 +76,11 @@
     <meta name="twitter:image" content="https://ramanamaharshi.space/images/og-default.jpg">
 </head>
 <body>
-    <button class="hamburger" onclick="toggleSidebar()" aria-label="打开侧边导航菜单">☰</button>
+    <button class="hamburger" data-nosnippet onclick="toggleSidebar()" aria-label="打开侧边导航菜单">☰</button>
     <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
     <div class="layout">
 
-        <aside class="sidebar" id="sidebar">
+        <aside class="sidebar" data-nosnippet id="sidebar">
             <div class="sidebar-header">
                 <a href="../index.html" class="logo">🙏 拉玛那知识库</a>
                 <button class="sidebar-close-btn" aria-label="收起侧边栏" title="收起侧边栏" style="visibility:hidden;opacity:0;">◀</button>
@@ -145,7 +145,7 @@
         </aside>
 
 <main class="main-content">
-    <header class="topbar">
+    <header class="topbar" data-nosnippet>
                 <button class="sidebar-open-btn" aria-label="展开侧边栏" title="展开侧边栏">▶</button>
         <div class="topbar-left">
             <button class="menu-toggle" onclick="toggleSidebar()" aria-label="切换侧边栏">☰</button>
@@ -175,7 +175,7 @@
         <div class="card">
             <h2>📖 核心定义</h2>
             <p><strong>神通 (Siddhi)</strong> 意为"成就"或"圆满"，指修行过程中可能显现的超自然能力。在印度瑜伽传统中，有所谓"八大神通"（Ashta Siddhis）：能小、能大、能轻、能重、能至、能来、能去、能隐等。</p>
-            <p style="margin-top:1rem;">然而，马哈希的教法对此有明确的警示：<strong>神通不是修行的目标，而是应当超越的障碍</strong>。</p>
+            <p style="margin-top:1rem;"><a href="../about.html" style="color: var(--text-muted); text-decoration: underline; font-weight:600;">📜 凡例与关于本库</a> <span style="margin: 0 0.8rem;">|</span> 然而，马哈希的教法对此有明确的警示：<strong>神通不是修行的目标，而是应当超越的障碍</strong>。 <span style="margin: 0 0.8rem;">|</span> <a href="https://github.com/creativeburster/ramanamaharshi.space" target="_blank" rel="noopener noreferrer" style="color: var(--text-muted); text-decoration: underline;">🐙 开源仓库</a></p>
         </div>
 
         <div class="card">
@@ -229,7 +229,7 @@
 
     
 
-<footer class="site-footer">
+<footer class="site-footer" data-nosnippet>
         <p><a href="../index.html" style="text-decoration: underline;">拉玛那马哈希</a> | <a href="index.html">← 核心概念</a></p>
     </footer>
 </main>

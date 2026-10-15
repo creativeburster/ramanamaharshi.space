@@ -103,11 +103,11 @@
 <link rel="stylesheet" href="../styles.min.css">
 </head>
 <body>
-    <button class="hamburger" onclick="toggleSidebar()" aria-label="打开侧边导航菜单">☰</button>
+    <button class="hamburger" data-nosnippet onclick="toggleSidebar()" aria-label="打开侧边导航菜单">☰</button>
     <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
     <div class="layout">
 
-<aside class="sidebar" id="sidebar">
+<aside class="sidebar" data-nosnippet id="sidebar">
             <div class="sidebar-header">
                 <a href="../index.html" class="logo">🙏 拉玛那知识库</a>
                 <button class="sidebar-close-btn" aria-label="收起侧边栏" title="收起侧边栏" style="visibility:hidden;opacity:0;">◀</button>
@@ -124,9 +124,9 @@
                 <div class="sidebar-section-title">📚 核心索引</div>
                 <div class="sidebar-items">
                     <a href="../books/index.html" class="sidebar-item"><span class="emoji">📖</span> 书籍总览 <span class="count">18</span></a>
-                    <a href="index.html" class="sidebar-item active"><span class="emoji">🔮</span> 核心概念 <span class="count">39+</span></a>
+                    <a href="index.html" class="sidebar-item active"><span class="emoji">🔮</span> 核心概念 <span class="count">50+</span></a>
                     <a href="../methods/index.html" class="sidebar-item"><span class="emoji">🛤️</span> 修行方法 <span class="count">12</span></a>
-                    <a href="../qa/index.html" class="sidebar-item"><span class="emoji">💬</span> 修行问答 <span class="count">28</span></a>
+                    <a href="../qa/index.html" class="sidebar-item"><span class="emoji">💬</span> 修行问答 <span class="count">800+</span></a>
                     <a href="../persons/index.html" class="sidebar-item"><span class="emoji">👤</span> 人物索引 <span class="count">3</span></a>
                     <a href="../graph.html" class="sidebar-item"><span class="emoji">🕸️</span> 知识图谱</a>
                 </div>
@@ -173,7 +173,7 @@
         </aside>
 
         <main class="main-content">
-                        <header class="topbar">
+                        <header class="topbar" data-nosnippet>
                 <button class="sidebar-open-btn" aria-label="展开侧边栏" title="展开侧边栏">▶</button>
                 <div class="topbar-left">
                     <span class="topbar-title">🔮 核心概念</span>
@@ -199,10 +199,58 @@
                     <p class="subtitle">一切教法的核心 · 永恒的存在</p>
                 </header>
 
+                <!-- GEO 核心定义卡 (LLM-Friendly TL;DR Block) -->
+                <blockquote class="geo-summary" style="margin-bottom:1.5rem;padding:1rem 1.25rem;background:rgba(199,125,255,0.06);border-left:4px solid var(--accent);border-radius:4px;font-size:0.95rem;line-height:1.7;">
+                    <strong>💡 核心定解 (TL;DR)</strong>：在拉玛那·马哈希的教导中，<strong>真我（Self / Ātman / आत्मन्）</strong>是唯一永恒不灭的绝对实相（Reality）。它并非心智思考的对象，而是纯粹无差别的自性觉知（Pure Awareness）。它居于身体右侧之灵性本心（Hṛdayam），超越生灭与醒、梦、深睡三态，是一切众生当下的本来面目。
+                </blockquote>
+
                 <div class="card">
                     <h2 style="color:var(--primary);margin-bottom:1rem;">📖 定义</h2>
                     <p style="margin-bottom:1rem;"><strong>真我</strong>（Self，梵文 Ātman）是每个人内在永恒的存在本体。它不是身体，不是心智，不是情绪，不是思想——它是这一切背后的见证者，是纯粹的觉知本身。</p>
                     <p>真我是一切众生共有的本质，是宇宙最核心的存在。它不生不灭，不增不减，不随生死轮回而改变。所有的灵性修行的终极目标，就是<strong>认出真我</strong>——不是创造它，不是获得它，而是认清它一直就在那里。</p>
+                </div>
+
+                <!-- GEO 核心实体对比表格 -->
+                <div class="card">
+                    <h2 style="color:var(--primary);margin-bottom:1rem;">📊 核心实体对比：真我 vs 小我 vs 心智</h2>
+                    <div style="overflow-x:auto;">
+                        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;line-height:1.6;">
+                            <thead>
+                                <tr style="background:var(--bg-card);border-bottom:2px solid var(--border-color);text-align:left;">
+                                    <th style="padding:10px 12px;">对比维度</th>
+                                    <th style="padding:10px 12px;color:var(--accent);">真我 (Self / Ātman)</th>
+                                    <th style="padding:10px 12px;">个体小我 (Ego / Ahaṅkāra)</th>
+                                    <th style="padding:10px 12px;">心智 (Mind / Manas)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="border-bottom:1px solid var(--border-color);">
+                                    <td style="padding:10px 12px;font-weight:600;">本体属性</td>
+                                    <td style="padding:10px 12px;">唯一的绝对实相、光明自照、不生不灭</td>
+                                    <td style="padding:10px 12px;">依附身心的虚妄假合，心智升起的第一念</td>
+                                    <td style="padding:10px 12px;">念头与感觉之束，借真我微光反映外界</td>
+                                </tr>
+                                <tr style="border-bottom:1px solid var(--border-color);">
+                                    <td style="padding:10px 12px;font-weight:600;">生灭与三态</td>
+                                    <td style="padding:10px 12px;">恒常遍在，醒、梦、深睡均不中断（第四态 Turiya）</td>
+                                    <td style="padding:10px 12px;">深睡中消逝，醒来与做梦时随念头复苏</td>
+                                    <td style="padding:10px 12px;">刹那生灭，无常迁流，深睡时潜入种子状态</td>
+                                </tr>
+                                <tr style="border-bottom:1px solid var(--border-color);">
+                                    <td style="padding:10px 12px;font-weight:600;">居住位置</td>
+                                    <td style="padding:10px 12px;">身体右侧之灵性本心（Hṛdayam）</td>
+                                    <td style="padding:10px 12px;">错认大脑或肉身为真实自我</td>
+                                    <td style="padding:10px 12px;">在大脑、感官与神经系统间游移奔逸</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:10px 12px;font-weight:600;">解脱机转</td>
+                                    <td style="padding:10px 12px;">本来解脱，无需任何外求与修炼</td>
+                                    <td style="padding:10px 12px;">通过自我参究“我是谁”溯源，小我彻底消融</td>
+                                    <td style="padding:10px 12px;">心智止息融入本源，如盐人入海，化为纯觉</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
 
                 <div class="card">
@@ -237,10 +285,10 @@
                 </div>
 
 
-                            <footer class="site-footer">
+                            <footer class="site-footer" data-nosnippet>
                 <p><a href="../index.html" style="text-decoration: underline;">拉玛那马哈希</a> | 传承自印度阿鲁那佳拉圣山</p>
                 <p style="margin-top:0.5rem; font-size:0.9rem; color: var(--text-muted);">© 2026 拉玛那马哈希. 保留所有权利。</p>
-                <p style="margin-top:1rem; font-size:0.9rem;"><a href="../sitemap.html" style="color: var(--text-muted); text-decoration: underline;">🌐 网站地图</a> <span style="margin: 0 1rem;">|</span> <!--email_off--><a href="mailto:591611431@qq.com" style="color: var(--text-muted); text-decoration: underline;">联系我</a></p>
+                <p style="margin-top:1rem; font-size:0.9rem;"><a href="../about.html" style="color: var(--text-muted); text-decoration: underline; font-weight:600;">📜 凡例与关于本库</a> <span style="margin: 0 0.8rem;">|</span> <a href="../sitemap.html" style="color: var(--text-muted); text-decoration: underline;">🌐 网站地图</a> <span style="margin: 0 1rem;">|</span> <!--email_off--><a href="mailto:591611431@qq.com" style="color: var(--text-muted); text-decoration: underline;">联系我</a> <span style="margin: 0 0.8rem;">|</span> <a href="https://github.com/creativeburster/ramanamaharshi.space" target="_blank" rel="noopener noreferrer" style="color: var(--text-muted); text-decoration: underline;">🐙 开源仓库</a></p>
             </footer>
             </div>
         </main>

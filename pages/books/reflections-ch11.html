@@ -57,10 +57,10 @@
     <meta name="twitter:image" content="https://ramanamaharshi.space/images/og-default.jpg">
 </head>
 <body>
-    <button class="hamburger" onclick="toggleSidebar()" aria-label="打开侧边导航菜单">☰</button>
+    <button class="hamburger" data-nosnippet onclick="toggleSidebar()" aria-label="打开侧边导航菜单">☰</button>
     <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
     <div class="layout">
-        <aside class="sidebar" id="sidebar" data-chapter-mode="true">
+        <aside class="sidebar" data-nosnippet id="sidebar" data-chapter-mode="true">
             <div class="sidebar-header">
                 <a href="../index.html" class="logo">🙏 拉玛那知识库</a>
                 <button class="sidebar-close-btn" aria-label="收起侧边栏" title="收起侧边栏" style="visibility:hidden;opacity:0;">◀</button>
@@ -102,7 +102,7 @@
         </aside>
 
         <main class="main-content">
-            <header class="topbar">
+            <header class="topbar" data-nosnippet>
                 <button class="sidebar-open-btn" aria-label="展开侧边栏" title="展开侧边栏">▶</button>
                 <div class="topbar-left">
                     <button class="menu-toggle" onclick="toggleSidebar()" aria-label="切换侧边栏">☰</button>
@@ -132,7 +132,7 @@
                 <div class="card">
                     <h2 style="color:var(--primary);margin-bottom:1rem;">📖 章节简介</h2>
                     <p>马哈希对梦的分析是其教法中最深刻的部分之一。他说："在梦中，我们创造了整个世界——山川、河流、人群——但醒来后，我们知道这一切都是心智的产物。那么，醒着的世界又何尝不是如此呢？"</p>
-                    <p style="margin-top:1rem;"><strong>梦瑜伽：</strong>认识到醒和梦本质上是相同的——都是心智创造的经验。通过观照，我们可以在两种状态下都保持觉醒。</p>
+                    <p style="margin-top:1rem;"><a href="../about.html" style="color: var(--text-muted); text-decoration: underline; font-weight:600;">📜 凡例与关于本库</a> <span style="margin: 0 0.8rem;">|</span> <strong>梦瑜伽：</strong>认识到醒和梦本质上是相同的——都是心智创造的经验。通过观照，我们可以在两种状态下都保持觉醒。 <span style="margin: 0 0.8rem;">|</span> <a href="https://github.com/creativeburster/ramanamaharshi.space" target="_blank" rel="noopener noreferrer" style="color: var(--text-muted); text-decoration: underline;">🐙 开源仓库</a></p>
                 </div>
                 
                 <!-- 核心洞见  -->
@@ -188,14 +188,14 @@
                 </div>
                 
                 <!-- 上下章导航  -->
-                <div class="page-nav">
+                <div class="page-nav" data-nosnippet>
                     <a href="reflections-ch10.html"><span class="nav-label">← 上一章</span><span class="nav-title">📝 第十章：身体终结</span></a>
                     
                     <a href="reflections.html"><span class="nav-label">返回书籍</span><span class="nav-title">reflections全书</span></a>
 <a href="reflections-ch12.html"><span class="nav-label">下一章 →</span><span class="nav-title">📝 第十二章：死亡的思考</span></a>
                 </div>
                 
-                <footer class="site-footer">
+                <footer class="site-footer" data-nosnippet>
                     <p><a href="../index.html" style="text-decoration: underline;">拉玛那马哈希</a> | 传承自印度阿鲁那佳拉圣山</p>
                     <p style="margin-top:0.5rem; font-size:0.9rem; color: var(--text-muted);">© 2026 拉玛那马哈希. 保留所有权利。</p>
                     <p style="margin-top:1rem; font-size:0.9rem;"><a href="../sitemap.html" style="color: var(--text-muted); text-decoration: underline;">🌐 网站地图</a> <span style="margin: 0 1rem;">|</span> <!--email_off--><a href="mailto:591611431@qq.com" style="color: var(--text-muted); text-decoration: underline;">联系我</a></p>

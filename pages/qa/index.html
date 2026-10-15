@@ -21,7 +21,7 @@
     <meta name="twitter:title" content="拉玛那马哈希知识库">
 
     
-    <meta name="twitter:description" content="拉玛那马哈希知识库系统整理其灵性教示，包含18本经典著作完整导读、50+核心概念详解、500+精选问答、修行方法指南与关键人物传记。">
+    <meta name="twitter:description" content="拉玛那马哈希知识库系统整理其灵性教示，包含18本经典著作完整导读、50+核心概念详解、800+精选问答、修行方法指南与关键人物传记。">
 
     
     <meta name="twitter:image" content="https://ramanamaharshi.space/images/og-default.jpg">
@@ -123,10 +123,10 @@
     }
     </script></head>
 <body>
-    <button class="hamburger" onclick="toggleSidebar()" aria-label="打开侧边导航菜单">☰</button>
+    <button class="hamburger" data-nosnippet onclick="toggleSidebar()" aria-label="打开侧边导航菜单">☰</button>
     <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
     <div class="layout">
-        <aside class="sidebar" id="sidebar">
+        <aside class="sidebar" data-nosnippet id="sidebar">
             <div class="sidebar-header">
                 <a href="../index.html" class="logo">🙏 拉玛那知识库</a>
                 <button class="sidebar-close-btn" aria-label="收起侧边栏" title="收起侧边栏" style="visibility:hidden;opacity:0;">◀</button>
@@ -143,9 +143,9 @@
                 <div class="sidebar-section-title">📚 核心索引</div>
                 <div class="sidebar-items">
                     <a href="../books/index.html" class="sidebar-item"><span class="emoji">📖</span> 书籍总览 <span class="count">18</span></a>
-                    <a href="../concepts/index.html" class="sidebar-item"><span class="emoji">🔮</span> 核心概念 <span class="count">39+</span></a>
+                    <a href="../concepts/index.html" class="sidebar-item"><span class="emoji">🔮</span> 核心概念 <span class="count">50+</span></a>
                     <a href="../methods/index.html" class="sidebar-item"><span class="emoji">🛤️</span> 修行方法 <span class="count">12</span></a>
-                    <a href="index.html" class="sidebar-item active"><span class="emoji">💬</span> 修行问答 <span class="count">800</span></a>
+                    <a href="index.html" class="sidebar-item active"><span class="emoji">💬</span> 修行问答 <span class="count">800+</span></a>
                     <a href="../persons/index.html" class="sidebar-item"><span class="emoji">👤</span> 人物索引 <span class="count">3</span></a>
                     <a href="../graph.html" class="sidebar-item"><span class="emoji">🕸️</span> 知识图谱</a>
                 </div>
@@ -178,7 +178,7 @@
         </aside>
 
         <main class="main-content">
-            <header class="topbar">
+            <header class="topbar" data-nosnippet>
                 <button class="sidebar-open-btn" aria-label="展开侧边栏" title="展开侧边栏">▶</button>
                 <div class="topbar-left">
                     <button class="menu-toggle" onclick="toggleSidebar()" aria-label="切换侧边栏">☰</button>
@@ -222,6 +222,37 @@
                     </div>
                 </div>
 
+                <!-- 静态主题聚合枢纽 (Topic Hub Matrix - 降低爬虫抓取深度) -->
+                <div class="card" style="margin-bottom:2rem;">
+                    <h2 style="color:var(--primary);margin-bottom:1rem;font-size:1.1rem;">🧭 核心主题问答快速直达</h2>
+                    <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));gap:0.75rem;">
+                        <a href="qa-1.html" class="chapter-card" style="padding:0.75rem 1rem;margin:0;">
+                            <strong>🔮 真我与实相</strong>
+                            <p style="font-size:0.8rem;color:var(--text-muted);margin-top:0.25rem;">关于自性、梵与意识本质的直指解答</p>
+                        </a>
+                        <a href="qa-10.html" class="chapter-card" style="padding:0.75rem 1rem;margin:0;">
+                            <strong>🔍 参究我是谁</strong>
+                            <p style="font-size:0.8rem;color:var(--text-muted);margin-top:0.25rem;">追溯我念源头的实修细则与障碍排查</p>
+                        </a>
+                        <a href="qa-20.html" class="chapter-card" style="padding:0.75rem 1rem;margin:0;">
+                            <strong>🧠 心智与念头</strong>
+                            <p style="font-size:0.8rem;color:var(--text-muted);margin-top:0.25rem;">如何面对妄念杂念与潜意识习气</p>
+                        </a>
+                        <a href="qa-30.html" class="chapter-card" style="padding:0.75rem 1rem;margin:0;">
+                            <strong>🙏 臣服与上师</strong>
+                            <p style="font-size:0.8rem;color:var(--text-muted);margin-top:0.25rem;">放下虚假做者感，全然归依真我恩典</p>
+                        </a>
+                        <a href="qa-40.html" class="chapter-card" style="padding:0.75rem 1rem;margin:0;">
+                            <strong>🧘 禅定与三摩地</strong>
+                            <p style="font-size:0.8rem;color:var(--text-muted);margin-top:0.25rem;">从坐禅定境到自然安住的平稳过渡</p>
+                        </a>
+                        <a href="qa-50.html" class="chapter-card" style="padding:0.75rem 1rem;margin:0;">
+                            <strong>💼 日常起居修行</strong>
+                            <p style="font-size:0.8rem;color:var(--text-muted);margin-top:0.25rem;">世俗工作、家庭责任与出离心的平衡</p>
+                        </a>
+                    </div>
+                </div>
+
                 <!-- 分类筛选  -->
                 <div class="tab-nav" id="tabNav">
                     <button class="tab-btn active" data-category="all" onclick="filterByCategory('all')">全部</button>
@@ -254,10 +285,10 @@
                 
                 <p style="text-align:center;color:var(--text2);font-size:14px;margin-top:1rem;">✨ 更多问答正在整理中……</p>
 
-                <footer class="site-footer">
+                <footer class="site-footer" data-nosnippet>
                     <p><a href="../index.html" style="text-decoration: underline;">拉玛那马哈希</a> | 传承自印度阿鲁那佳拉圣山</p>
                     <p style="margin-top:0.5rem; font-size:0.9rem; color: var(--text-muted);">© 2026 拉玛那马哈希. 保留所有权利。</p>
-                    <p style="margin-top:1rem; font-size:0.9rem;"><a href="../sitemap.html" style="color: var(--text-muted); text-decoration: underline;">🌐 网站地图</a> <span style="margin: 0 1rem;">|</span> <!--email_off--><a href="mailto:591611431@qq.com" style="color: var(--text-muted); text-decoration: underline;">联系我</a></p>
+                    <p style="margin-top:1rem; font-size:0.9rem;"><a href="../about.html" style="color: var(--text-muted); text-decoration: underline; font-weight:600;">📜 凡例与关于本库</a> <span style="margin: 0 0.8rem;">|</span> <a href="../sitemap.html" style="color: var(--text-muted); text-decoration: underline;">🌐 网站地图</a> <span style="margin: 0 1rem;">|</span> <!--email_off--><a href="mailto:591611431@qq.com" style="color: var(--text-muted); text-decoration: underline;">联系我</a> <span style="margin: 0 0.8rem;">|</span> <a href="https://github.com/creativeburster/ramanamaharshi.space" target="_blank" rel="noopener noreferrer" style="color: var(--text-muted); text-decoration: underline;">🐙 开源仓库</a></p>
                 </footer>
             </div>
         </main>

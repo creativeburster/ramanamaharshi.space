@@ -52,11 +52,11 @@
     <meta name="twitter:image" content="https://ramanamaharshi.space/images/og-default.jpg">
 </head>
 <body>
-    <button class="hamburger" onclick="toggleSidebar()" aria-label="打开侧边导航菜单">☰</button>
+    <button class="hamburger" data-nosnippet onclick="toggleSidebar()" aria-label="打开侧边导航菜单">☰</button>
     <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
     <div class="layout">
 
-<aside class="sidebar" id="sidebar">
+<aside class="sidebar" data-nosnippet id="sidebar">
     <div class="sidebar-header">
         <a href="../index.html" class="logo">🙏 拉玛那知识库</a>
                 <button class="sidebar-close-btn" aria-label="收起侧边栏" title="收起侧边栏" style="visibility:hidden;opacity:0;">◀</button>
@@ -140,7 +140,7 @@
 </aside>
 
 <main class="main-content">
-    <header class="topbar">
+    <header class="topbar" data-nosnippet>
                 <button class="sidebar-open-btn" aria-label="展开侧边栏" title="展开侧边栏">▶</button>
         <div class="topbar-left">
             <button class="menu-toggle" onclick="toggleSidebar()" aria-label="切换侧边栏">☰</button>
@@ -170,7 +170,7 @@
         <div class="card">
             <h2 style="color:var(--primary);margin-bottom:1rem;">📖 本章导言</h2>
             <p>纳塔南南达（Natanananda），原名S. R. 克里希那穆尔蒂（S. R. Krishnamurthi），是马哈希早期最忠诚的弟子之一。他出生于一个受过良好教育的婆罗门家庭，年轻时即展现出对哲学和灵性的浓厚兴趣。在遇见马哈希之前，他已经广泛阅读了吠檀多经典，但那些文字上的理解并未给他带来真正的安宁。</p>
-            <p style="margin-top:1rem;">当他第一次来到阿鲁那佳拉，见到马哈希的那一刻，一切书本上的知识在一瞬间变得鲜活而真实。他后来将自己的名字改为"Natanananda"，意为"存在的喜悦"——这正是他在马哈希身边所体验到的核心状态。本章记录了他与马哈希的珍贵互动以及他对上师教导的深刻理解。</p>
+            <p style="margin-top:1rem;"><a href="../about.html" style="color: var(--text-muted); text-decoration: underline; font-weight:600;">📜 凡例与关于本库</a> <span style="margin: 0 0.8rem;">|</span> 当他第一次来到阿鲁那佳拉，见到马哈希的那一刻，一切书本上的知识在一瞬间变得鲜活而真实。他后来将自己的名字改为"Natanananda"，意为"存在的喜悦"——这正是他在马哈希身边所体验到的核心状态。本章记录了他与马哈希的珍贵互动以及他对上师教导的深刻理解。 <span style="margin: 0 0.8rem;">|</span> <a href="https://github.com/creativeburster/ramanamaharshi.space" target="_blank" rel="noopener noreferrer" style="color: var(--text-muted); text-decoration: underline;">🐙 开源仓库</a></p>
         </div>
 
         <div class="card">
@@ -228,7 +228,7 @@
             </div>
         </div>
 
-        <div class="page-nav">
+        <div class="page-nav" data-nosnippet>
             <a href="surpassing-love-ch15.html"><span class="nav-label">← 上一章</span><span class="nav-title">第十五章：勿忘</span></a>
             <a href="surpassing-love.html"><span class="nav-label">返回书籍</span><span class="nav-title">📖 超越爱与恩典全书</span></a>
             <a href="surpassing-love-ch17.html"><span class="nav-label">下一章 →</span><span class="nav-title">第十七章：Sein</span></a>
@@ -236,7 +236,7 @@
 
     </div>
     
-    <footer class="site-footer">
+    <footer class="site-footer" data-nosnippet>
         <p><a href="../index.html" style="text-decoration: underline;">拉玛那马哈希</a> | 传承自印度阿鲁那佳拉圣山</p>
         <p style="margin-top:0.5rem; font-size:0.9rem; color: var(--text-muted);">© 2026 拉玛那马哈希. 保留所有权利。</p>
         <p style="margin-top:1rem; font-size:0.9rem;"><a href="../sitemap.html" style="color: var(--text-muted); text-decoration: underline;">🌐 网站地图</a> <span style="margin: 0 1rem;">|</span> <!--email_off--><a href="mailto:591611431@qq.com" style="color: var(--text-muted); text-decoration: underline;">联系我</a></p>

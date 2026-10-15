@@ -75,11 +75,11 @@
     <meta name="twitter:image" content="https://ramanamaharshi.space/images/og-default.jpg">
 </head>
 <body>
-    <button class="hamburger" onclick="toggleSidebar()" aria-label="打开侧边导航菜单">☰</button>
+    <button class="hamburger" data-nosnippet onclick="toggleSidebar()" aria-label="打开侧边导航菜单">☰</button>
     <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
     <div class="layout">
 
-        <aside class="sidebar" id="sidebar">
+        <aside class="sidebar" data-nosnippet id="sidebar">
             <div class="sidebar-header">
                 <a href="../index.html" class="logo">🙏 拉玛那知识库</a>
                 <button class="sidebar-close-btn" aria-label="收起侧边栏" title="收起侧边栏" style="visibility:hidden;opacity:0;">◀</button>
@@ -144,7 +144,7 @@
         </aside>
 
 <main class="main-content">
-    <header class="topbar">
+    <header class="topbar" data-nosnippet>
                 <button class="sidebar-open-btn" aria-label="展开侧边栏" title="展开侧边栏">▶</button>
         <div class="topbar-left">
             <button class="menu-toggle" onclick="toggleSidebar()" aria-label="切换侧边栏">☰</button>
@@ -174,7 +174,7 @@
         <div class="card">
             <h2>📖 核心定义</h2>
             <p><strong>信心 (Shraddha)</strong> 是梵文词，意为"深信"、"虔诚"或"信念"。在印度灵性传统中，Shraddha 是修行的基石——没有信心，任何灵性修习都难以持续。</p>
-            <p style="margin-top:1rem;">真正的信心不是盲目的信仰，而是基于智慧的信任——对真理的真实性、上师的慈悲和修行道路的有效性的深信。</p>
+            <p style="margin-top:1rem;"><a href="../about.html" style="color: var(--text-muted); text-decoration: underline; font-weight:600;">📜 凡例与关于本库</a> <span style="margin: 0 0.8rem;">|</span> 真正的信心不是盲目的信仰，而是基于智慧的信任——对真理的真实性、上师的慈悲和修行道路的有效性的深信。 <span style="margin: 0 0.8rem;">|</span> <a href="https://github.com/creativeburster/ramanamaharshi.space" target="_blank" rel="noopener noreferrer" style="color: var(--text-muted); text-decoration: underline;">🐙 开源仓库</a></p>
         </div>
 
         <div class="card">
@@ -229,7 +229,7 @@
 
     
 
-<footer class="site-footer">
+<footer class="site-footer" data-nosnippet>
         <p><a href="../index.html" style="text-decoration: underline;">拉玛那马哈希</a> | <a href="index.html">← 核心概念</a></p>
     </footer>
 </main>

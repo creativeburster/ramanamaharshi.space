@@ -52,11 +52,11 @@
     <meta name="twitter:image" content="https://ramanamaharshi.space/images/og-default.jpg">
 </head>
 <body>
-    <button class="hamburger" onclick="toggleSidebar()" aria-label="打开侧边导航菜单">☰</button>
+    <button class="hamburger" data-nosnippet onclick="toggleSidebar()" aria-label="打开侧边导航菜单">☰</button>
     <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
     <div class="layout">
 
-<aside class="sidebar" id="sidebar">
+<aside class="sidebar" data-nosnippet id="sidebar">
     <div class="sidebar-header">
         <a href="../index.html" class="logo">🙏 拉玛那知识库</a>
                 <button class="sidebar-close-btn" aria-label="收起侧边栏" title="收起侧边栏" style="visibility:hidden;opacity:0;">◀</button>
@@ -140,7 +140,7 @@
 </aside>
 
 <main class="main-content">
-    <header class="topbar">
+    <header class="topbar" data-nosnippet>
                 <button class="sidebar-open-btn" aria-label="展开侧边栏" title="展开侧边栏">▶</button>
         <div class="topbar-left">
             <button class="menu-toggle" onclick="toggleSidebar()" aria-label="切换侧边栏">☰</button>
@@ -170,7 +170,7 @@
         <div class="card">
             <h2 style="color:var(--primary);margin-bottom:1rem;">📖 本章导言</h2>
             <p>"Sein"是德语中"存在"（Being）的意思，也是西方哲学最核心的概念之一。海德格尔在《存在与时间》中将"Sein"确立为哲学的终极追问。有趣的是，这个德语词汇所指向的终极问题，与拉玛那·马哈希的教导产生了深刻的共鸣——尽管他们来自完全不同的文化传统。</p>
-            <p style="margin-top:1rem;">本章从跨哲学的视角探讨"存在"这一永恒主题。马哈希的"我是谁？"实际上就是对"Sein"最直接的回答：存在不是一个可以描述的对象，它就是那个感知一切的"我"本身。当你追问"我是谁？"并深入到那个不可言说的源头时，你就在体验着纯粹的"存在"。</p>
+            <p style="margin-top:1rem;"><a href="../about.html" style="color: var(--text-muted); text-decoration: underline; font-weight:600;">📜 凡例与关于本库</a> <span style="margin: 0 0.8rem;">|</span> 本章从跨哲学的视角探讨"存在"这一永恒主题。马哈希的"我是谁？"实际上就是对"Sein"最直接的回答：存在不是一个可以描述的对象，它就是那个感知一切的"我"本身。当你追问"我是谁？"并深入到那个不可言说的源头时，你就在体验着纯粹的"存在"。 <span style="margin: 0 0.8rem;">|</span> <a href="https://github.com/creativeburster/ramanamaharshi.space" target="_blank" rel="noopener noreferrer" style="color: var(--text-muted); text-decoration: underline;">🐙 开源仓库</a></p>
         </div>
 
         <div class="card">
@@ -228,7 +228,7 @@
             </div>
         </div>
 
-        <div class="page-nav">
+        <div class="page-nav" data-nosnippet>
             <a href="surpassing-love-ch16.html"><span class="nav-label">← 上一章</span><span class="nav-title">第十六章：Natanananda</span></a>
             <a href="surpassing-love.html"><span class="nav-label">返回书籍</span><span class="nav-title">📖 超越爱与恩典全书</span></a>
             <a href="surpassing-love-ch18.html"><span class="nav-label">下一章 →</span><span class="nav-title">第十八章：八颂与成就者</span></a>
@@ -236,7 +236,7 @@
 
     </div>
     
-    <footer class="site-footer">
+    <footer class="site-footer" data-nosnippet>
         <p><a href="../index.html" style="text-decoration: underline;">拉玛那马哈希</a> | 传承自印度阿鲁那佳拉圣山</p>
         <p style="margin-top:0.5rem; font-size:0.9rem; color: var(--text-muted);">© 2026 拉玛那马哈希. 保留所有权利。</p>
         <p style="margin-top:1rem; font-size:0.9rem;"><a href="../sitemap.html" style="color: var(--text-muted); text-decoration: underline;">🌐 网站地图</a> <span style="margin: 0 1rem;">|</span> <!--email_off--><a href="mailto:591611431@qq.com" style="color: var(--text-muted); text-decoration: underline;">联系我</a></p>

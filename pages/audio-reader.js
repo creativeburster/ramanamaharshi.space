@@ -120,6 +120,8 @@
             const headerBar = document.createElement('div');
             headerBar.id = 'tts-header-bar';
             headerBar.className = 'tts-header-bar';
+            headerBar.setAttribute('data-nosnippet', '');
+            headerBar.setAttribute('aria-hidden', 'true');
             headerBar.innerHTML = `
                 <button class="tts-play-btn" id="tts-start-btn">
                     <span class="tts-icon">🎧</span>
@@ -153,6 +155,8 @@
             const floating = document.createElement('div');
             floating.id = 'tts-floating-player';
             floating.className = 'tts-floating-player tts-hidden';
+            floating.setAttribute('data-nosnippet', '');
+            floating.setAttribute('aria-hidden', 'true');
 
             floating.innerHTML = `
                 <div class="tts-player-inner">

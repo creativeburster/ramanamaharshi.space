@@ -119,11 +119,11 @@
     <meta name="twitter:image" content="https://ramanamaharshi.space/images/og-default.jpg">
 </head>
 <body>
-    <button class="hamburger" onclick="toggleSidebar()" aria-label="打开侧边导航菜单">☰</button>
+    <button class="hamburger" data-nosnippet onclick="toggleSidebar()" aria-label="打开侧边导航菜单">☰</button>
     <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
     <div class="layout">
 
-<aside class="sidebar" id="sidebar">
+<aside class="sidebar" data-nosnippet id="sidebar">
             <div class="sidebar-header">
                 <a href="../index.html" class="logo">🙏 拉玛那知识库</a>
                 <button class="sidebar-close-btn" aria-label="收起侧边栏" title="收起侧边栏" style="visibility:hidden;opacity:0;">◀</button>
@@ -188,7 +188,7 @@
         </aside>
 
         <main class="main-content">
-            <header class="topbar">
+            <header class="topbar" data-nosnippet>
                 <button class="sidebar-open-btn" aria-label="展开侧边栏" title="展开侧边栏">▶</button>
                 <div class="topbar-left">
                     <span class="topbar-title">🔮 核心概念</span>
@@ -255,7 +255,7 @@
                         "觉悟者的喜悦不是情绪的起伏，而是一种恒常的、平静的、深沉的满足。它不被任何外在事件所动摇。"
                         <div class="source">— 室利·拉玛那·马哈希</div>
                     </div>
-                    <p style="margin-top:1rem;">这种喜悦被称为<strong>萨提阿南达</strong>（Satchidananda）——存在-意识-极乐，是真我的本质属性。觉者不"感到"快乐，因为快乐意味着有不快乐作为参照；觉者本身即是喜悦。</p>
+                    <p style="margin-top:1rem;"><a href="../about.html" style="color: var(--text-muted); text-decoration: underline; font-weight:600;">📜 凡例与关于本库</a> <span style="margin: 0 0.8rem;">|</span> 这种喜悦被称为<strong>萨提阿南达</strong>（Satchidananda）——存在-意识-极乐，是真我的本质属性。觉者不"感到"快乐，因为快乐意味着有不快乐作为参照；觉者本身即是喜悦。 <span style="margin: 0 0.8rem;">|</span> <a href="https://github.com/creativeburster/ramanamaharshi.space" target="_blank" rel="noopener noreferrer" style="color: var(--text-muted); text-decoration: underline;">🐙 开源仓库</a></p>
                 </div>
                 
                 <div class="card">
@@ -282,7 +282,7 @@
             
             
 
-<footer class="site-footer">
+<footer class="site-footer" data-nosnippet>
                 <p><a href="../index.html" style="text-decoration: underline;">拉玛那马哈希</a> | 传承自印度阿鲁那佳拉圣山</p>
                 <p style="margin-top:0.5rem; font-size:0.9rem; color: var(--text-muted);">© 2026 拉玛那马哈希. 保留所有权利。</p>
                 <p style="margin-top:1rem; font-size:0.9rem;"><a href="../sitemap.html" style="color: var(--text-muted); text-decoration: underline;">🌐 网站地图</a> <span style="margin: 0 1rem;">|</span> <!--email_off--><a href="mailto:591611431@qq.com" style="color: var(--text-muted); text-decoration: underline;">联系我</a></p>
