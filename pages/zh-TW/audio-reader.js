@@ -23,13 +23,28 @@
             this.floatingPlayerEl = null;
         }
 
-        init() {
-            if (!this.supported) return;
-
-            if (document.getElementById('tts-header-bar')) return;
-
+                shouldEnableTTS() {
+            if (!this.supported) return false;
+            if (document.body && (document.body.hasAttribute('data-no-tts') || document.body.classList.contains('no-tts'))) return false;
+            const loc = window.location;
+            if (loc && loc.pathname) {
+                const path = loc.pathname.toLowerCase().replace(/\/index\.html$/, '/');
+                if (path === '/' || path === '' || path === '/zh-tw/' || path === '/zh-tw') return false;
+                const hubPaths = ['/books/', '/concepts/', '/methods/', '/qa/', '/persons/', '/sitemap.html', '/graph.html', '/zh-tw/books/', '/zh-tw/concepts/', '/zh-tw/methods/', '/zh-tw/qa/', '/zh-tw/persons/', '/zh-tw/sitemap.html', '/zh-tw/graph.html'];
+                if (hubPaths.some(hp => path.endsWith(hp) || path === hp)) return false;
+                if (loc.pathname.toLowerCase().endsWith('index.html')) return false;
+            }
+            if (document.querySelector('.stats-grid') || document.querySelector('.books-grid') || document.querySelector('.category-grid') || document.querySelector('.topic-hub-matrix') || document.querySelector('.graph-container') || document.querySelector('.sitemap-tree')) return false;
+            const topbarTitle = document.querySelector('.topbar-title');
+            if (topbarTitle && (topbarTitle.textContent.includes('首页') || topbarTitle.textContent.includes('首頁'))) return false;
             this.container = document.querySelector('.content-wrapper');
-            if (!this.container) return;
+            if (!this.container) return false;
+            return true;
+        }
+
+        init() {
+            if (!this.shouldEnableTTS()) return;
+
 
             this.extractChunks();
             if (this.chunks.length === 0 || this.totalWords < 60) {

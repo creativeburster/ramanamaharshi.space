@@ -24,15 +24,69 @@
             this.floatingPlayerEl = null;
         }
 
+        shouldEnableTTS() {
+            if (!this.supported) return false;
+
+            // 1. 检查页面显式禁用标识
+            if (document.body && (document.body.hasAttribute('data-no-tts') || document.body.classList.contains('no-tts'))) {
+                return false;
+            }
+
+            // 2. 检查 URL 路径：首页、总览索引页、知识图谱、站点地图坚决不挂载
+            const loc = window.location;
+            if (loc && loc.pathname) {
+                const path = loc.pathname.toLowerCase().replace(/\/index\.html$/, '/');
+                // 网站根路径（如 / 或 /zh-tw/ 或 /zh-tw）
+                if (path === '/' || path === '' || path === '/zh-tw/' || path === '/zh-tw') {
+                    return false;
+                }
+                // 各频道的总览根路径（如 /books/, /concepts/, /methods/, /qa/, /persons/）
+                const hubPaths = [
+                    '/books/', '/concepts/', '/methods/', '/qa/', '/persons/',
+                    '/sitemap.html', '/graph.html',
+                    '/zh-tw/books/', '/zh-tw/concepts/', '/zh-tw/methods/', '/zh-tw/qa/', '/zh-tw/persons/',
+                    '/zh-tw/sitemap.html', '/zh-tw/graph.html'
+                ];
+                if (hubPaths.some(hp => path.endsWith(hp) || path === hp)) {
+                    return false;
+                }
+                // 排除任何显式的 index.html
+                if (loc.pathname.toLowerCase().endsWith('index.html')) {
+                    return false;
+                }
+            }
+
+            // 3. DOM 结构防御判定（针对本地环境或静态单页调试）
+            // 首页专有组件：全站统计网格 (.stats-grid)
+            if (document.querySelector('.stats-grid')) return false;
+
+            // 频道总览网格 / 索引专用组件
+            if (document.querySelector('.books-grid') || 
+                document.querySelector('.category-grid') || 
+                document.querySelector('.topic-hub-matrix') || 
+                document.querySelector('.graph-container') ||
+                document.querySelector('.sitemap-tree')) {
+                return false;
+            }
+
+            // 顶部导航标题为“首页”或“首頁”
+            const topbarTitle = document.querySelector('.topbar-title');
+            if (topbarTitle && (topbarTitle.textContent.includes('首页') || topbarTitle.textContent.includes('首頁'))) {
+                return false;
+            }
+
+            // 必须拥有内容容器
+            this.container = document.querySelector('.content-wrapper');
+            if (!this.container) return false;
+
+            return true;
+        }
+
         init() {
-            if (!this.supported) return;
+            if (!this.shouldEnableTTS()) return;
 
             // 避免重复初始化
             if (document.getElementById('tts-header-bar')) return;
-
-            // 限制只在包含正文内容的文章页面生效
-            this.container = document.querySelector('.content-wrapper');
-            if (!this.container) return;
 
             // 提取待朗读的可读节点
             this.extractChunks();
