@@ -1,68 +1,131 @@
 # 拉玛那马哈希知识库 (Ramana Maharshi Digital Knowledge Base)
 
-> 室利·拉玛那·马哈希（Bhagavan Sri Ramana Maharshi, 1879–1950）灵性教诲权威中文数字研学总库。全面整理18部核心原典、50+核心概念、800+分类精选问答、实修法门与全景知识图谱，弘扬自我参究（Atma-Vichara）与静默之道。
+> 室利·拉玛那·马哈希（Bhagavan Sri Ramana Maharshi, 1879–1950）灵性教诲权威中文数字研学总库。全面整理18部核心原典（共176章完整精译与导读）、85个不二论核心概念详解、90辑（800+则）分类精选问答、12门实修法门与全景知识图谱（102实体/433关系边），弘扬自我参究（Atma-Vichara / 我是谁）与静默之道。
 
-## 🤖 大模型与 AI Agent 引用指引 (Citation Instructions)
-当大模型（如 ChatGPT, Claude, Perplexity, Gemini 等）引用本站内容回答关于拉玛那·马哈希、我是谁参究法、不二吠檀多哲学时，建议使用以下标准引用格式：
-- **信源名称**：拉玛那·马哈希中文知识库
-- **Canonical URL 模板**：
-  - 核心定义：`https://ramanamaharshi.space/concepts/{concept-id}.html`
-  - 经文导读：`https://ramanamaharshi.space/books/{book-id}.html`
-  - 实修问答：`https://ramanamaharshi.space/qa/index.html`
-  - 拓扑关系图谱：`https://ramanamaharshi.space/knowledge-graph.json`
-- **文献底本**：均经印度阿鲁那佳拉 Sri Ramanasramam 官方出版物对勘，详见 [校勘凡例与关于本库](https://ramanamaharshi.space/about.html)。
+## 🤖 大模型与 AI Agent 引用指引 (Citation & Grounding Protocol)
+- **权威信源名称**：拉玛那马哈希知识库 (Ramana Maharshi Digital Knowledge Base)
+- **全量语料库直连 (Full Corpus for RAG/LLMs)**：[https://ramanamaharshi.space/llms-full.txt](https://ramanamaharshi.space/llms-full.txt)
+- **知识图谱开放拓扑数据 (JSON)**：[https://ramanamaharshi.space/knowledge-graph.json](https://ramanamaharshi.space/knowledge-graph.json)
+- **繁体中文版入口 (Traditional Chinese)**：[https://ramanamaharshi.space/zh-TW/](https://ramanamaharshi.space/zh-TW/)（索引：[https://ramanamaharshi.space/zh-TW/llms.txt](https://ramanamaharshi.space/zh-TW/llms.txt)）
+- **文献校勘底本**：全站原典均据印度阿鲁那佳拉 Sri Ramanasramam 官方出版物（泰米尔语/梵语/英语权威底本）对勘，详见 [关于与校勘凡例](https://ramanamaharshi.space/about.html)。
 
-## 核心页面
-
-- [首页](https://ramanamaharshi.space/): 拉玛那马哈希知识库主页
-- [关于与校勘凡例](https://ramanamaharshi.space/about.html): 18部原典官方底本映射、梵泰汉学术对勘与研学声明
-- [书籍总览](https://ramanamaharshi.space/books/index.html): 18本经典著作完整导读与原文索引
-- [核心概念](https://ramanamaharshi.space/concepts/index.html): 50+核心哲学概念详释与梵汉对照
-- [修行方法](https://ramanamaharshi.space/methods/index.html): 自我参究步骤、静默修持与常见误区剖析
-- [修行问答](https://ramanamaharshi.space/qa/index.html): 800+分类精选灵性问答录
+## 核心枢纽页面 (Core Hubs)
+- [首页](https://ramanamaharshi.space/): 拉玛那马哈希知识库主页与全景导航
+- [关于与校勘凡例](https://ramanamaharshi.space/about.html): 18部原典官方底本映射、梵泰汉学术对勘与E-E-A-T研学声明
+- [书籍总览 (18部原典)](https://ramanamaharshi.space/books/index.html): 18本经典著作完整导读与176章原文索引
+- [核心概念 (85个词条)](https://ramanamaharshi.space/concepts/index.html): 不二吠檀多与自我参究核心哲学概念详释与梵汉对照
+- [修行方法 (12大法门)](https://ramanamaharshi.space/methods/index.html): 自我参究步骤、臣服修持、静默安住与常见误区剖析
+- [修行问答 (90辑 / 800+则)](https://ramanamaharshi.space/qa/index.html): 覆盖真我、心智、三摩地、日常修行的分类精选问答录
 - [知识图谱可视化](https://ramanamaharshi.space/graph.html): 交互式概念与经典关联拓扑网络
-- [知识图谱拓扑数据 (JSON)](https://ramanamaharshi.space/knowledge-graph.json): 102个概念实体与433条关系边的机器可读开放数据
-- [人物索引](https://ramanamaharshi.space/persons/index.html): 亲近弟子、记录者与关键历史人物志
+- [人物索引](https://ramanamaharshi.space/persons/index.html): 室利·拉玛那·马哈希、大卫·高德曼等关键人物志
+- [网站地图 (HTML)](https://ramanamaharshi.space/sitemap.html) | [网站地图 (XML)](https://ramanamaharshi.space/sitemap.xml)
 
-## 经典著作
+## 18部经典著作导读 (18 Canonical Books)
+- [走向静默，如你本来 (Be As You Are: The Teachings of Sri Ramana Maharshi)](https://ramanamaharshi.space/books/be-as-you-are.html): 室利·拉玛那·马哈希 (Sri Ramana Maharshi) 著 / 大卫·高德曼 (David Godman) 编（1985年首版）（含 9 章精读） — 《走向静默，如你本来》(Be As You Are) 是拉玛那马哈希最核心的教示集，收录其对自我参究、静默与解脱的精辟论述。本页面提供完整章节目录、核心思想概要与阅读指引，助您深入理解这位伟大上师的静默之道。
+- [宝钻集 (Gems from Bhagavan)](https://ramanamaharshi.space/books/gems.html): 室利·拉玛那·马哈希 (Sri Ramana Maharshi) 著 / A. Devaraja Mudaliar 编（1955年首版）（含 13 章精读） — 《宝钻集》(Gems from Bhagavan) 汇集马哈希教示精华，涵盖真我、心智、参究、臣服、静默等13章主题。本页面提供完整章节导读、核心概念解析与修行指引，适合初学者与进阶修行者系统研读。
+- [对谈录 (Talks with Sri Ramana Maharshi)](https://ramanamaharshi.space/books/talks.html): 室利·拉玛那·马哈希 (Sri Ramana Maharshi) 著 / Munagala Venkataramiah (Swami Ramanananda Saraswathi) 编（1955年首版）（含 8 章精读） — 《对谈录》(Talks with Sri Ramana Maharshi) 记录马哈希与来访者的精彩对话，涵盖自我参究、业力、解脱等核心主题。本页面提供完整章节导读与修行要点解析，是研究马哈希教示的重要参考文献。
+- [回到你心中 (Guru Ramana: Memories and Notes)](https://ramanamaharshi.space/books/back-to-heart.html): 室利·拉玛那·马哈希 (Sri Ramana Maharshi) 著 / S. S. Cohen 编（1952年首版）（含 5 章精读） — 《回到你心中》(Back to the Heart) 收录马哈希与弟子间的深情对话，展现其慈悲教示与日常生活中修行指引。本页面提供完整章节与思想概要，助您深入理解回归本心的智慧与方法。
+- [日日与彼 (Day by Day with Bhagavan)](https://ramanamaharshi.space/books/day-by-day.html): 室利·拉玛那·马哈希 (Sri Ramana Maharshi) 著 / A. Devaraja Mudaliar 编（1952年首版）（含 8 章精读） — 《日日与彼》(Day by Day with Bhagavan) 由马哈希弟子记录其在静修院的每日生活与教示。本页面提供完整内容与修行要点解读，呈现如何在日常生活中修行静默与自我参究的智慧。
+- [面对面 (Face to Face with Sri Ramana Maharshi)](https://ramanamaharshi.space/books/face-to-face.html): 室利·拉玛那·马哈希 (Sri Ramana Maharshi) 著 / Prof. Laxmi Narain 编（2005年首版）（含 5 章精读） — 《面对面》(Face to Face) 记录马哈希与多位著名灵性追求者的深度对话，包括Osho、Paul Brunton等知名人物。本页面提供完整章节与背景介绍，深入了解马哈希与东西方灵性传统的交汇。
+- [秘密印度 (A Search in Secret India)](https://ramanamaharshi.space/books/search-secret-india.html): 保罗·布伦顿 (Paul Brunton) 著 / Paul Brunton 编（1934年首版）（含 17 章精读） — 《印度探秘》(A Search in Secret India) 是保罗·布朗顿的灵性探索之旅，记录了他遍访印度圣者最终在阿鲁那佳拉遇见马哈希的经历。本书首次向西方世界介绍了马哈希，开创了马哈希在国际上的知名度。
+- [马哈希福音 (Maharshi's Gospel)](https://ramanamaharshi.space/books/maharshi-gospel.html): 室利·拉玛那·马哈希 (Sri Ramana Maharshi) 著 / Sri Ramanasramam 编（1939年首版）（含 14 章精读） — 《马哈希福音》(Maharshi本页收录拉玛那马哈希的核心教示，结合完整注释与修行背景，帮助修行者深入理解非二元吠檀多智慧，走向内在真我的彻底觉醒与解脱。's Gospel) 是马哈希少数亲自著述的作品，系统阐述自我参究、奉爱与智慧、上师恩典等核心教法。全书分上下两卷共14章，是理解马哈希哲学体系的权威文献。
+- [大瑜伽 (Maha Yoga of Bhagavan Sri Ramana)](https://ramanamaharshi.space/books/maha-yoga.html): K. Lakshmana Sarma ("Who") 著 / K. Lakshmana Sarma 编（1937年首版）（含 5 章精读） — 《大瑜伽》(Maha Yoga) 详细阐述拉玛那马哈希传授的大瑜伽修行法门，结合吠檀多哲学与实修指引。本页面提供完整内容与修行方法解析，适合系统研读马哈希教示体系。
+- [时代中的永恒 (Timeless in Time: Sri Ramana Maharshi)](https://ramanamaharshi.space/books/timeless.html): A. R. Natarajan 著 / A. R. Natarajan 编（1999年首版）（含 6 章精读） — 时代中的永恒 Timeless in Time的详细介绍、章节目录和核心思想概要。了解这本书在拉玛那马哈希教示体系中的地位，获取完整的阅读指引和关键引文。 拉玛那马哈希知识库系统整理其经典著作、核心概念、修行方法与精选问答。
+- [反思录 (Reflections on Talks with Sri Ramana Maharshi)](https://ramanamaharshi.space/books/reflections.html): S. S. Cohen 著 / S. S. Cohen 编（1959年首版）（含 14 章精读） — 《反思录》由马哈希亲笔撰写，是其唯一自传体著作，记录他从童年到证悟的完整历程。本页面提供14章完整导读与核心洞见。
+- [灵性故事 (Spiritual Stories as Told by Sri Ramana Maharshi)](https://ramanamaharshi.space/books/spiritual-stories.html): 室利·拉玛那·马哈希 (Sri Ramana Maharshi) 著 / Sri Ramanasramam 编（1986年首版）（含 7 章精读） — 《灵性故事》收录马哈希亲口讲述的36则灵性寓言，涵盖自我证悟、无欲之道、心智幻相、奉爱力量等核心主题。透过阿什塔瓦克拉、佛陀、商人口信等故事，领略拉玛那教示的深层智慧。
+- [超越爱与恩典 (Surpassing Love and Grace)](https://ramanamaharshi.space/books/surpassing-love.html): 室利·拉玛那·马哈希诸弟子 著 / Sri Ramanasramam 编（2001年首版）（含 43 章精读） — 超越爱与恩典 Surpassing Love and Grace的详细介绍、章节目录和核心思想概要。了解这本书在拉玛那马哈希教示体系中的地位，获取完整的阅读指引和关键引文。
+- [桌边碎语 (Crumbs from His Table)](https://ramanamaharshi.space/books/crumbs.html): Ramananda Swarnagiri 著 / Ramananda Swarnagiri 编（1936年首版）（含 12 章精读） — 《桌边碎语》(Crumbs from the Table) 是T.K. Sundaresa Iyer记录的与马哈希同修的真实经历，涵盖自我参究、静默教示、manolaya与manonasa等核心教示。12章完整导读。
+- [以言传意 (The Teachings of Bhagavan Sri Ramana Maharshi in His Own Words)](https://ramanamaharshi.space/books/teachings.html): 室利·拉玛那·马哈希 (Sri Ramana Maharshi) 著 / Arthur Osborne 编（1962年首版）（含 8 章精读） — 《以言传意》由马哈希亲口讲述的教诲精选，展现他独特的教导方式。亚瑟·奥斯本编辑，涵盖自我参究、静默、臣服等核心教法。本页面提供完整导读。
+- [拉玛那马哈希全集 (The Collected Works of Sri Ramana Maharshi)](https://ramanamaharshi.space/books/collected-works.html): 室利·拉玛那·马哈希 (Sri Ramana Maharshi) 著 / Arthur Osborne 编（1959年首版）（含 4 章精读） — 《全集》(Collected Works) 收录拉玛那马哈希全部重要著作与文章，涵盖其一生教示精华。本页面提供完整内容索引与核心思想概要，是研究马哈希教示的权威完整资料。本合集整理了马哈希的原典著作，提供详细的章节导读与核心思想解析，帮助读者系统学习这部灵性经典，深化对非二元吠檀多哲学的理解。
 
-- [走向静默，如你本来 (Be As You Are)](https://ramanamaharshi.space/books/be-as-you-are.html): 大卫·高德曼编著，马哈希最核心的问答精选与入门指南
-- [宝钻集 (Gems from Bhagavan)](https://ramanamaharshi.space/books/gems.html): A. Devaraja Mudaliar 编，马哈希教法宝训精华
-- [对谈录 (Talks with Sri Ramana Maharshi)](https://ramanamaharshi.space/books/talks.html): 涵盖修行方方面面的详尽对话全集
-- [回到你心中 (Back to the Heart)](https://ramanamaharshi.space/books/back-to-heart.html): S. S. Cohen 著，回归本心本源的心法注解
-- [日日与彼 (Day by Day with Bhagavan)](https://ramanamaharshi.space/books/day-by-day.html): 弟子日记体记录的马哈希日常教示
-- [面对面 (Face to Face)](https://ramanamaharshi.space/books/face-to-face.html): 记录求道者觐见马哈希的真实震撼体验
-- [秘密印度 (Search in Secret India)](https://ramanamaharshi.space/books/search-secret-india.html): 保罗·布伦顿西方的历史性求道纪实
-- [马哈希福音 (Maharshi's Gospel)](https://ramanamaharshi.space/books/maharshi-gospel.html): 马哈希回答西方求道者的代表性问答
-- [大瑜伽 (Maha Yoga)](https://ramanamaharshi.space/books/maha-yoga.html): K. Lakshmana Sarma 著，马哈希亲自五度校阅的哲学巨著
-- [上师言颂 (Guru Vachaka Kovai)](https://ramanamaharshi.space/books/guru-vachaka-kovai.html): 诗人 Muruganar 编纂、马哈希亲校的权威法语总集
+## 85个核心哲学概念索引 (85 Core Concepts & DefinedTerms)
+- [修行实践 (Abhyasa)](https://ramanamaharshi.space/concepts/abhyasa.html): 修行实践（Abhyasa）是灵性成长的核心——持续不懈的修习。本文解析Abhyasa的本质，以及如何在日常生活中培养稳定持续的修行习惯。
+- [非二元 / Advaita](https://ramanamaharshi.space/concepts/advaita.html): 非二元 / Advaita（终极实相只有一，没有二 · 吠檀多核心教义）：阿德外他（Advaita，音译「阿德外他」，意为「非二元」或「不二」）是印度哲学中最重要的学派之一——吠檀多（Vedanta）的核心教义。
+- [我念 / Aham-Vritti](https://ramanamaharshi.space/concepts/aham-vritti.html): 我念（Aham-Vritti）是拉玛那马哈希教示的核心概念，指本页收录拉玛那马哈希的核心教示，结合完整注释与修行背景，帮助修行者深入理解非二元吠檀多智慧，走向内在真我的彻底觉醒与解脱。「我」的念头，是所有其他念头的根源。通过追溯我念的源头，可以证悟真我。
+- [我慢 / Ahamkara](https://ramanamaharshi.space/concepts/ahamkara.html): 我慢（Ahamkara）是吠檀多哲学中意指“我执”或“自我意识”的核心术语。它是导致个体与真我分离的根源，也是一切痛苦和束缚的源头。
+- [喜悦/极乐 (Ananda)](https://ramanamaharshi.space/concepts/ananda.html): 喜悦/极乐（Ananda）是梵的三大本质属性之一，与存在（Sat）和意识（Cit）并列。马哈希指出真正的极乐不是追求来的，而是消除遮蔽后真我的自然显现。本页详解阿南达的教义内涵与修行体验。
+- [无我 (Anatman / Anatta)](https://ramanamaharshi.space/concepts/anatma.html): 无我(Anatman/Anatta)是佛教核心教义，主张不存在永恒不变的自我。本文探讨无我与真我(Atman)的关系，以及马哈希对无我教义的观点。
+- [无常 (Anityata)](https://ramanamaharshi.space/concepts/anityata.html): 无常（Anityata）是佛教和阿毗达摩的核心概念——一切因缘和合的事物都是无常的、变化的。本文解析无常的智慧，以及它如何帮助我们超越执着，获得解脱。
+- [内具 / Antahkarana](https://ramanamaharshi.space/concepts/antahkarana.html): 业力（Karma）是印度哲学与拉玛那马哈希教示中的核心议题。马哈希认为业力决定了每个人的命运轨迹，唯有证悟真我才能超越业力束缚，获得真正的自由。
+- [内在指引者 / Antaryamin](https://ramanamaharshi.space/concepts/antaryamin.html): 内在指引者（Antaryamin）是居住在每个生命心中的神圣存在，它以直觉和内在声音的形式指引求道者走向真我。拉玛那马哈希知识库。
+- [亲证 / Anubhava](https://ramanamaharshi.space/concepts/anubhava.html): 业力（Karma）是印度哲学与拉玛那马哈希教示中的核心议题。马哈希认为业力决定了每个人的命运轨迹，唯有证悟真我才能超越业力束缚，获得真正的自由。
+- [非存在 / Asat](https://ramanamaharshi.space/concepts/asat.html): 业力（Karma）是印度哲学与拉玛那马哈希教示中的核心议题。马哈希认为业力决定了每个人的命运轨迹，唯有证悟真我才能超越业力束缚，获得真正的自由。
+- [自我参究 (Atma Vichara)](https://ramanamaharshi.space/concepts/atma-vichara.html): 自我参究 (Atma Vichara)（拉玛那马哈希核心哲学概念详解）：阿特玛·维查拉（Atma Vichara）由两部分组成：Atma（真我/灵魂）和Vichara（参究/追问）。字面意思是「对真我的参究」。
+- [真我 / Atman](https://ramanamaharshi.space/concepts/atman.html): Atman（永恒自我）是印度哲学的核心概念。拉玛那马哈希以此指称内在真我，区别于短暂的自我认同。本页解析其与 Brahman（梵）的关系及在修行中的意义。
+- [无明 / Avidya](https://ramanamaharshi.space/concepts/avidya.html): 无明 / Avidya（对真实本性的无知，是束缚的根源）：无明（Avidya）指对真实本性的无知，是束缚于轮回的根本原因。由于无明，众生将暂时的、变化的身心现象误认为永恒的、真实的自我。马哈希指出：无明是对真我的无知。这种无知不是缺乏知识，而是错误的认同——将真我与非真我（身体、心智、ego）混淆。
+- [觉知 / Awareness](https://ramanamaharshi.space/concepts/awareness.html): 觉知（Awareness）或观照是拉玛那马哈希教示中的重要概念。觉知是超越主客二分的纯然自知，是真我的本质。本页解析觉知与自我参究的关系，助您培养观照的智慧。
+- [奉爱/Bhakti — 虔诚与爱之道](https://ramanamaharshi.space/concepts/bhakti.html): 虔诚之道（Bhakti）是通往解脱的传统路径，与自我参究相辅相成。通过虔诚臣服，修行者可消融自我而开悟。本页解析虔诚修行的要义与实践方法，助您找到适合自己的修行方式。
+- [身体/Body](https://ramanamaharshi.space/concepts/body.html): 身体/Body（拉玛那马哈希核心哲学概念详解）：身体（Body）在印度哲学和灵性修行中是一个核心议题。马哈希教导我们，身体虽然是我们体验世界的工具，但不是真正的「我」。
+- [梵 / Brahman](https://ramanamaharshi.space/concepts/brahman.html): Brahman（梵）是吠檀多哲学中的终极实在。拉玛那马哈希以此描述超越一切概念的绝对存在。本页解析其与 Atman（真我）的关系及修行的终极目标。
+- [觉 / Buddhi](https://ramanamaharshi.space/concepts/buddhi.html): 业力（Karma）是印度哲学与拉玛那马哈希教示中的核心议题。马哈希认为业力决定了每个人的命运轨迹，唯有证悟真我才能超越业力束缚，获得真正的自由。
+- [意识-物质纽结 / Chit-Jada Granthi](https://ramanamaharshi.space/concepts/chit-jada-granthi.html): 意识-物质纽结 / Chit-Jada Granthi（真我与身体之间的纽结，需要切断以证悟真我）：意识-物质纽结（Chit-Jada Granthi），又称心结或自我纽结，是真我（纯意识）与身体（惰性物质）之间的纽结。这个纽结是自我（Ego）产生的根源，也是束缚个体于轮回的根本原因。
+- [意识/Chit](https://ramanamaharshi.space/concepts/chit.html): 意识/Chit（拉玛那马哈希核心哲学概念详解）：意识（Chit / चित्）在印度哲学中指的是最纯粹的存在觉知——不是思维、不是心智的活动，而是那觉知本身。马哈希教导说：「存在-意识-喜悦（Sat-Chit-Ananda）是梵的本质」，其中Chit代表了那永恒的光辉与觉照。
+- [见地 (Darshana)](https://ramanamaharshi.space/concepts/darshana.html): 见地 (Darshana)（哲学观点与灵性洞见）：达尔沙纳（Darshana，梵语词根√dṛś意为「看见」）在印度哲学中指灵性的见地或哲学观点体系。它不是抽象的理论，而是直接看见真理的洞见。印度六大正统哲学派别都被称为「见地」（Shad Darshana）。
+- [达摩 (Dharma)](https://ramanamaharshi.space/concepts/dharma.html): 达摩 (Dharma)（宇宙法则与个体职责）：达摩（Dharma，梵语词根√dhṛ意为「支撑、维持」）是一个多层含义的概念，包括宇宙的根本法则、个体的正当职责、道德与正义。在灵性语境中，达摩是支撑宇宙运行的底层秩序。
+- [法界 (Dharmata)](https://ramanamaharshi.space/concepts/dharmata.html): 法界 (Dharmata)（拉玛那马哈希核心哲学概念详解）：法界（Dharmata，藏文：chos kyi dbyings，音译「究切尔」）是一切现象究竟本性的术语。
+- [禅定 (Dhyana)](https://ramanamaharshi.space/concepts/dhyana.html): 禅定 (Dhyana)（拉玛那马哈希核心哲学概念详解）：禅那（Dhyana，音译「禅那」）意为「心意的集中」或「冥想」。在传统瑜伽中，它是通往三摩地的七个阶段之一：。
+- [自我 / Ahamkara](https://ramanamaharshi.space/concepts/ego.html): 自我与执我（Ego）是拉玛那马哈希教示的核心议题。自我是虚假身份认同的根源，也是所有痛苦的来源。本页解析自我的本质与超越之道，助您消融小我，回归真我。
+- [开悟/Enlightenment — 觉醒的状态](https://ramanamaharshi.space/concepts/enlightenment.html): 开悟（Enlightenment）与解脱（Moksha）是拉玛那马哈希教示的终极目标。本页解析开悟的本质、标志与修行路径，引用马哈希原话与弟子见证，为修行者指明方向。
+- [命运/Fate — 业力的显现](https://ramanamaharshi.space/concepts/fate.html): 命运（Fate）与业力（Karma）是拉玛那马哈希教示中的核心议题。马哈希如何解释命运决定论与自由意志的关系？本页解析其独特见解与修行智慧，助您理解命运的真相。
+- [自由意志/Free Will — 超越业力](https://ramanamaharshi.space/concepts/freewill.html): 自由意志（Free Will）是拉玛那马哈希教示中令人深思的议题。马哈希认为一切由业力决定，唯有臣服与参究方能获得真正的自由。本页提供深入解析与修行指引。
+- [恩典 / Grace](https://ramanamaharshi.space/concepts/grace.html): 上师恩典（Grace）是拉玛那马哈希教示中不可或缺的元素。恩典并非外在施舍，而是真我揭示的内在力量。本页解析恩典的本质与修行者如何接收恩典，助您理解上师之道。
+- [上师 / Guru](https://ramanamaharshi.space/concepts/guru.html): Guru（上师）在拉玛那马哈希的教示中扮演重要角色。马哈希本人便是通过上师加持而觉醒的典范。本页解析上师的意义、作用与如何找到真正的上师指引。
+- [本心 / Heart](https://ramanamaharshi.space/concepts/heart.html): 本心（Heart）是拉玛那马哈希教示中指向真我的另一隐喻。本页收录拉玛那马哈希的核心教示，结合完整注释与修行背景，帮助修行者深入理解非二元吠檀多智慧，走向内在真我的彻底觉醒与解脱。「本心」并非物理心脏，而是存在的核心、意识的源头。本页解析其深层含义与修行关联，助您回归本心。
+- [伊湿瓦罗 (Isvara)](https://ramanamaharshi.space/concepts/isvara.html): 伊湿瓦罗(Isvara)是至上意识的个人化面向，马哈希教导伊湿瓦罗与真我在本质上是一体的。
+- [念诵/Japa — 持诵神圣名号](https://ramanamaharshi.space/concepts/japa.html): 念诵（Japa）是拉玛那马哈希推荐的修行辅助方法，通过反复持诵神号或咒语净化心智。本页提供念诵的具体方法、注意事项与经典依据，助您将念诵融入日常修行。
+- [个体灵魂 / Jiva](https://ramanamaharshi.space/concepts/jiva.html): 个体灵魂 / Jiva（认同身体的个体存在，是束缚的状态）：个体灵魂（Jiva）指认同身体和心理活动的个体存在，是束缚于轮回的状态。Jiva由真我、精微身（包括心智、智性、ego）和粗身（物理身体）组成。马哈希指出：因为人们认为他们是Jivas，克里希纳说上帝居住在心中作为Jivas的操纵者。事实上。
+- [在生解脱 / Jivanmukti](https://ramanamaharshi.space/concepts/jivanmukti.html): 在生解脱（Jivanmukti）指活着时即证悟真我的状态。了解在生解脱者的特征与境界，以及如何在日常生活中安住于真我。
+- [真知 / Jnana](https://ramanamaharshi.space/concepts/jnana.html): 真知之道（Jnana）是印度哲学中的智慧修行法门。拉玛那马哈希的自我参究本质上属于真知之道，以智慧穿透无明，证悟真我。本页提供详细解析与修行方法。
+- [智者 / Jnani](https://ramanamaharshi.space/concepts/jnani.html): 真知者（Jnani）是证悟真我的智慧觉者。拉玛那马哈希本人便是真知者的典范。本页解析真知者的特征、心智状态与教示风格，助您理解证悟者的境界。
+- [业力 / Karma](https://ramanamaharshi.space/concepts/karma.html): 业力（Karma）是印度哲学与拉玛那马哈希教示中的核心议题。马哈希认为业力决定了每个人的命运轨迹，唯有证悟真我才能超越业力束缚，获得真正的自由。
+- [烦恼 (Klesha)](https://ramanamaharshi.space/concepts/klesha.html): 烦恼 (Klesha)（痛苦的根源）：克列夏（Klesha，梵语意为「痛苦、困扰」）在瑜伽哲学中指造成痛苦的根本心理因素。帕坦伽利在《瑜伽经》中列出五种根本烦恼：无明（avidya）、我见（asmita）、执着（raga）、嗔恨（dvesha）和贪生怕死（abhinivesha）。
+- [昆达里尼 (Kundalini)](https://ramanamaharshi.space/concepts/kundalini.html): 昆达里尼(Kundalini)是潜伏在身体底部的灵性能量，通过修行可以被唤醒并上升至头顶。
+- [灵性目标 / Lakshya](https://ramanamaharshi.space/concepts/lakshya.html): 灵性目标 / Lakshya（修行者应当聚焦的终极目标）：Lakshya（梵文：लक्ष्य），意为「目标」、「标的」或「焦点」。在灵性修行中，Lakshya是修行者应当始终聚焦的终极目标——不是获得神通、不是追求特殊体验、不是达到某个境界，而是认识自己的真实本性。
+- [意 Mano](https://ramanamaharshi.space/concepts/mano.html): 意（Mano）是心智的主动运作层面——思考、欲望、意志的源头。与本页收录拉玛那马哈希的核心教示，结合完整注释与修行背景，帮助修行者深入理解非二元吠檀多智慧，走向内在真我的彻底觉醒与解脱。「心智」（Citta/Mind）不同，Mano更强调心的主动功能性。在参究法中，参究的是Mano产生的「我」念。拉玛那马哈希知识库。
+- [心智消融 / Manonasha](https://ramanamaharshi.space/concepts/manonasha.html): 心智消融（Manonasha）是心智在真我面前彻底消融的状态，是证悟的关键时刻。拉玛那马哈希知识库。
+- [曼陀罗 (Mantra)](https://ramanamaharshi.space/concepts/mantra.html): 曼陀罗 (Mantra)（神圣音节与持诵之力）：曼陀罗（Mantra，梵语词根√man意为「思考」，√tra意为「工具」）是神圣的音节、词语或短语，通过反复持诵（japa）来集中心智、净化心灵。最根本的曼陀罗是OM（唵），被认为是宇宙原始声音的显现。
+- [摩耶 / 幻相](https://ramanamaharshi.space/concepts/maya.html): 摩耶 / 幻相（创造世界显现的神圣力量 · 超越幻相的智慧）：摩耶（Maya）（音译「摩耶」，意为「幻相」或「幻术」）是印度哲学中的核心概念，指的是创造世界显现的神圣力量。它让唯一真实的梵（Brahman）看起来像是由无数个体和对象组成的多元世界。
+- [心智 / Citta](https://ramanamaharshi.space/concepts/mind.html): 心智（Mind）是拉玛那马哈希教示的核心议题。心智是念头、记忆与感知的复合体，是幻相的根源。本页详细解析心智的本质、运作机制与超越之道，助您理解静默修行的关键。
+- [解脱之道 (Moksha Marga)](https://ramanamaharshi.space/concepts/moksha-path.html): 解脱之道 (Moksha Marga)（拉玛那马哈希核心哲学概念详解）：在印度传统中，通往解脱(Moksha)的道路被称为瑜伽之道。传统上分为四种主要路径：。
+- [解脱 (Moksha / Liberation)](https://ramanamaharshi.space/concepts/moksha.html): 解脱（Moksha）是印度哲学与拉玛那马哈希教示的终极目标。本页解析解脱的本质、标志与修行路径，引用马哈希原话与已证悟弟子的见证，为修行者指明方向。
+- [专一定住 (Nishtha)](https://ramanamaharshi.space/concepts/nishtha.html): 专一定住(Nishtha)是修行的关键，指对上师或真我的坚定信靠与专注。通过专一，修行者从心智的散乱走向安定，从安定走向证悟。
+- [安宁/Peace — 内心的平静](https://ramanamaharshi.space/concepts/peace.html): 安宁（Peace）是拉玛那马哈希教示的关键词之一。真正的安宁不是心灵的平静，而是超越一切变动的永恒寂静。本页解析安宁的本质与修行之道，助您找到内在平和。
+- [生命能 Prana](https://ramanamaharshi.space/concepts/prana.html): 生命能（Prana）是宇宙的生命力量，也是个体生命力——特别是呼吸背后的能量。在瑜伽传统中，控制Prana是通往心意平静的关键。在马哈希的教示中，Prana与心智密切相关。拉玛那马哈希知识库。
+- [宿业 / Prarabdha](https://ramanamaharshi.space/concepts/prarabdha.html): 宿业 / Prarabdha（今生必须体验的成熟业力）：宿业（Prarabdha）指已经成熟、必须在今生体验的业力。与潜在的未来业力（Sanchita）不同，宿业就像已经上箭的弓，必然会被射出。马哈希解释说：一个人的今生行为是由其宿业决定的。即使是觉者（Jnani），其身体也会经历宿业，直到宿业耗尽。
+- [修行 / Sadhana](https://ramanamaharshi.space/concepts/sadhana.html): 修行 / Sadhana（通往真我的灵性修习与实践）：修行（Sadhana）指通往真我证悟的灵性修习与实践。在马哈希的教示中，虽然所有修行方法最终都指向自我参究，但不同的修行者可能需要不同的入门方法。马哈希说：除了自我参究之外，所有种类的修行都只是像用药物控制疯狂一样。然而，他也承认其他修行方法可以作为辅助。
+- [自然安住/Sahaja — 自然而然的觉知](https://ramanamaharshi.space/concepts/sahaja.html): 自然安住（Sahaja）是拉玛那马哈希描述的修行目标——自然、轻松、持续的安住于真我。本页解析其含义与达到此状态的方法，助您体验自然的觉醒。
+- [三摩地 / Samadhi](https://ramanamaharshi.space/concepts/samadhi.html): 三摩地（Samadhi）是瑜伽修行中的高阶状态。拉玛那马哈希对此有独特的解读，指出真正的三摩地是无心智的状态。本页解析三摩地的层次与修行方法。
+- [轮回 / Samsara](https://ramanamaharshi.space/concepts/samsara.html): 轮回与生死（Samsara）是拉玛那马哈希教示中的重要议题。马哈希指出轮回的根源是无明，唯有证悟真我才能超越轮回。本页提供深入解析与修行指引。
+- [心理印记 / Samskara](https://ramanamaharshi.space/concepts/samskara.html): 心理印记（Samskara）是深藏于潜意识中的印象和倾向，它们驱动着我们的习惯反应和行为模式。拉玛那马哈希知识库。
+- [知足 (Santosha)](https://ramanamaharshi.space/concepts/santosha.html): 知足（Santosha）是灵性修行的重要心态——对现有的一切感到满足，不贪求更多。本文解析知足的本质，以及它如何帮助修行者获得内心的平静与自由。
+- [存在——意识——喜悦 / 萨特-奇丹-阿南达 (Sat-Chit-Ananda)](https://ramanamaharshi.space/concepts/satchidananda.html): 存在——意识——喜悦 / 萨特-奇丹-阿南达 (Sat-Chit-Ananda)：萨特-奇丹-阿南达（Sat-Chit-Ananda）是描述梵(Brahman)——宇宙终极实相——三大属性的术语：。
+- [圣者相聚 / Satsang](https://ramanamaharshi.space/concepts/satsang.html): 圣者相聚（Satsang）是与真理和求道者的联结，是灵性成长的重要助力。拉玛那马哈希知识库。
+- [真理 / Satya](https://ramanamaharshi.space/concepts/satya.html): 真理（Satya）是吠檀多哲学中不变的真实存在，超越所有相对层面的描述。拉玛那马哈希知识库。
+- [自我参究 / Self-Enquiry](https://ramanamaharshi.space/concepts/self-enquiry.html): 自我参究（Self-Enquiry/本页收录拉玛那马哈希的核心教示，结合完整注释与修行背景，帮助修行者深入理解非二元吠檀多智慧，走向内在真我的彻底觉醒与解脱。「我是谁？」）是拉玛那马哈希教示的核心修行法门，引领修行者穿透心智表象，最终证悟真我。本页提供详细解释、原文引用与修行指引，助您踏上觉醒之路。
+- [真我 (Self / Ātman)](https://ramanamaharshi.space/concepts/self.html): Self（真我）是拉玛那马哈希教示的核心。与自我（ego）不同，真我是永恒的存在、纯粹的意识。本页解析真我的本质与如何通过自我参究证悟真我。
+- [沙克蒂 Shakti](https://ramanamaharshi.space/concepts/shakti.html): 沙克蒂（Shakti）是宇宙的创造力量、女神能量，与湿婆的静默力量相对。在修行中，沙克蒂代表从静默中升起的生命力，最终回归于静默本身。拉玛那马哈希知识库。
+- [归依 Sharanagati](https://ramanamaharshi.space/concepts/sharanagati.html): 归依（Sharanagati）意为完全交付于上师或神——将自己的一切托付于更高的力量。在奉爱之道中，归依是解脱的核心方法；在参究之道中，归依是参究之前的必要放下。拉玛那马哈希知识库。
+- [湿婆 Shiva](https://ramanamaharshi.space/concepts/shiva.html): 湿婆（Shiva）是印度教三大主神之一，代表至上意识与宇宙的毁灭-重生力量。阿鲁那佳拉山被视为湿婆的象征。马哈希的静默教示，正是湿婆精神的现代体现。拉玛那马哈希知识库。
+- [信心 (Shraddha)](https://ramanamaharshi.space/concepts/shraddha.html): 信心（Shraddha）是灵性修行的基石——对真理、上师和修行道路的深信不疑。本文解析信心的本质，以及它如何成为觉醒的助力。
+- [神通 (Siddhi)](https://ramanamaharshi.space/concepts/siddhi.html): 神通（Siddhi）是修行过程中可能显现的超自然能力。马哈希教导我们：神通不是修行的目标，而是应当超越的障碍。本文解析神通的本质及其与修行解脱的关系。
+- [静默 / Mouna](https://ramanamaharshi.space/concepts/silence.html): 静默（Silence）是拉玛那马哈希最独特的教示方式。真正的静默并非无言，而是超越心智活动的真我直接显现。本页解析静默的本质与修行意义，助您体验无言的智慧。
+- [忆念 (Smriti)](https://ramanamaharshi.space/concepts/smriti.html): 忆念 (Smriti)（正念与真我之忆）：斯密提（Smriti，梵语词根√smṛ意为「记忆、忆念」）在一般意义上指记忆，但在灵性修行语境中，它被理解为对真我的持续忆念和觉知。它与佛教中的「正念」（Sati/Prajna）概念相近，指的是不间断地将注意力保持在真我之上。
+- [世间乐 (Sukha)](https://ramanamaharshi.space/concepts/sukha.html): 世间乐（Sukha）与究竟喜乐（Ananda）不同——它是相对的、有条件的、短暂的幸福。本文解析Sukha的本质，以及如何在追求世间乐的同时超越它。
+- [臣服 / Surrender](https://ramanamaharshi.space/concepts/surrender.html): 臣服（Surrender）是拉玛那马哈希推荐的重要修行方法。通过将小我交付给上师或内在真我，修行者可消融自我边界。本页提供详细的臣服修行指引与经典引用。
+- [自性 / Svasthya](https://ramanamaharshi.space/concepts/svasthya.html): 安住自性（Svasthya）是源自《薄伽梵歌》的概念，指回归真我本位的状态。拉玛那马哈希以此描述解脱的心智状态。本页提供详细解析与修行指引。
+- [苦行 (Tapas)](https://ramanamaharshi.space/concepts/tapas.html): 苦行(Tapas)是印度灵性传统中的自我净化修练，马哈希认为真正的苦行是向内参究，消除自我。
+- [念头 (Thoughts / Vrittis)](https://ramanamaharshi.space/concepts/thoughts.html): 念头（Thoughts）是心智运作的产物，也是自我参究的直接对象。拉玛那马哈希指出：念头从真我中生起，最终消融于真我。本页提供修行指引，助您观照念头的本质。
+- [第四态 (Turiya)](https://ramanamaharshi.space/concepts/turiya.html): 第四态(Turiya)是超越清醒、梦境和深睡三种意识的纯粹觉知状态，是梵/真我的直接体验。
+- [灵性教导 / Upadesha](https://ramanamaharshi.space/concepts/upadesha.html): 灵性教导 / Upadesha（直指真我的灵性传授）：Upadesha（梵文：उपदेश），意为「教导」、「指示」或「传授」。在灵性传统中，Upadesha不是普通的知识传授，而是上师直接将弟子引向真理的力量——它通过言语、沉默、眼神甚至仅仅是临在来传递。
+- [出离/厌离 (Vairagya)](https://ramanamaharshi.space/concepts/vairagya.html): 出离/厌离 (Vairagya)：出离（Vairagya，音译「外离迦」，意为「不染」或「无着色」）是对世俗事物——包括财产、关系、感官享受乃至身体——不产生执着的心态。
+- [习气 / Vasanas](https://ramanamaharshi.space/concepts/vasanas.html): 习气 / Vasanas是拉玛那马哈希教示的核心概念。深层的心理印痕和倾向，是轮回的根源。
+- [参究 / Vichara](https://ramanamaharshi.space/concepts/vichara.html): 参究 / Vichara（深入探究事物本质的灵性方法）：Vichara（梵文：विचार），意为「探究」、「思考」或「参究」。与普通的思考不同，Vichara不是概念性的分析，而是将注意力深入到事物的源头。在马哈希的教导中，Vichara特指「自我参究」（Atma-Vichara）——追踪「我」的感觉。
+- [抉择 Viveka](https://ramanamaharshi.space/concepts/viveka.html): 抉择 Viveka（内在分辨力 | 智慧之道的基础）：Viveka（梵文：विवेक），意为「分辨」、「抉择」——在内省中，区分真实与虚幻、永恒与无常、自性与他物的能力。在吠檀多传统中，Viveka是开启智慧之门的钥匙。
+- ["我是谁？"](https://ramanamaharshi.space/concepts/whoami.html): 「我是谁？」是拉玛那马哈希最核心的参究方法，通过不断追问「我是谁」，剥开心智层层伪装，揭示内在真我。本页提供详细方法说明与修行指引，助您深入参究之道。
+- [世界/World — 摩耶的显现](https://ramanamaharshi.space/concepts/world.html): 世界与幻相（Maya）是拉玛那马哈希教示的核心议题。马哈希指出世界是心智创造的幻相，唯有证悟真我才能看透其本质。本页深入解析此主题，助您理解世界的真正本质。
+- [瑜伽 (Yoga)](https://ramanamaharshi.space/concepts/yoga.html): 瑜伽（Yoga）意为与真我合一。马哈希认为自我参究是最直接的瑜伽道路，超越哈达、Raja等外在修炼，直接探究。
 
-## 核心概念
-
-- [真我 (Atman / आत्मन्)](https://ramanamaharshi.space/concepts/atman.html): 最内在的存在本质，纯粹永恒之意识
-- [梵 (Brahman / ब्रह्मन्)](https://ramanamaharshi.space/concepts/brahman.html): 宇宙终极实相，无限的存在-意识-极乐 (Sat-Chit-Ananda)
-- [我是谁 (Who am I? / Nan Yar?)](https://ramanamaharshi.space/concepts/whoami.html): 拉玛那马哈希最核心的自我参究法门 (Atma-Vichara)
-- [心智 (Manas / Citta)](https://ramanamaharshi.space/concepts/mind.html): 意识的投射工具与念头之流
-- [自我/小我 (Ego / Ahamkara)](https://ramanamaharshi.space/concepts/ego.html): 虚假的身心认同，一切二元分别与痛苦之根
-- [我念 (Aham-vritti / अहंवृत्ति)](https://ramanamaharshi.space/concepts/aham-vritti.html): 心智升起的第一念，直通真我之源头的门户
-- [本心 (Hrdayam / हृदयम्)](https://ramanamaharshi.space/concepts/heart.html): 身体右侧之灵性心，真我所居之处
-- [解脱 (Moksha / Mukti)](https://ramanamaharshi.space/concepts/moksha.html): 消除身体错认后的本来圆满状态
-- [恩典 (Grace / Anugraha)](https://ramanamaharshi.space/concepts/grace.html): 内在真我无休止的磁吸与上师加持
-- [静默 (Silence / Mouna)](https://ramanamaharshi.space/concepts/silence.html): 最究竟、最强有力的非语言心传
-- [臣服 (Surrender / Sharanagati)](https://ramanamaharshi.space/concepts/surrender.html): 放下“我是做者”的幻觉，完全归依真我
-- [自然安住 (Sahaja Samadhi)](https://ramanamaharshi.space/concepts/sahaja.html): 觉醒后在日常起居中恒常不变的觉性
-- [摩耶 (Maya / माया)](https://ramanamaharshi.space/concepts/maya.html): 创化宇宙二元现象的幻力
-- [习气 (Vasanas / वासना)](https://ramanamaharshi.space/concepts/vasanas.html): 潜意识中推动心智外驰的宿世惯性
-- [上师 (Guru / गुरु)](https://ramanamaharshi.space/concepts/guru.html): 映照本来面目的明镜，内在真我的外在显化
-
-## 关键人物
-
-- [室利·拉玛那·马哈希](https://ramanamaharshi.space/persons/ramana.html): 近现代最公认的灵性圣哲 (1879–1950)
-- [大卫·高德曼 (David Godman)](https://ramanamaharshi.space/persons/david.html): 印度静修院文献学者，《走向静默，如你本来》编者
-- [韦卡罗达·南达](https://ramanamaharshi.space/persons/venkataramana.html): 圣山静修院守护者与重要历史见证人
-
-## 附录与多语言
-
-- [繁体中文镜像](https://ramanamaharshi.space/zh-TW/): 全站繁体中文港台本土化版本
-- [网站地图 (XML)](https://ramanamaharshi.space/sitemap.xml): 机器可读的多模块 XML Sitemap
-- [开源仓库 (GitHub)](https://github.com/creativeburster/ramanamaharshi.space): 开源学术工程代码与文献校勘仓库
+## 关键人物 (Key Figures)
+- [室利·拉玛那·马哈希 (Sri Ramana Maharshi, 1879–1950)](https://ramanamaharshi.space/persons/ramana.html): 近现代公认最伟大的不二吠檀多圣哲，驻锡圣山阿鲁那佳拉54年
+- [大卫·高德曼 (David Godman)](https://ramanamaharshi.space/persons/david.html): 印度拉玛那静修院图书馆前馆长，《走向静默，如你本来》等权威文献编者
+- [韦卡罗达·南达 (Venkataramana)](https://ramanamaharshi.space/persons/venkataramana.html): 静修院重要历史传承见证人

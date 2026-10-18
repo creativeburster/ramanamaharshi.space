@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
     <loc>https://ramanamaharshi.space/sitemap-books.xml</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://ramanamaharshi.space/sitemap-concepts.xml</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://ramanamaharshi.space/sitemap-qa.xml</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://ramanamaharshi.space/sitemap-zh-tw.xml</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </sitemap>
 </sitemapindex>
