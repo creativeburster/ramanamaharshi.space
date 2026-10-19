@@ -6,7 +6,7 @@
     <meta name="description" content="拉玛那马哈希关于大瑜伽（Maha Yoga）的教导，探讨 Self-enquiry 的深层含义和实践方法。">
     <meta name="keywords" content="马哈希, 大瑜伽, Self-enquiry, 真我, 心智, 实相">
     <meta name="robots" content="index, follow">
-    <meta name="author" content="室利·拉玛那·马哈希 (Sri Ramana Maharshi)">
+    <meta name="author" content="拉玛那马哈希知识库（编译整理）">
     <link rel="canonical" href="https://ramanamaharshi.space/qa/qa-36.html">
     
     <title>大瑜伽 | 拉玛那马哈希知识库</title>
@@ -55,20 +55,17 @@
         "@id": "https://ramanamaharshi.space/#ramana-maharshi"
       },
       "author": {
-        "@type": "Person",
-        "@id": "https://ramanamaharshi.space/#ramana-maharshi",
-        "name": "室利·拉玛那·马哈希",
-        "alternateName": [
-          "Sri Ramana Maharshi",
-          "Bhagavan Sri Ramana Maharshi"
-        ],
-        "birthDate": "1879-12-30",
-        "deathDate": "1950-04-14",
+        "@type": "Organization",
+        "@id": "https://ramanamaharshi.space/#organization",
+        "name": "拉玛那马哈希知识库",
+        "alternateName": "Ramana Maharshi Digital Knowledge Base",
+        "url": "https://ramanamaharshi.space",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://ramanamaharshi.space/icons/icon-512.png"
+        },
         "sameAs": [
-          "https://www.wikidata.org/entity/Q191944",
-          "https://zh.wikipedia.org/wiki/%E6%8B%89%E7%8E%9B%E9%82%A3%C2%B7%E9%A9%AC%E5%93%88%E5%B8%8C",
-          "https://en.wikipedia.org/wiki/Ramana_Maharshi",
-          "https://www.sriramanamaharshi.org/"
+          "https://github.com/creativeburster/ramanamaharshi.space"
         ]
       },
       "publisher": {
@@ -176,6 +173,23 @@
             "text": "是的，大瑜伽适合所有真诚的求道者。它不需要特殊的身体条件或智力水平。唯一需要的是真诚的渴望和持续的练习。无论你的背景如何，都可以实践 Self-enquiry。"
           }
         }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ramanamaharshi.space/#ramana-maharshi",
+      "name": "室利·拉玛那·马哈希",
+      "alternateName": [
+        "Sri Ramana Maharshi",
+        "Bhagavan Sri Ramana Maharshi"
+      ],
+      "birthDate": "1879-12-30",
+      "deathDate": "1950-04-14",
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q288441",
+        "https://zh.wikipedia.org/wiki/%E6%8B%89%E7%91%AA%E9%82%A3%C2%B7%E9%A6%AC%E5%93%88%E5%B8%8C",
+        "https://en.wikipedia.org/wiki/Ramana_Maharshi",
+        "https://www.sriramanamaharshi.org/"
       ]
     },
     {
@@ -308,6 +322,15 @@
                 </aside>
                 </article>
             </div>
+            <footer class="site-footer" data-nosnippet>
+                <p><a href="../index.html" style="text-decoration: underline;">拉玛那马哈希</a> | 传承自印度阿鲁那佳拉圣山</p>
+                <p style="margin-top:0.5rem;font-size:0.85rem;">本知识库整合了18本核心著作，涵盖问答、语录、日记、传记等多种形式</p>
+                <p style="margin-top:0.5rem; font-size:0.9rem; color: var(--text-muted);">© 2026 拉玛那马哈希. 保留所有权利。</p>
+                <p style="margin-top:0.8rem; font-size:0.88rem; color: var(--text-muted);">
+                    🔗 姐妹研学站点：<a href="https://chanzong.space/" target="_blank" rel="noopener" style="color: #8B5E0B; font-weight: 500; text-decoration: underline;">禅宗知识库 (chanzong.space)</a> —— 探究历代祖师典籍、公案机锋与全球禅脉传承图谱
+                </p>
+                <p style="margin-top:1rem; font-size:0.9rem;"><a href="../about.html" style="color: var(--text-muted); text-decoration: underline; font-weight:600;">📜 凡例与关于本库</a> <span style="margin: 0 0.8rem;">|</span> <a href="../sitemap.html" style="color: var(--text-muted); text-decoration: underline;">🌐 网站地图</a> <span style="margin: 0 1rem;">|</span> <!--email_off--><a href="#" onclick="openContact();return false;" style="color: var(--text-muted); text-decoration: underline;">✉️ 联系我</a> <span style="margin: 0 1rem;">|</span> <a href="#" id="donationBtn" onclick="openDonation();return false;" style="color: var(--text-muted); text-decoration: underline;">🙏 支持本站</a> <span style="margin: 0 0.8rem;">|</span> <a href="https://github.com/creativeburster/ramanamaharshi.space" target="_blank" rel="noopener noreferrer" style="color: var(--text-muted); text-decoration: underline;">🐙 开源仓库</a></p>
+            </footer>
         </main>
     </div>
     <script>document.addEventListener("click",function(e){if(e.target.closest(".sidebar-item")&&window.innerWidth<768){var s=document.getElementById("sidebar"),o=document.getElementById("sidebarOverlay");if(s&&s.classList.contains("open")){s.classList.remove("open");if(o)o.classList.remove("open");}}if(e.target.closest(".sidebar-close-btn,.sidebar-open-btn")){e.preventDefault();var s=document.getElementById("sidebar"),m=document.querySelector(".main-content"),t=document.querySelector(".topbar"),b=document.querySelector(".sidebar-close-btn");if(!s)return;if(s.classList.contains("desktop-hidden")){s.classList.remove("desktop-hidden");if(m)m.classList.remove("full-width");if(t)t.classList.remove("reading-mode");if(b){b.textContent="◀";b.title="收起侧边栏";}}else{s.classList.add("desktop-hidden");if(m)m.classList.add("full-width");if(t)t.classList.add("reading-mode");if(b){b.textContent="▶";b.title="展开侧边栏";}}}});</script>
