@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +11,7 @@
     <title>疾病與療愈問答 | 拉瑪那馬哈希知識庫</title>
         <!-- 預加載關鍵資源  -->
     <link rel="preload" href="../../styles.min.css" as="style">
-    <link rel="preload" href="../../bundle.min.js" as="script">
+    <link rel="preload" href="../bundle.min.js" as="script">
 
     <!-- DNS 預解析  -->
 <link rel="stylesheet" href="../../styles.min.css">
@@ -104,6 +106,14 @@
       },
       "datePublished": "2026-07-17",
       "dateModified": "2026-10-18",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          ".subtitle",
+          ".quote-box"
+        ]
+      },
       "mainEntity": [
         {
           "@type": "Question",
@@ -200,13 +210,13 @@
   </script>
 </head>
 <body>
-    <button class="hamburger" data-nosnippet onclick="toggleSidebar()" aria-label="打开侧边导航菜单">☰</button>
+    <button class="hamburger" data-nosnippet onclick="toggleSidebar()" aria-label="開啟側邊導航選單">☰</button>
     <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
     <div class="layout">
         <aside class="sidebar" data-nosnippet id="sidebar">
             <div class="sidebar-header">
                 <a href="../index.html" class="logo">🙏 拉瑪那知識庫</a>
-                <button class="sidebar-close-btn" aria-label="收起侧边栏" title="收起侧边栏" style="visibility:hidden;opacity:0;">◀</button>
+                <button class="sidebar-close-btn" aria-label="收起側邊欄" title="收起側邊欄" style="visibility:hidden;opacity:0;">◀</button>
             </div>
             <div class="sidebar-section">
                 <div class="sidebar-section-title">📚 核心索引</div>
@@ -222,9 +232,9 @@
         </aside>
         <main class="main-content">
             <header class="topbar" data-nosnippet>
-                <button class="sidebar-open-btn" aria-label="展开侧边栏" title="展开侧边栏">▶</button>
+                <button class="sidebar-open-btn" aria-label="展開側邊欄" title="展開側邊欄">▶</button>
                 <div class="topbar-left">
-                    <button class="menu-toggle" onclick="toggleSidebar()" aria-label="切换侧边栏">☰</button>
+                    <button class="menu-toggle" onclick="toggleSidebar()" aria-label="切換側邊欄">☰</button>
                     <span class="topbar-title">💬 修行問答</span>
                 </div>
                 <nav class="topbar-nav topbar-full">
@@ -234,7 +244,7 @@
                     <a href="../methods/index.html">方法</a>
                     <a href="index.html" class="active">問答</a>
                     <a href="../persons/index.html">人物</a>
-                    <a href="../graph.html">圖譜</a><a href="#" class="lang-toggle" style="border-left:1px solid rgba(255,255,255,.3);" title="切換爲簡體中文" onclick="location.href=location.pathname.replace('/zh-TW/','/');return false;">簡</a>
+                    <a href="../graph.html">圖譜</a><a href="#" class="lang-toggle" style="border-left:1px solid rgba(255,255,255,.3);" title="切換為簡體中文" onclick="location.href=location.pathname.replace('/zh-TW/','/');return false;">簡</a>
                 </nav>
             </header>
             <div class="content-wrapper">
@@ -248,35 +258,35 @@
                 </div>
                 <div class="qa-container">
                         <div class="qa-item">
-                        <h3 class="qa-q">❓ 疾病和靈性有關係嗎？</h3>
+                        <h2 class="qa-q">❓ 疾病和靈性有關係嗎？</h2>
                         <div class="qa-a">"疾病是身體的現象，與真我無關。但疾病可以成為修行的助緣——它提醒你'我不是這個身體'。馬哈希在晚年患有癌症，但他對身體的疼痛完全無動於衷。"</div>
                     </div>
                         <div class="qa-item">
-                        <h3 class="qa-q">❓ 生病時還能修行嗎？</h3>
+                        <h2 class="qa-q">❓ 生病時還能修行嗎？</h2>
                         <div class="qa-a">"生病時更應該修行。疾病使身體虛弱，反而有助於放下對身體的執著。馬哈希說：'當身體痛苦時，轉向內心——你會發現真我從來不受疾病影響。'"</div>
                     </div>
                         <div class="qa-item">
-                        <h3 class="qa-q">❓ 馬哈希自己是如何面對疾病的？</h3>
+                        <h2 class="qa-q">❓ 馬哈希自己是如何面對疾病的？</h2>
                         <div class="qa-a">馬哈希在晚年手臂上長了一個腫瘤，弟子們為他治療。他從未抱怨疼痛，也沒有要求特殊照顧。他說："這具身體有它的命運，讓它自然發生。"這是對不執著和臣服的完美示範。</div>
                     </div>
                         <div class="qa-item">
-                        <h3 class="qa-q">❓ 冥想可以治療身體疾病嗎？</h3>
+                        <h2 class="qa-q">❓ 冥想可以治療身體疾病嗎？</h2>
                         <div class="qa-a">"冥想可以帶來身心放鬆，間接有助於身體的自愈能力。但冥想的主要目的不是治病。如果追求冥想的健康益處，那就把靈性修行降格為了物理治療。當然，身體健康是好的副產品。"</div>
                     </div>
                         <div class="qa-item">
-                        <h3 class="qa-q">❓ 如何面對慢性疾病？</h3>
+                        <h2 class="qa-q">❓ 如何面對慢性疾病？</h2>
                         <div class="qa-a">"接受它。不意味著放棄治療，而是不把注意力全部放在疾病上。身體有病時，讓醫生來照顧身體；心智有病時，讓真我來照顧心智。保持對'我在'的覺知，疾病就不佔據你全部的注意力。"</div>
                     </div>
                         <div class="qa-item">
-                        <h3 class="qa-q">❓ 心理疾病和靈性修行衝突嗎？</h3>
+                        <h2 class="qa-q">❓ 心理疾病和靈性修行衝突嗎？</h2>
                         <div class="qa-a">"嚴重的心理疾病需要專業的治療。靈性修行可以作為輔助，但不能替代醫學治療。馬哈希認為身體和心智的疾病屬於相對層面，應該在相對層面處理。"</div>
                     </div>
                         <div class="qa-item">
-                        <h3 class="qa-q">❓ 上師的恩典能治癒疾病嗎？</h3>
+                        <h2 class="qa-q">❓ 上師的恩典能治癒疾病嗎？</h2>
                         <div class="qa-a">"上師的恩典可以轉化心智，心智的轉化可能帶來身體的改善。但恩典的目的不是治病，而是覺醒。不要把恩典當作醫療工具——那樣會錯過恩典的真正意義。"</div>
                     </div>
                         <div class="qa-item">
-                        <h3 class="qa-q">❓ 為什麼覺者也會生病？</h3>
+                        <h2 class="qa-q">❓ 為什麼覺者也會生病？</h2>
                         <div class="qa-a">"覺者不再認同身體，所以身體的疾病不會影響他的覺知。覺者仍然有身體，身體仍然服從自然法則。但覺者不以'我的身體'來感受疾病。疾病的痛苦屬於身體，不屬於覺者。"</div>
                     </div>
     
@@ -286,6 +296,13 @@
                     <a href="index.html" class="page-link">目錄</a>
                     <a href="qa-50.html" class="page-link">下一頁</a>
                 </div>
+                <aside class="card geo-citation-card" data-nosnippet style="margin-top:1.5rem;padding:1rem 1.25rem;border-left:3px solid var(--primary);background:rgba(255,255,255,0.02);font-size:0.88rem;color:var(--text-muted);line-height:1.7;">
+                    <div style="font-weight:600;color:var(--text-primary);margin-bottom:0.35rem;">📜 文獻溯源與學術引用規範 (Citation &amp; Provenance)</div>
+                    <div><strong>詞條 / 篇章</strong>：《修行問答49：疾病與療愈》 · 拉瑪那馬哈希知識庫</div>
+                    <div><strong>文獻底本</strong>：對勘自印度阿魯那佳拉 <span lang="en">Sri Ramanasramam</span> 官方出版原典（詳見 <a href="../about.html" style="color:var(--primary);text-decoration:underline;">校勘凡例與關於本庫</a>）</div>
+                    <div><strong>標準引用連結</strong>：<a href="https://ramanamaharshi.space/zh-TW/qa/qa-49.html" style="color:var(--primary);word-break:break-all;">https://ramanamaharshi.space/zh-TW/qa/qa-49.html</a></div>
+                </aside>
+                </article>
             </div>
         </main>
     </div>
@@ -297,8 +314,8 @@
     }
 </script>
 <script src="/pwa-analytics.js" defer></script>
-<script src="../../bundle.min.js" defer></script>
-<script>document.addEventListener("click",function(e){if(e.target.closest(".sidebar-item")&&window.innerWidth<768){var s=document.getElementById("sidebar"),o=document.getElementById("sidebarOverlay");if(s&&s.classList.contains("open")){s.classList.remove("open");if(o)o.classList.remove("open");}}if(e.target.closest(".sidebar-close-btn,.sidebar-open-btn")){e.preventDefault();var s=document.getElementById("sidebar"),m=document.querySelector(".main-content"),t=document.querySelector(".topbar"),b=document.querySelector(".sidebar-close-btn");if(!s)return;if(s.classList.contains("desktop-hidden")){s.classList.remove("desktop-hidden");if(m)m.classList.remove("full-width");if(t)t.classList.remove("reading-mode");if(b){b.textContent="◀";b.title="收起侧边栏";}}else{s.classList.add("desktop-hidden");if(m)m.classList.add("full-width");if(t)t.classList.add("reading-mode");if(b){b.textContent="▶";b.title="展开侧边栏";}}}});</script>
+<script src="../bundle.min.js" defer></script>
+<script>document.addEventListener("click",function(e){if(e.target.closest(".sidebar-item")&&window.innerWidth<768){var s=document.getElementById("sidebar"),o=document.getElementById("sidebarOverlay");if(s&&s.classList.contains("open")){s.classList.remove("open");if(o)o.classList.remove("open");}}if(e.target.closest(".sidebar-close-btn,.sidebar-open-btn")){e.preventDefault();var s=document.getElementById("sidebar"),m=document.querySelector(".main-content"),t=document.querySelector(".topbar"),b=document.querySelector(".sidebar-close-btn");if(!s)return;if(s.classList.contains("desktop-hidden")){s.classList.remove("desktop-hidden");if(m)m.classList.remove("full-width");if(t)t.classList.remove("reading-mode");if(b){b.textContent="◀";b.title="收起側邊欄";}}else{s.classList.add("desktop-hidden");if(m)m.classList.add("full-width");if(t)t.classList.add("reading-mode");if(b){b.textContent="▶";b.title="展開側邊欄";}}}});</script>
 <!-- sidebar-toggle-css -->
 <style>.sidebar.desktop-hidden{transform:translateX(-100%) !important;transition:transform .3s ease;}.sidebar-close-btn{visibility:hidden;opacity:0;background:rgba(255,255,255,.1);border:none;color:#cbd5e1;font-size:14px;cursor:pointer;padding:6px 10px;border-radius:4px;transition:all .15s;line-height:1;}.sidebar-close-btn:hover{background:rgba(255,255,255,.2);color:#fff;}.sidebar:not(.desktop-hidden) .sidebar-close-btn{visibility:visible;opacity:1;}.main-content.full-width{margin-left:0 !important;max-width:100vw !important;transition:margin-left .3s ease;}.main-content.full-width .topbar{left:0 !important;width:100% !important;}.main-content.full-width .content-wrapper,.main-content.full-width main{max-width:100% !important;}.main-content.full-width .content-wrapper{padding:24px 48px !important;}.sidebar-open-btn{display:none;position:fixed;top:9px;left:8px;z-index:201;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.2);color:#cbd5e1;font-size:16px;cursor:pointer;padding:5px 10px;border-radius:4px;transition:all .15s;line-height:1.2;}.sidebar-open-btn:hover{background:rgba(255,255,255,.25);color:#fff;}.main-content.full-width .sidebar-open-btn{display:block;}</style>
 <!-- sidebar-toggle -->

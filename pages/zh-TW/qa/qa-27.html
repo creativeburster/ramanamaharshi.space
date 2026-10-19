@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +12,7 @@
     <title>三摩地與覺醒 | 拉瑪那馬哈希知識庫</title>
         <!-- 預加載關鍵資源  -->
     <link rel="preload" href="../../styles.min.css" as="style">
-    <link rel="preload" href="../../bundle.min.js" as="script">
+    <link rel="preload" href="../bundle.min.js" as="script">
 
     <!-- DNS 預解析  -->
 <link rel="stylesheet" href="../../styles.min.css">
@@ -105,6 +107,14 @@
       },
       "datePublished": "2026-07-17",
       "dateModified": "2026-10-18",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          ".subtitle",
+          ".quote-box"
+        ]
+      },
       "mainEntity": [
         {
           "@type": "Question",
@@ -201,13 +211,13 @@
   </script>
 </head>
 <body>
-    <button class="hamburger" data-nosnippet onclick="toggleSidebar()" aria-label="打开侧边导航菜单">☰</button>
+    <button class="hamburger" data-nosnippet onclick="toggleSidebar()" aria-label="開啟側邊導航選單">☰</button>
     <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
     <div class="layout">
         <aside class="sidebar" data-nosnippet id="sidebar">
             <div class="sidebar-header">
                 <a href="../index.html" class="logo">🙏 拉瑪那知識庫</a>
-                <button class="sidebar-close-btn" aria-label="收起侧边栏" title="收起侧边栏" style="visibility:hidden;opacity:0;">◀</button>
+                <button class="sidebar-close-btn" aria-label="收起側邊欄" title="收起側邊欄" style="visibility:hidden;opacity:0;">◀</button>
             </div>
             <div class="sidebar-section">
                 <div class="sidebar-section-title">📚 核心索引</div>
@@ -223,9 +233,9 @@
         </aside>
         <main class="main-content">
             <header class="topbar" data-nosnippet>
-                <button class="sidebar-open-btn" aria-label="展开侧边栏" title="展开侧边栏">▶</button>
+                <button class="sidebar-open-btn" aria-label="展開側邊欄" title="展開側邊欄">▶</button>
                 <div class="topbar-left">
-                    <button class="menu-toggle" onclick="toggleSidebar()" aria-label="切换侧边栏">☰</button>
+                    <button class="menu-toggle" onclick="toggleSidebar()" aria-label="切換側邊欄">☰</button>
                     <span class="topbar-title">💬 修行問答</span>
                 </div>
                 <nav class="topbar-nav topbar-full">
@@ -234,7 +244,7 @@
                     <a href="../concepts/index.html">概念</a>
                     <a href="index.html" class="active">問答</a>
                     <a href="../persons/index.html">人物</a>
-                    <a href="../graph.html">圖譜</a><a href="#" class="lang-toggle" style="border-left:1px solid rgba(255,255,255,.3);" title="切換爲簡體中文" onclick="location.href=location.pathname.replace('/zh-TW/','/');return false;">簡</a>
+                    <a href="../graph.html">圖譜</a><a href="#" class="lang-toggle" style="border-left:1px solid rgba(255,255,255,.3);" title="切換為簡體中文" onclick="location.href=location.pathname.replace('/zh-TW/','/');return false;">簡</a>
                 </nav>
             </header>
             <div class="content-wrapper">
@@ -248,35 +258,35 @@
                 </div>
                 <div class="qa-container">
                     <div class="qa-item">
-                        <h3 class="qa-q">❓ 什麼是三摩地？</h3>
+                        <h2 class="qa-q">❓ 什麼是三摩地？</h2>
                         <div class="qa-a">三摩地是專注力完全集中於一點的狀態。但真正的三摩地不是努力保持專注，而是自然地安住於真我。當心智完全消融，只剩下純粹的覺知，那就是三摩地。它不是一種人為的狀態，而是我們本來的樣子。</div>
                     </div>
                     <div class="qa-item">
-                        <h3 class="qa-q">❓ 有欲三摩地和無慾三摩地有什麼區別？</h3>
+                        <h2 class="qa-q">❓ 有欲三摩地和無慾三摩地有什麼區別？</h2>
                         <div class="qa-a">有欲三摩地是有物件的專注，比如專注於呼吸、咒語或某個形象。無慾三摩地是無物件的，是完全安住於真我。有欲三摩地可以是修行的準備，但無慾三摩地才是究竟的——在那裡，連"我"的概念都消失了。</div>
                     </div>
                     <div class="qa-item">
-                        <h3 class="qa-q">❓ 什麼是覺醒？</h3>
+                        <h2 class="qa-q">❓ 什麼是覺醒？</h2>
                         <div class="qa-a">覺醒不是獲得新的東西，而是認出一直就在那裡的東西。它是從對"我"的錯誤認同中醒來，認出你真正的身份——真我。覺醒是當下的，不是漸進的。它可能在一瞬間發生，當你完全放下"我"的概念時。</div>
                     </div>
                     <div class="qa-item">
-                        <h3 class="qa-q">❓ 覺醒後會發生什麼？</h3>
+                        <h2 class="qa-q">❓ 覺醒後會發生什麼？</h2>
                         <div class="qa-a">覺醒後，你仍然在這個世界上，仍然吃飯、睡覺、工作，但你的內心完全不同了。你不再與身體、心智或情緒認同，你知道你是純粹的覺知。痛苦可能仍然會來，但你不再被它困擾——你看著它來了又去，如如不動。</div>
                     </div>
                     <div class="qa-item">
-                        <h3 class="qa-q">❓ 如何知道自己是否覺醒了？</h3>
+                        <h2 class="qa-q">❓ 如何知道自己是否覺醒了？</h2>
                         <div class="qa-a">不是透過特殊的體驗或神通，而是透過內心的轉變——執著減少、內心平靜、對"我是誰"毫無疑問、對他人的苦難自然生起慈悲心。你不再尋求外在的認可，因為你知道自己的真實身份。這就是覺醒的標誌。</div>
                     </div>
                     <div class="qa-item">
-                        <h3 class="qa-q">❓ 三摩地和覺醒是什麼關係？</h3>
+                        <h2 class="qa-q">❓ 三摩地和覺醒是什麼關係？</h2>
                         <div class="qa-a">三摩地可以是覺醒的準備，也可以是覺醒後的自然狀態。在三摩地中，你可能短暫地體驗到真我，但覺醒是持久地安住於真我。三摩地像是瞥見月亮，而覺醒是一直看著月亮——它不再消失。</div>
                     </div>
                     <div class="qa-item">
-                        <h3 class="qa-q">❓ 什麼是"見道"和"修道"？</h3>
+                        <h2 class="qa-q">❓ 什麼是"見道"和"修道"？</h2>
                         <div class="qa-a">見道是第一次瞥見真我，修道是持續穩定地安住於真我。見道可能瞬間，修道需要時間。見道讓你知道方向，修道讓你穩定在那個方向上。兩者都不可或缺——見道給你信心，修道給你穩固。</div>
                     </div>
                     <div class="qa-item">
-                        <h3 class="qa-q">❓ 覺醒是終點嗎？</h3>
+                        <h2 class="qa-q">❓ 覺醒是終點嗎？</h2>
                         <div class="qa-a">覺醒是起點，不是終點。覺醒後，你仍然需要在生活中穩固你的領悟，讓它滲透到你存在的每一個層面。這就是為什麼馬哈希覺醒後仍然在阿魯那佳拉山上多年——他在穩固他的領悟，讓它成為他的自然狀態。</div>
                     </div>
                 </div>
@@ -285,6 +295,13 @@
                     <a href="index.html" class="page-link">目錄</a>
                     <a href="qa-28.html" class="page-link">下一頁</a>
                 </div>
+                <aside class="card geo-citation-card" data-nosnippet style="margin-top:1.5rem;padding:1rem 1.25rem;border-left:3px solid var(--primary);background:rgba(255,255,255,0.02);font-size:0.88rem;color:var(--text-muted);line-height:1.7;">
+                    <div style="font-weight:600;color:var(--text-primary);margin-bottom:0.35rem;">📜 文獻溯源與學術引用規範 (Citation &amp; Provenance)</div>
+                    <div><strong>詞條 / 篇章</strong>：《修行問答27：三摩地與覺醒》 · 拉瑪那馬哈希知識庫</div>
+                    <div><strong>文獻底本</strong>：對勘自印度阿魯那佳拉 <span lang="en">Sri Ramanasramam</span> 官方出版原典（詳見 <a href="../about.html" style="color:var(--primary);text-decoration:underline;">校勘凡例與關於本庫</a>）</div>
+                    <div><strong>標準引用連結</strong>：<a href="https://ramanamaharshi.space/zh-TW/qa/qa-27.html" style="color:var(--primary);word-break:break-all;">https://ramanamaharshi.space/zh-TW/qa/qa-27.html</a></div>
+                </aside>
+                </article>
             </div>
         </main>
     </div>
@@ -302,8 +319,8 @@
     }
     </script>
 <script src="/pwa-analytics.js" defer></script>
-<script src="../../bundle.min.js" defer></script>
-<script>document.addEventListener("click",function(e){if(e.target.closest(".sidebar-item")&&window.innerWidth<768){var s=document.getElementById("sidebar"),o=document.getElementById("sidebarOverlay");if(s&&s.classList.contains("open")){s.classList.remove("open");if(o)o.classList.remove("open");}}if(e.target.closest(".sidebar-close-btn,.sidebar-open-btn")){e.preventDefault();var s=document.getElementById("sidebar"),m=document.querySelector(".main-content"),t=document.querySelector(".topbar"),b=document.querySelector(".sidebar-close-btn");if(!s)return;if(s.classList.contains("desktop-hidden")){s.classList.remove("desktop-hidden");if(m)m.classList.remove("full-width");if(t)t.classList.remove("reading-mode");if(b){b.textContent="◀";b.title="收起侧边栏";}}else{s.classList.add("desktop-hidden");if(m)m.classList.add("full-width");if(t)t.classList.add("reading-mode");if(b){b.textContent="▶";b.title="展开侧边栏";}}}});</script>
+<script src="../bundle.min.js" defer></script>
+<script>document.addEventListener("click",function(e){if(e.target.closest(".sidebar-item")&&window.innerWidth<768){var s=document.getElementById("sidebar"),o=document.getElementById("sidebarOverlay");if(s&&s.classList.contains("open")){s.classList.remove("open");if(o)o.classList.remove("open");}}if(e.target.closest(".sidebar-close-btn,.sidebar-open-btn")){e.preventDefault();var s=document.getElementById("sidebar"),m=document.querySelector(".main-content"),t=document.querySelector(".topbar"),b=document.querySelector(".sidebar-close-btn");if(!s)return;if(s.classList.contains("desktop-hidden")){s.classList.remove("desktop-hidden");if(m)m.classList.remove("full-width");if(t)t.classList.remove("reading-mode");if(b){b.textContent="◀";b.title="收起側邊欄";}}else{s.classList.add("desktop-hidden");if(m)m.classList.add("full-width");if(t)t.classList.add("reading-mode");if(b){b.textContent="▶";b.title="展開側邊欄";}}}});</script>
 <!-- sidebar-toggle-css -->
 <style>.sidebar.desktop-hidden{transform:translateX(-100%) !important;transition:transform .3s ease;}.sidebar-close-btn{visibility:hidden;opacity:0;background:rgba(255,255,255,.1);border:none;color:#cbd5e1;font-size:14px;cursor:pointer;padding:6px 10px;border-radius:4px;transition:all .15s;line-height:1;}.sidebar-close-btn:hover{background:rgba(255,255,255,.2);color:#fff;}.sidebar:not(.desktop-hidden) .sidebar-close-btn{visibility:visible;opacity:1;}.main-content.full-width{margin-left:0 !important;max-width:100vw !important;transition:margin-left .3s ease;}.main-content.full-width .topbar{left:0 !important;width:100% !important;}.main-content.full-width .content-wrapper,.main-content.full-width main{max-width:100% !important;}.main-content.full-width .content-wrapper{padding:24px 48px !important;}.sidebar-open-btn{display:none;position:fixed;top:9px;left:8px;z-index:201;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.2);color:#cbd5e1;font-size:16px;cursor:pointer;padding:5px 10px;border-radius:4px;transition:all .15s;line-height:1.2;}.sidebar-open-btn:hover{background:rgba(255,255,255,.25);color:#fff;}.main-content.full-width .sidebar-open-btn{display:block;}</style>
 <!-- sidebar-toggle -->

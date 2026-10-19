@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +11,7 @@
     <meta property="og:title" content="真知与迷惑問答 | 拉瑪那馬哈希150精選問答 | 拉瑪那馬哈希</title>
         <!-- 預加載關鍵資源  -->
     <link rel="preload" href="../../styles.min.css" as="style">
-    <link rel="preload" href="../../bundle.min.js" as="script">
+    <link rel="preload" href="../bundle.min.js" as="script">
 
     <!-- DNS 預解析  -->
 <link rel="stylesheet" href="../../styles.min.css">
@@ -112,6 +114,14 @@
       },
       "datePublished": "2026-07-17",
       "dateModified": "2026-10-18",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          ".subtitle",
+          ".quote-box"
+        ]
+      },
       "mainEntity": [
         {
           "@type": "Question",
@@ -208,13 +218,13 @@
   </script>
 </head>
 <body>
-    <button class="hamburger" data-nosnippet onclick="toggleSidebar()" aria-label="打开侧边导航菜单">☰</button>
+    <button class="hamburger" data-nosnippet onclick="toggleSidebar()" aria-label="開啟側邊導航選單">☰</button>
     <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
     <div class="layout">
         <aside class="sidebar" data-nosnippet id="sidebar">
             <div class="sidebar-header">
                 <a href="../index.html" class="logo">🙏 拉瑪那知識庫</a>
-                <button class="sidebar-close-btn" aria-label="收起侧边栏" title="收起侧边栏" style="visibility:hidden;opacity:0;">◀</button>
+                <button class="sidebar-close-btn" aria-label="收起側邊欄" title="收起側邊欄" style="visibility:hidden;opacity:0;">◀</button>
             </div>
             <div class="sidebar-section">
                 <div class="sidebar-section-title">📚 核心索引</div>
@@ -230,9 +240,9 @@
         </aside>
         <main class="main-content">
             <header class="topbar" data-nosnippet>
-                <button class="sidebar-open-btn" aria-label="展开侧边栏" title="展开侧边栏">▶</button>
+                <button class="sidebar-open-btn" aria-label="展開側邊欄" title="展開側邊欄">▶</button>
                 <div class="topbar-left">
-                    <button class="menu-toggle" onclick="toggleSidebar()" aria-label="切换侧边栏">☰</button>
+                    <button class="menu-toggle" onclick="toggleSidebar()" aria-label="切換側邊欄">☰</button>
                     <span class="topbar-title">💬 修行問答</span>
                 </div>
                 <nav class="topbar-nav topbar-full">
@@ -241,7 +251,7 @@
                     <a href="../concepts/index.html">概念</a>
                     <a href="index.html" class="active">問答</a>
                     <a href="../persons/index.html">人物</a>
-                    <a href="../graph.html">圖譜</a><a href="#" class="lang-toggle" style="border-left:1px solid rgba(255,255,255,.3);" title="切換爲簡體中文" onclick="location.href=location.pathname.replace('/zh-TW/','/');return false;">簡</a>
+                    <a href="../graph.html">圖譜</a><a href="#" class="lang-toggle" style="border-left:1px solid rgba(255,255,255,.3);" title="切換為簡體中文" onclick="location.href=location.pathname.replace('/zh-TW/','/');return false;">簡</a>
                 </nav>
             </header>
             <div class="content-wrapper">
@@ -255,35 +265,35 @@
                 </div>
                 <div class="qa-container">
                     <div class="qa-item">
-                        <h3 class="qa-q">❓ 什麼是覺知（awareness）？</h3>
+                        <h2 class="qa-q">❓ 什麼是覺知（awareness）？</h2>
                         <div class="qa-a">覺知是"我在"的純粹體驗，是一切意識活動背後的見證者。它不是注意某個物件，而是純粹的臨在。覺知就是真我本身。</div>
                     </div>
                     <div class="qa-item">
-                        <h3 class="qa-q">❓ 覺知和思維有什麼區別？</h3>
+                        <h2 class="qa-q">❓ 覺知和思維有什麼區別？</h2>
                         <div class="qa-a">思維是心的活動，覺知是心的本質。思維有來來去去，覺知始終如一。你可以同時觀察很多思維，但覺知只有一個。</div>
                     </div>
                     <div class="qa-item">
-                        <h3 class="qa-q">❓ 什麼是正念（mindfulness）？</h3>
+                        <h2 class="qa-q">❓ 什麼是正念（mindfulness）？</h2>
                         <div class="qa-a">正念是覺知在日常生活中的應用。它是在當下這一刻，有意識地、不評判地專注於正在發生的事。正念是修行的開始，也是修行本身。</div>
                     </div>
                     <div class="qa-item">
-                        <h3 class="qa-q">❓ 如何培養覺知？</h3>
+                        <h2 class="qa-q">❓ 如何培養覺知？</h2>
                         <div class="qa-a">不是"培養"，而是"認出"。覺知一直都在，只是被念頭遮蔽。問"我是誰"、觀照呼吸、觀察身體感受——這些都是讓覺知顯現的方法。</div>
                     </div>
                     <div class="qa-item">
-                        <h3 class="qa-q">❓ 覺知時仍然有念頭，正常嗎？</h3>
+                        <h2 class="qa-q">❓ 覺知時仍然有念頭，正常嗎？</h2>
                         <div class="qa-a">完全正常。覺知不是讓念頭停止，而是看著念頭來來去去。就像天空看著雲彩飄過。開始時念頭很多，慢慢會減少，但不必追求。</div>
                     </div>
                     <div class="qa-item">
-                        <h3 class="qa-q">❓ 什麼是"覺者"的狀態？</h3>
+                        <h2 class="qa-q">❓ 什麼是"覺者"的狀態？</h2>
                         <div class="qa-a">覺者不是"有"覺知，而是"是"覺知。對覺者來說，沒有"我在覺知"的二元對立。覺知不再是工具，而是自然的存在狀態。</div>
                     </div>
                     <div class="qa-item">
-                        <h3 class="qa-q">❓ 覺知和專注有什麼區別？</h3>
+                        <h2 class="qa-q">❓ 覺知和專注有什麼區別？</h2>
                         <div class="qa-a">專注需要物件（專注呼吸、專注咒語），覺知不需要物件。專注是心的有意集中，覺知是心的自然狀態。專注是到達覺知的路徑。</div>
                     </div>
                     <div class="qa-item">
-                        <h3 class="qa-q">❓ 在日常生活中如何保持覺知？</h3>
+                        <h2 class="qa-q">❓ 在日常生活中如何保持覺知？</h2>
                         <div class="qa-a">不需要特別做什麼，只是記得"我是誰"。走路時知道在走路，吃飯時知道在吃飯。這個簡單的記持，就是覺知在日常生活中的應用。</div>
                     </div>
                 </div>
@@ -292,6 +302,13 @@
                     <a href="index.html" class="page-link">目錄</a>
                     <a href="qa-18.html" class="page-link">下一頁</a>
                 </div>
+                <aside class="card geo-citation-card" data-nosnippet style="margin-top:1.5rem;padding:1rem 1.25rem;border-left:3px solid var(--primary);background:rgba(255,255,255,0.02);font-size:0.88rem;color:var(--text-muted);line-height:1.7;">
+                    <div style="font-weight:600;color:var(--text-primary);margin-bottom:0.35rem;">📜 文獻溯源與學術引用規範 (Citation &amp; Provenance)</div>
+                    <div><strong>詞條 / 篇章</strong>：《修行問答17：正念與覺知》 · 拉瑪那馬哈希知識庫</div>
+                    <div><strong>文獻底本</strong>：對勘自印度阿魯那佳拉 <span lang="en">Sri Ramanasramam</span> 官方出版原典（詳見 <a href="../about.html" style="color:var(--primary);text-decoration:underline;">校勘凡例與關於本庫</a>）</div>
+                    <div><strong>標準引用連結</strong>：<a href="https://ramanamaharshi.space/zh-TW/qa/qa-17.html" style="color:var(--primary);word-break:break-all;">https://ramanamaharshi.space/zh-TW/qa/qa-17.html</a></div>
+                </aside>
+                </article>
             </div>
         </main>
     </div>
@@ -309,8 +326,8 @@
     }
     </script>
 <script src="/pwa-analytics.js" defer></script>
-<script src="../../bundle.min.js" defer></script>
-<script>document.addEventListener("click",function(e){if(e.target.closest(".sidebar-item")&&window.innerWidth<768){var s=document.getElementById("sidebar"),o=document.getElementById("sidebarOverlay");if(s&&s.classList.contains("open")){s.classList.remove("open");if(o)o.classList.remove("open");}}if(e.target.closest(".sidebar-close-btn,.sidebar-open-btn")){e.preventDefault();var s=document.getElementById("sidebar"),m=document.querySelector(".main-content"),t=document.querySelector(".topbar"),b=document.querySelector(".sidebar-close-btn");if(!s)return;if(s.classList.contains("desktop-hidden")){s.classList.remove("desktop-hidden");if(m)m.classList.remove("full-width");if(t)t.classList.remove("reading-mode");if(b){b.textContent="◀";b.title="收起侧边栏";}}else{s.classList.add("desktop-hidden");if(m)m.classList.add("full-width");if(t)t.classList.add("reading-mode");if(b){b.textContent="▶";b.title="展开侧边栏";}}}});</script>
+<script src="../bundle.min.js" defer></script>
+<script>document.addEventListener("click",function(e){if(e.target.closest(".sidebar-item")&&window.innerWidth<768){var s=document.getElementById("sidebar"),o=document.getElementById("sidebarOverlay");if(s&&s.classList.contains("open")){s.classList.remove("open");if(o)o.classList.remove("open");}}if(e.target.closest(".sidebar-close-btn,.sidebar-open-btn")){e.preventDefault();var s=document.getElementById("sidebar"),m=document.querySelector(".main-content"),t=document.querySelector(".topbar"),b=document.querySelector(".sidebar-close-btn");if(!s)return;if(s.classList.contains("desktop-hidden")){s.classList.remove("desktop-hidden");if(m)m.classList.remove("full-width");if(t)t.classList.remove("reading-mode");if(b){b.textContent="◀";b.title="收起側邊欄";}}else{s.classList.add("desktop-hidden");if(m)m.classList.add("full-width");if(t)t.classList.add("reading-mode");if(b){b.textContent="▶";b.title="展開側邊欄";}}}});</script>
 <!-- sidebar-toggle-css -->
 <style>.sidebar.desktop-hidden{transform:translateX(-100%) !important;transition:transform .3s ease;}.sidebar-close-btn{visibility:hidden;opacity:0;background:rgba(255,255,255,.1);border:none;color:#cbd5e1;font-size:14px;cursor:pointer;padding:6px 10px;border-radius:4px;transition:all .15s;line-height:1;}.sidebar-close-btn:hover{background:rgba(255,255,255,.2);color:#fff;}.sidebar:not(.desktop-hidden) .sidebar-close-btn{visibility:visible;opacity:1;}.main-content.full-width{margin-left:0 !important;max-width:100vw !important;transition:margin-left .3s ease;}.main-content.full-width .topbar{left:0 !important;width:100% !important;}.main-content.full-width .content-wrapper,.main-content.full-width main{max-width:100% !important;}.main-content.full-width .content-wrapper{padding:24px 48px !important;}.sidebar-open-btn{display:none;position:fixed;top:9px;left:8px;z-index:201;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.2);color:#cbd5e1;font-size:16px;cursor:pointer;padding:5px 10px;border-radius:4px;transition:all .15s;line-height:1.2;}.sidebar-open-btn:hover{background:rgba(255,255,255,.25);color:#fff;}.main-content.full-width .sidebar-open-btn{display:block;}</style>
 <!-- sidebar-toggle -->

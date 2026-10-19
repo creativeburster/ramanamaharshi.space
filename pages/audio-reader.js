@@ -148,7 +148,7 @@
 
             elements.forEach(el => {
                 // 排除导航、按钮、无关面板等
-                if (el.closest('.page-nav') || el.closest('.breadcrumb') || el.closest('#tts-header-bar') || el.closest('.tag')) {
+                if (el.closest('.page-nav') || el.closest('.breadcrumb') || el.closest('#tts-header-bar') || el.closest('.tag')||el.closest('.geo-citation-card')) {
                     return;
                 }
 

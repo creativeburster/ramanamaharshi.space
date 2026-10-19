@@ -1,8 +1,0 @@
-# Robots.txt for ramanamaharshi.space
-# Vercel部署: rootDirectory=pages, 所以根路径就是 /
-
-User-agent: *
-Allow: /
-
-Sitemap: https://ramanamaharshi.space/sitemap.xml
-# 访客浏览网页版索引（有版式）: /sitemap.html ；繁体: /zh-TW/sitemap.html

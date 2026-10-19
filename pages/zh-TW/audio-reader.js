@@ -95,7 +95,7 @@
             const elements = this.container.querySelectorAll('h1, h2, h3, h4, p, blockquote, li, .quote-box');
 
             elements.forEach(el => {
-                if (el.closest('.page-nav') || el.closest('.breadcrumb') || el.closest('#tts-header-bar') || el.closest('.tag')) {
+                if (el.closest('.page-nav') || el.closest('.breadcrumb') || el.closest('#tts-header-bar') || el.closest('.tag')||el.closest('.geo-citation-card')) {
                     return;
                 }
 

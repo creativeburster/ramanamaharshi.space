@@ -447,7 +447,7 @@
       "id": "meditation",
       "name": "🧘 禅修",
       "type": "practice",
-      "url": "concepts/meditation.html",
+      "url": "concepts/dhyana.html",
       "desc": "禅修/Meditation，心意专注的练习"
     },
     {
@@ -475,14 +475,14 @@
       "id": "drishti",
       "name": "👁️ 所见",
       "type": "mind",
-      "url": "concepts/drishti.html",
+      "url": "concepts/jnana.html",
       "desc": "所见/Drishti，心智的观看方式"
     },
     {
       "id": "sraddha",
       "name": "💫 信念",
       "type": "moksha",
-      "url": "concepts/sraddha.html",
+      "url": "concepts/shraddha.html",
       "desc": "信念/Sraddha，对真理的坚定信心"
     },
     {
@@ -573,7 +573,7 @@
       "id": "sattva",
       "name": "☀️ 善性",
       "type": "atman",
-      "url": "concepts/sattva.html",
+      "url": "concepts/peace.html",
       "desc": "善性/Sattva，三德中的清净之德"
     },
     {

@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +16,7 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
         <!-- 預加載關鍵資源  -->
     <link rel="preload" href="../../styles.min.css" as="style">
-    <link rel="preload" href="../../bundle.min.js" as="script">
+    <link rel="preload" href="../bundle.min.js" as="script">
 
     <!-- DNS 預解析  -->
 <link rel="stylesheet" href="../../styles.min.css">
@@ -85,6 +87,14 @@
       },
       "datePublished": "2026-07-17",
       "dateModified": "2026-10-18",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          ".subtitle",
+          ".quote-box"
+        ]
+      },
       "mainEntity": [
         {
           "@type": "Question",
@@ -197,13 +207,13 @@
   </script>
 </head>
 <body>
-    <button class="hamburger" data-nosnippet onclick="toggleSidebar()" aria-label="打开侧边导航菜单">☰</button>
+    <button class="hamburger" data-nosnippet onclick="toggleSidebar()" aria-label="開啟側邊導航選單">☰</button>
     <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
     <div class="layout">
         <aside class="sidebar" data-nosnippet id="sidebar">
             <div class="sidebar-header">
                 <a href="../index.html" class="logo">🙏 拉瑪那知識庫</a>
-                <button class="sidebar-close-btn" aria-label="收起侧边栏" title="收起侧边栏" style="visibility:hidden;opacity:0;">◀</button>
+                <button class="sidebar-close-btn" aria-label="收起側邊欄" title="收起側邊欄" style="visibility:hidden;opacity:0;">◀</button>
             </div>
             <div class="sidebar-section">
                 <div class="sidebar-section-title">📚 核心索引</div>
@@ -219,9 +229,9 @@
         </aside>
         <main class="main-content">
             <header class="topbar" data-nosnippet>
-                <button class="sidebar-open-btn" aria-label="展开侧边栏" title="展开侧边栏">▶</button>
+                <button class="sidebar-open-btn" aria-label="展開側邊欄" title="展開側邊欄">▶</button>
                 <div class="topbar-left">
-                    <button class="menu-toggle" onclick="toggleSidebar()" aria-label="切换侧边栏">☰</button>
+                    <button class="menu-toggle" onclick="toggleSidebar()" aria-label="切換側邊欄">☰</button>
                     <span class="topbar-title">💬 修行問答</span>
                 </div>
                 <nav class="topbar-nav topbar-full">
@@ -231,7 +241,7 @@
                     <a href="../methods/index.html">方法</a>
                     <a href="index.html" class="active">問答</a>
                     <a href="../persons/index.html">人物</a>
-                    <a href="../graph.html">圖譜</a><a href="#" class="lang-toggle" style="border-left:1px solid rgba(255,255,255,.3);" title="切換爲簡體中文" onclick="location.href=location.pathname.replace('/zh-TW/','/');return false;">簡</a>
+                    <a href="../graph.html">圖譜</a><a href="#" class="lang-toggle" style="border-left:1px solid rgba(255,255,255,.3);" title="切換為簡體中文" onclick="location.href=location.pathname.replace('/zh-TW/','/');return false;">簡</a>
                 </nav>
             </header>
             <div class="content-wrapper">
@@ -245,43 +255,43 @@
                 </div>
                 <div class="qa-container">
                     <div class="qa-item" data-category="奉爱">
-                        <h3 class="qa-q">❓ 西方人可以理解馬哈希的教導嗎？</h3>
+                        <h2 class="qa-q">❓ 西方人可以理解馬哈希的教導嗎？</h2>
                         <div class="qa-a">當然可以。真理是普世的，不受文化或地域的限制。許多西方人來到馬哈希身邊，都獲得了深刻的體驗。重要的是真誠的渴望，而不是背景。</div>
                     </div>
                     <div class="qa-item" data-category="日常">
-                        <h3 class="qa-q">❓ 西方人和東方人在修行上有什麼不同？</h3>
+                        <h2 class="qa-q">❓ 西方人和東方人在修行上有什麼不同？</h2>
                         <div class="qa-a">本質上沒有不同。Self 不會因為你是東方人或西方人而有所不同。但在表達方式上，馬哈希會根據每個人的背景調整。對西方人，他可能會用更理性的語言；對東方人，他可能會用更傳統的術語。</div>
                     </div>
                     <div class="qa-item" data-category="奉爱">
-                        <h3 class="qa-q">❓ 需要成為印度教徒才能跟隨馬哈希嗎？</h3>
+                        <h2 class="qa-q">❓ 需要成為印度教徒才能跟隨馬哈希嗎？</h2>
                         <div class="qa-a">不需要。馬哈希的教導超越宗教。他歡迎所有真誠的求道者，無論他們的宗教背景如何。他說，Self 是唯一的實相，這個真理屬於所有人。</div>
                     </div>
                     <div class="qa-item" data-category="日常">
-                        <h3 class="qa-q">❓ 西方人需要改變生活方式嗎？</h3>
+                        <h2 class="qa-q">❓ 西方人需要改變生活方式嗎？</h2>
                         <div class="qa-a">外在的生活方式不是最重要的。你可以繼續你的日常生活，同時保持對 Self 的覺知。當然，簡化生活、減少慾望會有幫助，但這不意味著你必須放棄一切。</div>
                     </div>
                     <div class="qa-item" data-category="奉爱">
-                        <h3 class="qa-q">❓ 許多西方人來找馬哈希，他們尋求什麼？</h3>
+                        <h2 class="qa-q">❓ 許多西方人來找馬哈希，他們尋求什麼？</h2>
                         <div class="qa-a">他們尋求真理，尋求內心的平靜，尋求生命的答案。有些人已經嘗試過西方的心理學和哲學，但感到不滿足。他們在馬哈希這裡找到了他們一直在尋找的東西。</div>
                     </div>
                     <div class="qa-item" data-category="日常">
-                        <h3 class="qa-q">❓ 語言障礙會影響理解嗎？</h3>
+                        <h2 class="qa-q">❓ 語言障礙會影響理解嗎？</h2>
                         <div class="qa-a">馬哈希的教導超越語言。即使透過翻譯，他的資訊也能傳達。更重要的是他的臨在，這種臨在不需要語言。許多西方人雖然不懂泰米爾語或梵語，卻仍然獲得了深刻的體驗。</div>
                     </div>
                     <div class="qa-item" data-category="奉爱">
-                        <h3 class="qa-q">❓ 西方人需要來印度嗎？</h3>
+                        <h2 class="qa-q">❓ 西方人需要來印度嗎？</h2>
                         <div class="qa-a">不一定。雖然來印度、在馬哈希的靜修院修行有特殊的價值，但 Self 無處不在。你可以在任何地方修行。重要的是內在的真誠，而不是外在的位置。</div>
                     </div>
                     <div class="qa-item" data-category="日常">
-                        <h3 class="qa-q">❓ 馬哈希如何看待西方的科學和哲學？</h3>
+                        <h2 class="qa-q">❓ 馬哈希如何看待西方的科學和哲學？</h2>
                         <div class="qa-a">馬哈希尊重所有的知識形式，但他指出，科學和哲學都侷限於心智。它們可以描述現象世界，但無法觸及那唯一的實相。要認識 Self，必須超越心智。</div>
                     </div>
                     <div class="qa-item" data-category="奉爱">
-                        <h3 class="qa-q">❓ 西方人可以成為馬哈希的弟子嗎？</h3>
+                        <h2 class="qa-q">❓ 西方人可以成為馬哈希的弟子嗎？</h2>
                         <div class="qa-a">當然可以。馬哈希沒有區分東方弟子和西方弟子。對他來說，所有真誠的求道者都是一樣的。許多西方人成為了他忠實的弟子，並將他的教導帶回了自己的國家。</div>
                     </div>
                     <div class="qa-item" data-category="日常">
-                        <h3 class="qa-q">❓ 馬哈希的教導如何適應現代生活？</h3>
+                        <h2 class="qa-q">❓ 馬哈希的教導如何適應現代生活？</h2>
                         <div class="qa-a">馬哈希的教導是關於永恆的真理，它適用於所有時代。在現代社會，人們可能更忙碌、更分心，但 Self 依然在這裡。無論生活多麼忙碌，都可以找到片刻的寧靜，迴歸 Self。</div>
                     </div>
                 </div>
@@ -290,13 +300,20 @@
                     <a href="index.html" class="page-link">目錄</a>
                     <a href="index.html" class="page-link">下一頁</a>
                 </div>
+                <aside class="card geo-citation-card" data-nosnippet style="margin-top:1.5rem;padding:1rem 1.25rem;border-left:3px solid var(--primary);background:rgba(255,255,255,0.02);font-size:0.88rem;color:var(--text-muted);line-height:1.7;">
+                    <div style="font-weight:600;color:var(--text-primary);margin-bottom:0.35rem;">📜 文獻溯源與學術引用規範 (Citation &amp; Provenance)</div>
+                    <div><strong>詞條 / 篇章</strong>：《修行問答39：西方求道者》 · 拉瑪那馬哈希知識庫</div>
+                    <div><strong>文獻底本</strong>：對勘自印度阿魯那佳拉 <span lang="en">Sri Ramanasramam</span> 官方出版原典（詳見 <a href="../about.html" style="color:var(--primary);text-decoration:underline;">校勘凡例與關於本庫</a>）</div>
+                    <div><strong>標準引用連結</strong>：<a href="https://ramanamaharshi.space/zh-TW/qa/qa-39.html" style="color:var(--primary);word-break:break-all;">https://ramanamaharshi.space/zh-TW/qa/qa-39.html</a></div>
+                </aside>
+                </article>
             </div>
         </main>
     </div>
-    <script>document.addEventListener("click",function(e){if(e.target.closest(".sidebar-item")&&window.innerWidth<768){var s=document.getElementById("sidebar"),o=document.getElementById("sidebarOverlay");if(s&&s.classList.contains("open")){s.classList.remove("open");if(o)o.classList.remove("open");}}if(e.target.closest(".sidebar-close-btn,.sidebar-open-btn")){e.preventDefault();var s=document.getElementById("sidebar"),m=document.querySelector(".main-content"),t=document.querySelector(".topbar"),b=document.querySelector(".sidebar-close-btn");if(!s)return;if(s.classList.contains("desktop-hidden")){s.classList.remove("desktop-hidden");if(m)m.classList.remove("full-width");if(t)t.classList.remove("reading-mode");if(b){b.textContent="◀";b.title="收起侧边栏";}}else{s.classList.add("desktop-hidden");if(m)m.classList.add("full-width");if(t)t.classList.add("reading-mode");if(b){b.textContent="▶";b.title="展开侧边栏";}}}});</script>
+    <script>document.addEventListener("click",function(e){if(e.target.closest(".sidebar-item")&&window.innerWidth<768){var s=document.getElementById("sidebar"),o=document.getElementById("sidebarOverlay");if(s&&s.classList.contains("open")){s.classList.remove("open");if(o)o.classList.remove("open");}}if(e.target.closest(".sidebar-close-btn,.sidebar-open-btn")){e.preventDefault();var s=document.getElementById("sidebar"),m=document.querySelector(".main-content"),t=document.querySelector(".topbar"),b=document.querySelector(".sidebar-close-btn");if(!s)return;if(s.classList.contains("desktop-hidden")){s.classList.remove("desktop-hidden");if(m)m.classList.remove("full-width");if(t)t.classList.remove("reading-mode");if(b){b.textContent="◀";b.title="收起側邊欄";}}else{s.classList.add("desktop-hidden");if(m)m.classList.add("full-width");if(t)t.classList.add("reading-mode");if(b){b.textContent="▶";b.title="展開側邊欄";}}}});</script>
 <!-- sidebar-toggle-css -->
 <style>.sidebar.desktop-hidden{transform:translateX(-100%) !important;transition:transform .3s ease;}.sidebar-close-btn{visibility:hidden;opacity:0;background:rgba(255,255,255,.1);border:none;color:#cbd5e1;font-size:14px;cursor:pointer;padding:6px 10px;border-radius:4px;transition:all .15s;line-height:1;}.sidebar-close-btn:hover{background:rgba(255,255,255,.2);color:#fff;}.sidebar:not(.desktop-hidden) .sidebar-close-btn{visibility:visible;opacity:1;}.main-content.full-width{margin-left:0 !important;max-width:100vw !important;transition:margin-left .3s ease;}.main-content.full-width .topbar{left:0 !important;width:100% !important;}.main-content.full-width .content-wrapper,.main-content.full-width main{max-width:100% !important;}.main-content.full-width .content-wrapper{padding:24px 48px !important;}.sidebar-open-btn{display:none;position:fixed;top:9px;left:8px;z-index:201;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.2);color:#cbd5e1;font-size:16px;cursor:pointer;padding:5px 10px;border-radius:4px;transition:all .15s;line-height:1.2;}.sidebar-open-btn:hover{background:rgba(255,255,255,.25);color:#fff;}.main-content.full-width .sidebar-open-btn{display:block;}</style>
 <!-- sidebar-toggle -->
-<script src="../../bundle.min.js" defer></script>
+<script src="../bundle.min.js" defer></script>
 </body>
 </html>

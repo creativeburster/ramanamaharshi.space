@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +11,7 @@
     <meta property="og:title" content="虔诚与念誦問答 | 拉瑪那馬哈希150精選問答 | 拉瑪那馬哈希</title>
         <!-- 預加載關鍵資源  -->
     <link rel="preload" href="../../styles.min.css" as="style">
-    <link rel="preload" href="../../bundle.min.js" as="script">
+    <link rel="preload" href="../bundle.min.js" as="script">
 
     <!-- DNS 預解析  -->
 <link rel="stylesheet" href="../../styles.min.css">
@@ -112,6 +114,14 @@
       },
       "datePublished": "2026-07-17",
       "dateModified": "2026-10-18",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          ".subtitle",
+          ".quote-box"
+        ]
+      },
       "mainEntity": [
         {
           "@type": "Question",
@@ -208,13 +218,13 @@
   </script>
 </head>
 <body>
-    <button class="hamburger" data-nosnippet onclick="toggleSidebar()" aria-label="打开侧边导航菜单">☰</button>
+    <button class="hamburger" data-nosnippet onclick="toggleSidebar()" aria-label="開啟側邊導航選單">☰</button>
     <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
     <div class="layout">
         <aside class="sidebar" data-nosnippet id="sidebar">
             <div class="sidebar-header">
                 <a href="../index.html" class="logo">🙏 拉瑪那知識庫</a>
-                <button class="sidebar-close-btn" aria-label="收起侧边栏" title="收起侧边栏" style="visibility:hidden;opacity:0;">◀</button>
+                <button class="sidebar-close-btn" aria-label="收起側邊欄" title="收起側邊欄" style="visibility:hidden;opacity:0;">◀</button>
             </div>
             <div class="sidebar-section">
                 <div class="sidebar-section-title">📚 核心索引</div>
@@ -230,9 +240,9 @@
         </aside>
         <main class="main-content">
             <header class="topbar" data-nosnippet>
-                <button class="sidebar-open-btn" aria-label="展开侧边栏" title="展开侧边栏">▶</button>
+                <button class="sidebar-open-btn" aria-label="展開側邊欄" title="展開側邊欄">▶</button>
                 <div class="topbar-left">
-                    <button class="menu-toggle" onclick="toggleSidebar()" aria-label="切换侧边栏">☰</button>
+                    <button class="menu-toggle" onclick="toggleSidebar()" aria-label="切換側邊欄">☰</button>
                     <span class="topbar-title">💬 修行問答</span>
                 </div>
                 <nav class="topbar-nav topbar-full">
@@ -241,7 +251,7 @@
                     <a href="../concepts/index.html">概念</a>
                     <a href="index.html" class="active">問答</a>
                     <a href="../persons/index.html">人物</a>
-                    <a href="../graph.html">圖譜</a><a href="#" class="lang-toggle" style="border-left:1px solid rgba(255,255,255,.3);" title="切換爲簡體中文" onclick="location.href=location.pathname.replace('/zh-TW/','/');return false;">簡</a>
+                    <a href="../graph.html">圖譜</a><a href="#" class="lang-toggle" style="border-left:1px solid rgba(255,255,255,.3);" title="切換為簡體中文" onclick="location.href=location.pathname.replace('/zh-TW/','/');return false;">簡</a>
                 </nav>
             </header>
             <div class="content-wrapper">
@@ -256,35 +266,35 @@
                 <div class="qa-container">
                     
                         <div class="qa-item">
-                            <h3 class="qa-q">❓ 三摩地是什麼？</h3>
+                            <h2 class="qa-q">❓ 三摩地是什麼？</h2>
                             <div class="qa-a">三摩地不是出神狀態，不是無意識。它是純粹的覺知，是"我在"的狀態。在三摩地中，沒有"我在三摩地中"的想法。只有寂靜，只有存在。</div>
                         </div>
                         <div class="qa-item">
-                            <h3 class="qa-q">❓ 三摩地和禪定有什麼區別？</h3>
+                            <h2 class="qa-q">❓ 三摩地和禪定有什麼區別？</h2>
                             <div class="qa-a">禪定是達到三摩地的準備工作。禪定時仍有專注的物件（呼吸、咒語等）。三摩地是完全的專注，沒有物件，只有覺知本身。</div>
                         </div>
                         <div class="qa-item">
-                            <h3 class="qa-q">❓ 初級三摩地和完全三摩地有什麼區別？</h3>
+                            <h2 class="qa-q">❓ 初級三摩地和完全三摩地有什麼區別？</h2>
                             <div class="qa-a">初級三摩地仍有微細念頭存在，像是睡夢中的夢。完全三摩地則一切念頭止息，只有純粹的"我在"。但覺者兩者都不執著。</div>
                         </div>
                         <div class="qa-item">
-                            <h3 class="qa-q">❓ 進入三摩地後會發生什麼？</h3>
+                            <h2 class="qa-q">❓ 進入三摩地後會發生什麼？</h2>
                             <div class="qa-a">在三摩地中沒有"發生"——一切活動都停止了。沒有時間感，沒有空間感，只有永恆的現在。這是真我的自然狀態。</div>
                         </div>
                         <div class="qa-item">
-                            <h3 class="qa-q">❓ 普通人能進入三摩地嗎？</h3>
+                            <h2 class="qa-q">❓ 普通人能進入三摩地嗎？</h2>
                             <div class="qa-a">每個人每天都在深睡中短暫地進入這種狀態。但要帶著覺知進入三摩地，需要長期的修行和準備。深睡是三摩地，但無覺知。</div>
                         </div>
                         <div class="qa-item">
-                            <h3 class="qa-q">❓ 三摩地會持續多久？</h3>
+                            <h2 class="qa-q">❓ 三摩地會持續多久？</h2>
                             <div class="qa-a">對普通人來說是短暫的片刻。對覺者來說，三摩地不是暫時的狀態，而是永恆的覺醒。醒來後，他仍然在三摩地中。</div>
                         </div>
                         <div class="qa-item">
-                            <h3 class="qa-q">❓ 冥想時感到平靜，是三摩地嗎？</h3>
+                            <h2 class="qa-q">❓ 冥想時感到平靜，是三摩地嗎？</h2>
                             <div class="qa-a">平靜的心智不等於三摩地。這可能是初級的禪定狀態。三摩地是完全的消融——沒有"我在冥想"或"我很平靜"的想法。</div>
                         </div>
                         <div class="qa-item">
-                            <h3 class="qa-q">❓ 追求三摩地是執著嗎？</h3>
+                            <h2 class="qa-q">❓ 追求三摩地是執著嗎？</h2>
                             <div class="qa-a">是的。任何對狀態的追求都是執著。真正的三摩地不是追求來的，而是放下一切執著後的自然狀態。放下對三摩地的渴望。</div>
                         </div>
                     
@@ -294,6 +304,13 @@
                     <a href="index.html" class="page-link">目錄</a>
                     <a href="qa-8.html" class="page-link">下一頁</a>
                 </div>
+                <aside class="card geo-citation-card" data-nosnippet style="margin-top:1.5rem;padding:1rem 1.25rem;border-left:3px solid var(--primary);background:rgba(255,255,255,0.02);font-size:0.88rem;color:var(--text-muted);line-height:1.7;">
+                    <div style="font-weight:600;color:var(--text-primary);margin-bottom:0.35rem;">📜 文獻溯源與學術引用規範 (Citation &amp; Provenance)</div>
+                    <div><strong>詞條 / 篇章</strong>：《修行問答7：三摩地的境界》 · 拉瑪那馬哈希知識庫</div>
+                    <div><strong>文獻底本</strong>：對勘自印度阿魯那佳拉 <span lang="en">Sri Ramanasramam</span> 官方出版原典（詳見 <a href="../about.html" style="color:var(--primary);text-decoration:underline;">校勘凡例與關於本庫</a>）</div>
+                    <div><strong>標準引用連結</strong>：<a href="https://ramanamaharshi.space/zh-TW/qa/qa-7.html" style="color:var(--primary);word-break:break-all;">https://ramanamaharshi.space/zh-TW/qa/qa-7.html</a></div>
+                </aside>
+                </article>
             </div>
         </main>
     </div>
@@ -311,8 +328,8 @@
     }
     </script>
 <script src="/pwa-analytics.js" defer></script>
-<script src="../../bundle.min.js" defer></script>
-<script>document.addEventListener("click",function(e){if(e.target.closest(".sidebar-item")&&window.innerWidth<768){var s=document.getElementById("sidebar"),o=document.getElementById("sidebarOverlay");if(s&&s.classList.contains("open")){s.classList.remove("open");if(o)o.classList.remove("open");}}if(e.target.closest(".sidebar-close-btn,.sidebar-open-btn")){e.preventDefault();var s=document.getElementById("sidebar"),m=document.querySelector(".main-content"),t=document.querySelector(".topbar"),b=document.querySelector(".sidebar-close-btn");if(!s)return;if(s.classList.contains("desktop-hidden")){s.classList.remove("desktop-hidden");if(m)m.classList.remove("full-width");if(t)t.classList.remove("reading-mode");if(b){b.textContent="◀";b.title="收起侧边栏";}}else{s.classList.add("desktop-hidden");if(m)m.classList.add("full-width");if(t)t.classList.add("reading-mode");if(b){b.textContent="▶";b.title="展开侧边栏";}}}});</script>
+<script src="../bundle.min.js" defer></script>
+<script>document.addEventListener("click",function(e){if(e.target.closest(".sidebar-item")&&window.innerWidth<768){var s=document.getElementById("sidebar"),o=document.getElementById("sidebarOverlay");if(s&&s.classList.contains("open")){s.classList.remove("open");if(o)o.classList.remove("open");}}if(e.target.closest(".sidebar-close-btn,.sidebar-open-btn")){e.preventDefault();var s=document.getElementById("sidebar"),m=document.querySelector(".main-content"),t=document.querySelector(".topbar"),b=document.querySelector(".sidebar-close-btn");if(!s)return;if(s.classList.contains("desktop-hidden")){s.classList.remove("desktop-hidden");if(m)m.classList.remove("full-width");if(t)t.classList.remove("reading-mode");if(b){b.textContent="◀";b.title="收起側邊欄";}}else{s.classList.add("desktop-hidden");if(m)m.classList.add("full-width");if(t)t.classList.add("reading-mode");if(b){b.textContent="▶";b.title="展開側邊欄";}}}});</script>
 <!-- sidebar-toggle-css -->
 <style>.sidebar.desktop-hidden{transform:translateX(-100%) !important;transition:transform .3s ease;}.sidebar-close-btn{visibility:hidden;opacity:0;background:rgba(255,255,255,.1);border:none;color:#cbd5e1;font-size:14px;cursor:pointer;padding:6px 10px;border-radius:4px;transition:all .15s;line-height:1;}.sidebar-close-btn:hover{background:rgba(255,255,255,.2);color:#fff;}.sidebar:not(.desktop-hidden) .sidebar-close-btn{visibility:visible;opacity:1;}.main-content.full-width{margin-left:0 !important;max-width:100vw !important;transition:margin-left .3s ease;}.main-content.full-width .topbar{left:0 !important;width:100% !important;}.main-content.full-width .content-wrapper,.main-content.full-width main{max-width:100% !important;}.main-content.full-width .content-wrapper{padding:24px 48px !important;}.sidebar-open-btn{display:none;position:fixed;top:9px;left:8px;z-index:201;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.2);color:#cbd5e1;font-size:16px;cursor:pointer;padding:5px 10px;border-radius:4px;transition:all .15s;line-height:1.2;}.sidebar-open-btn:hover{background:rgba(255,255,255,.25);color:#fff;}.main-content.full-width .sidebar-open-btn{display:block;}</style>
 <!-- sidebar-toggle -->

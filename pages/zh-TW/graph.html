@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +12,7 @@
     <title>馬哈希核心概念知識图譜 - 靈修思想可视化指南 | 拉瑪那馬哈希知識庫</title>
         <!-- 預加載關鍵資源  -->
     <link rel="preload" href="../styles.min.css" as="style">
-    <link rel="preload" href="../bundle.min.js" as="script">
+    <link rel="preload" href="bundle.min.js" as="script">
 
     <link rel="alternate" type="application/json" href="/knowledge-graph.json" title="知識圖譜拓撲數據 (JSON)">
     <!-- DNS 預解析  -->
@@ -306,7 +308,15 @@
           "https://github.com/creativeburster/ramanamaharshi.space"
         ]
       },
-      "dateModified": "2026-10-18"
+      "dateModified": "2026-10-18",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          ".subtitle",
+          ".quote-box"
+        ]
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -331,7 +341,7 @@
   </script>
 </head>
 <body>
-    <button class="hamburger" data-nosnippet onclick="toggleSidebar()" aria-label="打开侧边导航菜单">☰</button>
+    <button class="hamburger" data-nosnippet onclick="toggleSidebar()" aria-label="開啟側邊導航選單">☰</button>
     <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
     <div class="layout">
 
@@ -427,7 +437,7 @@
                     <a href="methods/index.html">方法</a>
                     <a href="qa/index.html">問答</a>
                     <a href="persons/index.html">人物</a>
-                    <a href="graph.html" class="active">圖譜</a><a href="#" class="lang-toggle" style="border-left:1px solid rgba(255,255,255,.3);" title="切換爲簡體中文" onclick="location.href=location.pathname.replace('/zh-TW/','/');return false;">簡</a>
+                    <a href="graph.html" class="active">圖譜</a><a href="#" class="lang-toggle" style="border-left:1px solid rgba(255,255,255,.3);" title="切換為簡體中文" onclick="location.href=location.pathname.replace('/zh-TW/','/');return false;">簡</a>
                 </nav>
             </header>
             
@@ -724,12 +734,12 @@
             { id: "siddhi", name: "✨ 神通", type: "practice", url: "concepts/siddhi.html", desc: "神通/Siddhi，超自然的靈性能力" },
             { id: "turiya", name: "🌅 第四態", type: "mind", url: "concepts/turiya.html", desc: "第四態/Turiya，超越三態的覺知" },
             { id: "peace", name: "☮️ 平安", type: "moksha", url: "concepts/peace.html", desc: "平安/Peace，真我的本質屬性" },
-            { id: "meditation", name: "🧘 禪修", type: "practice", url: "concepts/meditation.html", desc: "禪修/Meditation，心意專注的練習" },
+            { id: "meditation", name: "🧘 禪修", type: "practice", url: "concepts/dhyana.html", desc: "禪修/Meditation，心意專注的練習" },
             { id: "viveka", name: "⚡ 抉擇", type: "mind", url: "concepts/viveka.html", desc: "抉擇/Viveka，區分真假的能力" },
             { id: "prana", name: "🌬️ 生命能", type: "mind", url: "concepts/prana.html", desc: "生命能/Prana，呼吸與生命的能量" },
             { id: "body", name: "🧍 身體", type: "mind", url: "concepts/body.html", desc: "身體/Body，靈魂的載體與業力的顯現" },
-            { id: "drishti", name: "👁️ 所見", type: "mind", url: "concepts/drishti.html", desc: "所見/Drishti，心智的觀看方式" },
-            { id: "sraddha", name: "💫 信念", type: "moksha", url: "concepts/sraddha.html", desc: "信念/Sraddha，對真理的堅定信心" },
+            { id: "drishti", name: "👁️ 所見", type: "mind", url: "concepts/jnana.html", desc: "所見/Drishti，心智的觀看方式" },
+            { id: "sraddha", name: "💫 信念", type: "moksha", url: "concepts/shraddha.html", desc: "信念/Sraddha，對真理的堅定信心" },
 
             // 新增節點 - 20260427 擴展
             { id: "upadesha", name: "📜 教示", type: "practice", url: "concepts/upadesha.html", desc: "教示/Upadesha，上師的無言與有言之教" },
@@ -744,7 +754,7 @@
             { id: "anahata", name: "💖 心輪", type: "practice", url: "concepts/heart.html", desc: "心輪/Anahata，真我居所的精神中心" },
             { id: "mano", name: "💭 意", type: "mind", url: "concepts/mano.html", desc: "意/Manas，分別與思量的心識功能" },
             { id: "satsang", name: "🙏 莎桑", type: "practice", url: "concepts/satsang.html", desc: "莎桑/Satsang，與真理之人的親近與共處" },
-            { id: "sattva", name: "☀️ 善性", type: "atman", url: "concepts/sattva.html", desc: "善性/Sattva，三德中的清淨之德" },
+            { id: "sattva", name: "☀️ 善性", type: "atman", url: "concepts/peace.html", desc: "善性/Sattva，三德中的清淨之德" },
             { id: "manas", name: "🧠 意根", type: "mind", url: "concepts/mano.html", desc: "意根/Manas，六根之一，統攝思維" },
             { id: "self-enquiry", name: "🔎 自我參究", type: "practice", url: "concepts/whoami.html", desc: "自我參究/Self-Enquiry，馬哈希核心修行法" },
             { id: "chidabhasa", name: "🪞 意識之影", type: "mind", url: "concepts/awareness.html", desc: "意識之影/Chidabhasa，真我投射在心智上的倒影" },

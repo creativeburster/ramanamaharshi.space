@@ -4,17 +4,23 @@
 User-agent: *
 Allow: /
 
-# 显式允许主流生成式 AI 搜索引擎实时检索与知识溯源 (GEO / Grounding)
+# 显式允许全球主流生成式 AI 搜索引擎与大模型检索与知识溯源 (GEO / Grounding)
 User-agent: GPTBot
 Allow: /
 
 User-agent: OAI-SearchBot
 Allow: /
 
+User-agent: ChatGPT-User
+Allow: /
+
 User-agent: ClaudeBot
 Allow: /
 
 User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Anthropic-ai
 Allow: /
 
 User-agent: PerplexityBot
@@ -26,7 +32,29 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://ramanamaharshi.space/sitemap.xml
-# LLMs.txt for AI agents: https://ramanamaharshi.space/llms.txt
-# LLMs-full.txt: https://ramanamaharshi.space/llms-full.txt
+User-agent: Meta-ExternalAgent
+Allow: /
 
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: Cohere-ai
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+Sitemap: https://ramanamaharshi.space/sitemap.xml
+# LLMs.txt (Simplified Chinese): https://ramanamaharshi.space/llms.txt
+# LLMs.txt (Traditional Chinese): https://ramanamaharshi.space/zh-TW/llms.txt
+# LLMs-full.txt (Full RAG Corpus): https://ramanamaharshi.space/llms-full.txt
+# Open Knowledge Graph JSON: https://ramanamaharshi.space/knowledge-graph.json

@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +16,7 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
         <!-- 預加載關鍵資源  -->
     <link rel="preload" href="../../styles.min.css" as="style">
-    <link rel="preload" href="../../bundle.min.js" as="script">
+    <link rel="preload" href="../bundle.min.js" as="script">
 
     <!-- DNS 預解析  -->
 <link rel="stylesheet" href="../../styles.min.css">
@@ -85,6 +87,14 @@
       },
       "datePublished": "2026-07-17",
       "dateModified": "2026-10-18",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          ".subtitle",
+          ".quote-box"
+        ]
+      },
       "mainEntity": [
         {
           "@type": "Question",
@@ -197,13 +207,13 @@
   </script>
 </head>
 <body>
-    <button class="hamburger" data-nosnippet onclick="toggleSidebar()" aria-label="打开侧边导航菜单">☰</button>
+    <button class="hamburger" data-nosnippet onclick="toggleSidebar()" aria-label="開啟側邊導航選單">☰</button>
     <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
     <div class="layout">
         <aside class="sidebar" data-nosnippet id="sidebar">
             <div class="sidebar-header">
                 <a href="../index.html" class="logo">🙏 拉瑪那知識庫</a>
-                <button class="sidebar-close-btn" aria-label="收起侧边栏" title="收起侧边栏" style="visibility:hidden;opacity:0;">◀</button>
+                <button class="sidebar-close-btn" aria-label="收起側邊欄" title="收起側邊欄" style="visibility:hidden;opacity:0;">◀</button>
             </div>
             <div class="sidebar-section">
                 <div class="sidebar-section-title">📚 核心索引</div>
@@ -219,9 +229,9 @@
         </aside>
         <main class="main-content">
             <header class="topbar" data-nosnippet>
-                <button class="sidebar-open-btn" aria-label="展开侧边栏" title="展开侧边栏">▶</button>
+                <button class="sidebar-open-btn" aria-label="展開側邊欄" title="展開側邊欄">▶</button>
                 <div class="topbar-left">
-                    <button class="menu-toggle" onclick="toggleSidebar()" aria-label="切换侧边栏">☰</button>
+                    <button class="menu-toggle" onclick="toggleSidebar()" aria-label="切換側邊欄">☰</button>
                     <span class="topbar-title">💬 修行問答</span>
                 </div>
                 <nav class="topbar-nav topbar-full">
@@ -231,7 +241,7 @@
                     <a href="../methods/index.html">方法</a>
                     <a href="index.html" class="active">問答</a>
                     <a href="../persons/index.html">人物</a>
-                    <a href="../graph.html">圖譜</a><a href="#" class="lang-toggle" style="border-left:1px solid rgba(255,255,255,.3);" title="切換爲簡體中文" onclick="location.href=location.pathname.replace('/zh-TW/','/');return false;">簡</a>
+                    <a href="../graph.html">圖譜</a><a href="#" class="lang-toggle" style="border-left:1px solid rgba(255,255,255,.3);" title="切換為簡體中文" onclick="location.href=location.pathname.replace('/zh-TW/','/');return false;">簡</a>
                 </nav>
             </header>
             <div class="content-wrapper">
@@ -245,43 +255,43 @@
                 </div>
                 <div class="qa-container">
                     <div class="qa-item" data-category="恩典">
-                        <h3 class="qa-q">❓ 第一次見到馬哈希是什麼感覺？</h3>
+                        <h2 class="qa-q">❓ 第一次見到馬哈希是什麼感覺？</h2>
                         <div class="qa-a">許多弟子描述，第一次見到馬哈希時，感受到一種難以言喻的平靜。他的臨在就像一片深邃的海洋，讓人自然地安靜下來。不需要他說什麼，只是看著他，就感到一種回家的感覺。</div>
                     </div>
                     <div class="qa-item" data-category="奉爱">
-                        <h3 class="qa-q">❓ 馬哈希如何回答問題的？</h3>
+                        <h2 class="qa-q">❓ 馬哈希如何回答問題的？</h2>
                         <div class="qa-a">馬哈希的回答總是直接而深刻。他不會繞彎子，而是直指核心。有時他用簡單的幾句話，就能解開困擾多年的疑惑。他的回答不僅是語言，更是一種能量的傳遞。</div>
                     </div>
                     <div class="qa-item" data-category="恩典">
-                        <h3 class="qa-q">❓ 在馬哈希身邊 sitting 有什麼好處？</h3>
+                        <h2 class="qa-q">❓ 在馬哈希身邊 sitting 有什麼好處？</h2>
                         <div class="qa-a">在馬哈希身邊坐著，即使不說話，也是一種深刻的體驗。他的沉默就像一種強大的力量，幫助求道者深入內心。許多人在這種沉默中體驗到了前所未有的平靜。</div>
                     </div>
                     <div class="qa-item" data-category="奉爱">
-                        <h3 class="qa-q">❓ 馬哈希對不同的人有不同的教導嗎？</h3>
+                        <h2 class="qa-q">❓ 馬哈希對不同的人有不同的教導嗎？</h2>
                         <div class="qa-a">是的，馬哈希會根據每個人的性情和準備程度給予不同的教導。對有些人，他建議奉愛；對有些人，他建議參究。但所有的教導都指向同一個真理。</div>
                     </div>
                     <div class="qa-item" data-category="恩典">
-                        <h3 class="qa-q">❓ 有人沒有問問題就獲得證悟嗎？</h3>
+                        <h2 class="qa-q">❓ 有人沒有問問題就獲得證悟嗎？</h2>
                         <div class="qa-a">有的。有些人只是坐在馬哈希的身邊，沒有任何問題，卻獲得了深刻的體驗。馬哈希的臨在本身就是教導，他的恩典可以直接觸動準備好的心靈。</div>
                     </div>
                     <div class="qa-item" data-category="奉爱">
-                        <h3 class="qa-q">❓ 馬哈希如何看待不同的修行方法？</h3>
+                        <h2 class="qa-q">❓ 馬哈希如何看待不同的修行方法？</h2>
                         <div class="qa-a">馬哈希尊重所有的修行方法，但他強調，所有的方法最終都指向 Self。他不反對任何形式的努力，但提醒求道者不要迷失在方法中，而要記住最終的目標。</div>
                     </div>
                     <div class="qa-item" data-category="恩典">
-                        <h3 class="qa-q">❓ 馬哈希的沉默是什麼意思？</h3>
+                        <h2 class="qa-q">❓ 馬哈希的沉默是什麼意思？</h2>
                         <div class="qa-a">馬哈希的沉默是最有力的教導。在沉默中，沒有語言的干擾，真理可以直接傳達。他說，沉默是他的主要教導，語言只是輔助。學習在沉默中聆聽，是與他交流的最好方式。</div>
                     </div>
                     <div class="qa-item" data-category="奉爱">
-                        <h3 class="qa-q">❓ 如何與馬哈希建立聯絡？</h3>
+                        <h2 class="qa-q">❓ 如何與馬哈希建立聯絡？</h2>
                         <div class="qa-a">與馬哈希建立聯絡不需要外在的形式。無論你在哪裡，只要真誠地渴望，他就會回應。他在你的心中，永遠與你同在。向內在的 Self 臣服，就是與他建立最深的聯絡。</div>
                     </div>
                     <div class="qa-item" data-category="恩典">
-                        <h3 class="qa-q">❓ 馬哈希如何對待初學者？</h3>
+                        <h2 class="qa-q">❓ 馬哈希如何對待初學者？</h2>
                         <div class="qa-a">馬哈希對所有人都一樣慈悲，無論他們是初學者還是資深修行者。他對初學者特別有耐心，用簡單易懂的方式解釋深奧的真理。他從不讓人覺得自己渺小或無知。</div>
                     </div>
                     <div class="qa-item" data-category="奉爱">
-                        <h3 class="qa-q">❓ 馬哈希的教導在今天還有效嗎？</h3>
+                        <h2 class="qa-q">❓ 馬哈希的教導在今天還有效嗎？</h2>
                         <div class="qa-a">當然有效。真理不受時間限制。馬哈希的教導是關於永恆的 Self，這在任何時代都是適用的。今天，我們仍然可以透過他的著作和弟子們的記錄，接受他的教導。</div>
                     </div>
                 </div>
@@ -290,13 +300,20 @@
                     <a href="index.html" class="page-link">目錄</a>
                     <a href="qa-39.html" class="page-link">下一頁</a>
                 </div>
+                <aside class="card geo-citation-card" data-nosnippet style="margin-top:1.5rem;padding:1rem 1.25rem;border-left:3px solid var(--primary);background:rgba(255,255,255,0.02);font-size:0.88rem;color:var(--text-muted);line-height:1.7;">
+                    <div style="font-weight:600;color:var(--text-primary);margin-bottom:0.35rem;">📜 文獻溯源與學術引用規範 (Citation &amp; Provenance)</div>
+                    <div><strong>詞條 / 篇章</strong>：《修行問答38：面對面》 · 拉瑪那馬哈希知識庫</div>
+                    <div><strong>文獻底本</strong>：對勘自印度阿魯那佳拉 <span lang="en">Sri Ramanasramam</span> 官方出版原典（詳見 <a href="../about.html" style="color:var(--primary);text-decoration:underline;">校勘凡例與關於本庫</a>）</div>
+                    <div><strong>標準引用連結</strong>：<a href="https://ramanamaharshi.space/zh-TW/qa/qa-38.html" style="color:var(--primary);word-break:break-all;">https://ramanamaharshi.space/zh-TW/qa/qa-38.html</a></div>
+                </aside>
+                </article>
             </div>
         </main>
     </div>
-    <script>document.addEventListener("click",function(e){if(e.target.closest(".sidebar-item")&&window.innerWidth<768){var s=document.getElementById("sidebar"),o=document.getElementById("sidebarOverlay");if(s&&s.classList.contains("open")){s.classList.remove("open");if(o)o.classList.remove("open");}}if(e.target.closest(".sidebar-close-btn,.sidebar-open-btn")){e.preventDefault();var s=document.getElementById("sidebar"),m=document.querySelector(".main-content"),t=document.querySelector(".topbar"),b=document.querySelector(".sidebar-close-btn");if(!s)return;if(s.classList.contains("desktop-hidden")){s.classList.remove("desktop-hidden");if(m)m.classList.remove("full-width");if(t)t.classList.remove("reading-mode");if(b){b.textContent="◀";b.title="收起侧边栏";}}else{s.classList.add("desktop-hidden");if(m)m.classList.add("full-width");if(t)t.classList.add("reading-mode");if(b){b.textContent="▶";b.title="展开侧边栏";}}}});</script>
+    <script>document.addEventListener("click",function(e){if(e.target.closest(".sidebar-item")&&window.innerWidth<768){var s=document.getElementById("sidebar"),o=document.getElementById("sidebarOverlay");if(s&&s.classList.contains("open")){s.classList.remove("open");if(o)o.classList.remove("open");}}if(e.target.closest(".sidebar-close-btn,.sidebar-open-btn")){e.preventDefault();var s=document.getElementById("sidebar"),m=document.querySelector(".main-content"),t=document.querySelector(".topbar"),b=document.querySelector(".sidebar-close-btn");if(!s)return;if(s.classList.contains("desktop-hidden")){s.classList.remove("desktop-hidden");if(m)m.classList.remove("full-width");if(t)t.classList.remove("reading-mode");if(b){b.textContent="◀";b.title="收起側邊欄";}}else{s.classList.add("desktop-hidden");if(m)m.classList.add("full-width");if(t)t.classList.add("reading-mode");if(b){b.textContent="▶";b.title="展開側邊欄";}}}});</script>
 <!-- sidebar-toggle-css -->
 <style>.sidebar.desktop-hidden{transform:translateX(-100%) !important;transition:transform .3s ease;}.sidebar-close-btn{visibility:hidden;opacity:0;background:rgba(255,255,255,.1);border:none;color:#cbd5e1;font-size:14px;cursor:pointer;padding:6px 10px;border-radius:4px;transition:all .15s;line-height:1;}.sidebar-close-btn:hover{background:rgba(255,255,255,.2);color:#fff;}.sidebar:not(.desktop-hidden) .sidebar-close-btn{visibility:visible;opacity:1;}.main-content.full-width{margin-left:0 !important;max-width:100vw !important;transition:margin-left .3s ease;}.main-content.full-width .topbar{left:0 !important;width:100% !important;}.main-content.full-width .content-wrapper,.main-content.full-width main{max-width:100% !important;}.main-content.full-width .content-wrapper{padding:24px 48px !important;}.sidebar-open-btn{display:none;position:fixed;top:9px;left:8px;z-index:201;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.2);color:#cbd5e1;font-size:16px;cursor:pointer;padding:5px 10px;border-radius:4px;transition:all .15s;line-height:1.2;}.sidebar-open-btn:hover{background:rgba(255,255,255,.25);color:#fff;}.main-content.full-width .sidebar-open-btn{display:block;}</style>
 <!-- sidebar-toggle -->
-<script src="../../bundle.min.js" defer></script>
+<script src="../bundle.min.js" defer></script>
 </body>
 </html>

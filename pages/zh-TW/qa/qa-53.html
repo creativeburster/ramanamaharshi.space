@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +11,7 @@
     <title>憤怒與情緒問答 | 拉瑪那馬哈希知識庫</title>
         <!-- 預加載關鍵資源  -->
     <link rel="preload" href="../../styles.min.css" as="style">
-    <link rel="preload" href="../../bundle.min.js" as="script">
+    <link rel="preload" href="../bundle.min.js" as="script">
 
     <!-- DNS 預解析  -->
 <link rel="stylesheet" href="../../styles.min.css">
@@ -104,6 +106,14 @@
       },
       "datePublished": "2026-07-17",
       "dateModified": "2026-10-18",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          ".subtitle",
+          ".quote-box"
+        ]
+      },
       "mainEntity": [
         {
           "@type": "Question",
@@ -192,13 +202,13 @@
   </script>
 </head>
 <body>
-    <button class="hamburger" data-nosnippet onclick="toggleSidebar()" aria-label="打开侧边导航菜单">☰</button>
+    <button class="hamburger" data-nosnippet onclick="toggleSidebar()" aria-label="開啟側邊導航選單">☰</button>
     <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
     <div class="layout">
         <aside class="sidebar" data-nosnippet id="sidebar">
             <div class="sidebar-header">
                 <a href="../index.html" class="logo">🙏 拉瑪那知識庫</a>
-                <button class="sidebar-close-btn" aria-label="收起侧边栏" title="收起侧边栏" style="visibility:hidden;opacity:0;">◀</button>
+                <button class="sidebar-close-btn" aria-label="收起側邊欄" title="收起側邊欄" style="visibility:hidden;opacity:0;">◀</button>
             </div>
             <div class="sidebar-section">
                 <div class="sidebar-section-title">📚 核心索引</div>
@@ -214,9 +224,9 @@
         </aside>
         <main class="main-content">
             <header class="topbar" data-nosnippet>
-                <button class="sidebar-open-btn" aria-label="展开侧边栏" title="展开侧边栏">▶</button>
+                <button class="sidebar-open-btn" aria-label="展開側邊欄" title="展開側邊欄">▶</button>
                 <div class="topbar-left">
-                    <button class="menu-toggle" onclick="toggleSidebar()" aria-label="切换侧边栏">☰</button>
+                    <button class="menu-toggle" onclick="toggleSidebar()" aria-label="切換側邊欄">☰</button>
                     <span class="topbar-title">💬 修行問答</span>
                 </div>
                 <nav class="topbar-nav topbar-full">
@@ -226,7 +236,7 @@
                     <a href="../methods/index.html">方法</a>
                     <a href="index.html" class="active">問答</a>
                     <a href="../persons/index.html">人物</a>
-                    <a href="../graph.html">圖譜</a><a href="#" class="lang-toggle" style="border-left:1px solid rgba(255,255,255,.3);" title="切換爲簡體中文" onclick="location.href=location.pathname.replace('/zh-TW/','/');return false;">簡</a>
+                    <a href="../graph.html">圖譜</a><a href="#" class="lang-toggle" style="border-left:1px solid rgba(255,255,255,.3);" title="切換為簡體中文" onclick="location.href=location.pathname.replace('/zh-TW/','/');return false;">簡</a>
                 </nav>
             </header>
             <div class="content-wrapper">
@@ -240,31 +250,31 @@
                 </div>
                 <div class="qa-container">
                         <div class="qa-item">
-                        <h3 class="qa-q">❓ 如何控制憤怒？</h3>
+                        <h2 class="qa-q">❓ 如何控制憤怒？</h2>
                         <div class="qa-a">“馬哈希說不要試圖‘控制’憤怒，而是去觀察它。當你感到憤怒升起時，不要評判自己，也不要試圖壓抑。只是靜靜地觀察那個憤怒——它從哪裡來？它是衝著誰來的？那個被激怒的‘我’是誰？當你深入觀察時，憤怒會自己消散。”</div>
                     </div>
                         <div class="qa-item">
-                        <h3 class="qa-q">❓ 有情緒說明修行不夠好嗎？</h3>
+                        <h2 class="qa-q">❓ 有情緒說明修行不夠好嗎？</h2>
                         <div class="qa-a">“完全不是。情緒是人類的自然反應，不會因為修行就完全消失。區別在於：修行者會注意到情緒的升起，而不會被它帶走。就像天空中的雲——雲會來也會去，但天空不受影響。同樣，情緒來了又走，但你的真我始終不變。”</div>
                     </div>
                         <div class="qa-item">
-                        <h3 class="qa-q">❓ 馬哈希自己會生氣嗎？</h3>
+                        <h2 class="qa-q">❓ 馬哈希自己會生氣嗎？</h2>
                         <div class="qa-a">“弟子們說他們從未見過馬哈希發脾氣。但這不代表他沒有情緒反應——他有時會堅定地拒絕某些請求，或對不合適的行為表示不認同。區別在於，他的反應是當下的、乾淨的，不會留下怨恨或遺憾。他的情緒像一面鏡子，照完就乾淨了。”</div>
                     </div>
                         <div class="qa-item">
-                        <h3 class="qa-q">❓ 對某個人持續感到憤怒怎麼辦？</h3>
+                        <h2 class="qa-q">❓ 對某個人持續感到憤怒怎麼辦？</h2>
                         <div class="qa-a">“持續的對人憤怒通常源於過去的傷害。馬哈希建議：不要去分析為什麼會憤怒，而是去問那個憤怒者是誰。‘誰在憤怒？是我嗎？那個憤怒的我是什麼？’當你追蹤到憤怒的源頭——那個‘我’的感覺——憤怒會失去它的力量。不是因為你‘解決’了問題，而是因為你不再認同那個憤怒者。”</div>
                     </div>
                         <div class="qa-item">
-                        <h3 class="qa-q">❓ 恐懼和焦慮該如何面對？</h3>
+                        <h2 class="qa-q">❓ 恐懼和焦慮該如何面對？</h2>
                         <div class="qa-a">“恐懼本質上是對未來的投射。馬哈希說：‘恐懼只存在於時間和心智中。當下此刻沒有恐懼。’當你感到恐懼時，試著把注意力完全放在當下——你現在的感受是什麼？你的呼吸怎麼樣？當你完全安住在當下時，你會發現恐懼無法存在，因為它需要‘未來’才能生存。”</div>
                     </div>
                         <div class="qa-item">
-                        <h3 class="qa-q">❓ 壓抑情緒和表達情緒哪個更好？</h3>
+                        <h2 class="qa-q">❓ 壓抑情緒和表達情緒哪個更好？</h2>
                         <div class="qa-a">“兩者都不是最好的。馬哈希教導的第三條路是：覺知。既不壓抑也不放縱，而是清醒地看著情緒來來去去。壓抑會讓情緒在潛意識中積累和變形；放縱會強化情緒的習慣模式。只有純粹的覺知才能讓情緒自然地流過而不留下痕跡。”</div>
                     </div>
                         <div class="qa-item">
-                        <h3 class="qa-q">❓ 如何面對悲傷和失去？</h3>
+                        <h2 class="qa-q">❓ 如何面對悲傷和失去？</h2>
                         <div class="qa-a">“悲傷是對失去的自然反應，不需要為此感到羞恥。馬哈希說：‘允許悲傷存在，但不要讓它成為你的身份。’悲傷來了，和它在一起，然後讓它走。不要抓住它不放，也不需要急著擺脫它。在悲傷的深處，那個覺知悲傷的‘你’是完整和安寧的。”</div>
                     </div>
                 </div>
@@ -273,6 +283,13 @@
                     <a href="index.html" class="page-link">目錄</a>
                     <a href="qa-54.html" class="page-link">下一頁</a>
                 </div>
+                <aside class="card geo-citation-card" data-nosnippet style="margin-top:1.5rem;padding:1rem 1.25rem;border-left:3px solid var(--primary);background:rgba(255,255,255,0.02);font-size:0.88rem;color:var(--text-muted);line-height:1.7;">
+                    <div style="font-weight:600;color:var(--text-primary);margin-bottom:0.35rem;">📜 文獻溯源與學術引用規範 (Citation &amp; Provenance)</div>
+                    <div><strong>詞條 / 篇章</strong>：《修行問答53：憤怒與情緒》 · 拉瑪那馬哈希知識庫</div>
+                    <div><strong>文獻底本</strong>：對勘自印度阿魯那佳拉 <span lang="en">Sri Ramanasramam</span> 官方出版原典（詳見 <a href="../about.html" style="color:var(--primary);text-decoration:underline;">校勘凡例與關於本庫</a>）</div>
+                    <div><strong>標準引用連結</strong>：<a href="https://ramanamaharshi.space/zh-TW/qa/qa-53.html" style="color:var(--primary);word-break:break-all;">https://ramanamaharshi.space/zh-TW/qa/qa-53.html</a></div>
+                </aside>
+                </article>
             </div>
         </main>
     </div>
@@ -284,8 +301,8 @@
     }
 </script>
 <script src="/pwa-analytics.js" defer></script>
-<script src="../../bundle.min.js" defer></script>
-<script>document.addEventListener("click",function(e){if(e.target.closest(".sidebar-item")&&window.innerWidth<768){var s=document.getElementById("sidebar"),o=document.getElementById("sidebarOverlay");if(s&&s.classList.contains("open")){s.classList.remove("open");if(o)o.classList.remove("open");}}if(e.target.closest(".sidebar-close-btn,.sidebar-open-btn")){e.preventDefault();var s=document.getElementById("sidebar"),m=document.querySelector(".main-content"),t=document.querySelector(".topbar"),b=document.querySelector(".sidebar-close-btn");if(!s)return;if(s.classList.contains("desktop-hidden")){s.classList.remove("desktop-hidden");if(m)m.classList.remove("full-width");if(t)t.classList.remove("reading-mode");if(b){b.textContent="◀";b.title="收起侧边栏";}}else{s.classList.add("desktop-hidden");if(m)m.classList.add("full-width");if(t)t.classList.add("reading-mode");if(b){b.textContent="▶";b.title="展开侧边栏";}}}});</script>
+<script src="../bundle.min.js" defer></script>
+<script>document.addEventListener("click",function(e){if(e.target.closest(".sidebar-item")&&window.innerWidth<768){var s=document.getElementById("sidebar"),o=document.getElementById("sidebarOverlay");if(s&&s.classList.contains("open")){s.classList.remove("open");if(o)o.classList.remove("open");}}if(e.target.closest(".sidebar-close-btn,.sidebar-open-btn")){e.preventDefault();var s=document.getElementById("sidebar"),m=document.querySelector(".main-content"),t=document.querySelector(".topbar"),b=document.querySelector(".sidebar-close-btn");if(!s)return;if(s.classList.contains("desktop-hidden")){s.classList.remove("desktop-hidden");if(m)m.classList.remove("full-width");if(t)t.classList.remove("reading-mode");if(b){b.textContent="◀";b.title="收起側邊欄";}}else{s.classList.add("desktop-hidden");if(m)m.classList.add("full-width");if(t)t.classList.add("reading-mode");if(b){b.textContent="▶";b.title="展開側邊欄";}}}});</script>
 <!-- sidebar-toggle-css -->
 <style>.sidebar.desktop-hidden{transform:translateX(-100%) !important;transition:transform .3s ease;}.sidebar-close-btn{visibility:hidden;opacity:0;background:rgba(255,255,255,.1);border:none;color:#cbd5e1;font-size:14px;cursor:pointer;padding:6px 10px;border-radius:4px;transition:all .15s;line-height:1;}.sidebar-close-btn:hover{background:rgba(255,255,255,.2);color:#fff;}.sidebar:not(.desktop-hidden) .sidebar-close-btn{visibility:visible;opacity:1;}.main-content.full-width{margin-left:0 !important;max-width:100vw !important;transition:margin-left .3s ease;}.main-content.full-width .topbar{left:0 !important;width:100% !important;}.main-content.full-width .content-wrapper,.main-content.full-width main{max-width:100% !important;}.main-content.full-width .content-wrapper{padding:24px 48px !important;}.sidebar-open-btn{display:none;position:fixed;top:9px;left:8px;z-index:201;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.2);color:#cbd5e1;font-size:16px;cursor:pointer;padding:5px 10px;border-radius:4px;transition:all .15s;line-height:1.2;}.sidebar-open-btn:hover{background:rgba(255,255,255,.25);color:#fff;}.main-content.full-width .sidebar-open-btn{display:block;}</style>
 <!-- sidebar-toggle -->

@@ -1,8 +1,8 @@
 {
-  "name": "拉玛那知识库",
-  "short_name": "拉玛那知识库",
-  "description": "室利·拉玛那·马哈希的生平、教导与修行方法——印度近代最伟大的悟道者之一",
-  "start_url": "/",
+  "name": "拉瑪那馬哈希知識庫",
+  "short_name": "拉瑪那知識庫",
+  "description": "室利·拉瑪那·馬哈希的生平、教導與修行方法——印度近代最偉大的悟道者與不二論聖哲",
+  "start_url": "/zh-TW/",
   "display": "standalone",
   "background_color": "#1a1a2e",
   "theme_color": "#1a1a2e",
@@ -21,6 +21,9 @@
       "purpose": "any"
     }
   ],
-  "categories": ["education", "lifestyle"],
-  "lang": "zh-CN"
+  "categories": [
+    "education",
+    "lifestyle"
+  ],
+  "lang": "zh-TW"
 }
