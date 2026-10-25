@@ -51,7 +51,7 @@ const searchIndex = [
   // 人物
   {type:'person',title:'室利·拉玛那·马哈希',url:'/persons/ramana.html',excerpt:'二十世纪最重要的灵性导师之一，出生于阿鲁那佳拉山'},
   {type:'person',title:'大卫·高德曼',url:'/persons/david.html',excerpt:'《走向静默，如你本来》编者，拉玛那知识库创始人'},
-  {type:'person',title:'韦卡罗达·南达',url:'/persons/venkataramana.html',excerpt:'马哈希的姨妈，静修院的女瑜伽士'},
+  {type:'person',title:'阿莉伽玛（圣母）',url:'/persons/venkataramana.html',excerpt:'马哈希的姨妈，静修院的女瑜伽士'},
   // 方法
   {type:'method',title:'参究"我是谁"',url:'/methods/index.html',excerpt:'马哈希的核心修行法门'},
   {type:'method',title:'臣服上师',url:'/methods/index.html#surrender',excerpt:'完全向真我臣服'},
