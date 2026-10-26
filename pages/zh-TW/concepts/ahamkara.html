@@ -9,23 +9,16 @@
     <title>我慢 / Ahamkara | 拉瑪那馬哈希知識庫</title>
     <meta name="publisher" content="拉瑪那馬哈希知識庫">
     <link rel="canonical" href="https://ramanamaharshi.space/zh-TW/concepts/ahamkara.html">
-<!-- Google Analytics (按需加载，首屏0开销) -->
-    <script>
+    <!-- Google Analytics -->
+    <script data-cfasync="false" async src="https://www.googletagmanager.com/gtag/js?id=G-MYFWHFPSYB"></script>
+    <script data-cfasync="false">
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      function loadGA(){
-        if(window._gaLoaded) return;
-        window._gaLoaded = true;
-        var s = document.createElement('script');
-        s.async = true;
-        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-MYFWHFPSYB';
-        document.head.appendChild(s);
-        gtag('js', new Date());
-        gtag('config', 'G-MYFWHFPSYB');
-      }
-      ['scroll','touchstart','click','keydown','mousemove'].forEach(function(e){
-        window.addEventListener(e, loadGA, {once: true, passive: true});
+      gtag('consent', 'default', {
+        'analytics_storage': 'granted'
       });
+      gtag('js', new Date());
+      gtag('config', 'G-MYFWHFPSYB');
     </script>
     <link rel="alternate" hreflang="zh-CN" href="https://ramanamaharshi.space/concepts/ahamkara.html">
     <link rel="alternate" hreflang="zh-TW" href="https://ramanamaharshi.space/zh-TW/concepts/ahamkara.html">
@@ -305,7 +298,7 @@
         </main>
     </div>
 
-    <script>
+    <script data-cfasync="false">
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
             navigator.serviceWorker.register('/sw.js')
@@ -318,8 +311,8 @@
         });
     }
     </script>
-<script src="/pwa-analytics.js" defer></script>
-    <script src="../bundle.min.js" defer></script>
-<script>document.addEventListener("click",function(e){if(e.target.closest(".sidebar-close-btn,.sidebar-open-btn")){e.preventDefault();var s=document.getElementById("sidebar"),m=document.querySelector(".main-content"),t=document.querySelector(".topbar"),b=document.querySelector(".sidebar-close-btn");if(!s)return;if(s.classList.contains("desktop-hidden")){s.classList.remove("desktop-hidden");if(m)m.classList.remove("full-width");if(t)t.classList.remove("reading-mode");if(b){b.textContent="◀";b.title="收起側邊欄";}}else{s.classList.add("desktop-hidden");if(m)m.classList.add("full-width");if(t)t.classList.remove("reading-mode");if(b){b.textContent="▶";b.title="展開側邊欄";}}}});</script>
+<script data-cfasync="false" src="/pwa-analytics.js" defer></script>
+    <script data-cfasync="false" src="../bundle.min.js" defer></script>
+<script data-cfasync="false">document.addEventListener("click",function(e){if(e.target.closest(".sidebar-close-btn,.sidebar-open-btn")){e.preventDefault();var s=document.getElementById("sidebar"),m=document.querySelector(".main-content"),t=document.querySelector(".topbar"),b=document.querySelector(".sidebar-close-btn");if(!s)return;if(s.classList.contains("desktop-hidden")){s.classList.remove("desktop-hidden");if(m)m.classList.remove("full-width");if(t)t.classList.remove("reading-mode");if(b){b.textContent="◀";b.title="收起側邊欄";}}else{s.classList.add("desktop-hidden");if(m)m.classList.add("full-width");if(t)t.classList.remove("reading-mode");if(b){b.textContent="▶";b.title="展開側邊欄";}}}});</script>
 </body>
 </html>

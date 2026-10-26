@@ -242,23 +242,16 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <!-- Google Analytics 预连接  -->
 <!-- Google tag (gtag.js) -->
-<!-- Google Analytics (按需加载，首屏0开销) -->
-    <script>
+    <!-- Google Analytics -->
+    <script data-cfasync="false" async src="https://www.googletagmanager.com/gtag/js?id=G-MYFWHFPSYB"></script>
+    <script data-cfasync="false">
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      function loadGA(){
-        if(window._gaLoaded) return;
-        window._gaLoaded = true;
-        var s = document.createElement('script');
-        s.async = true;
-        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-MYFWHFPSYB';
-        document.head.appendChild(s);
-        gtag('js', new Date());
-        gtag('config', 'G-MYFWHFPSYB');
-      }
-      ['scroll','touchstart','click','keydown','mousemove'].forEach(function(e){
-        window.addEventListener(e, loadGA, {once: true, passive: true});
+      gtag('consent', 'default', {
+        'analytics_storage': 'granted'
       });
+      gtag('js', new Date());
+      gtag('config', 'G-MYFWHFPSYB');
     </script>
     <link rel="alternate" hreflang="zh-CN" href="https://ramanamaharshi.space/graph.html">
     <link rel="alternate" hreflang="zh-TW" href="https://ramanamaharshi.space/zh-TW/graph.html">
@@ -590,8 +583,8 @@
         </main>
     </div>
     
-    <script src="d3.min.js"></script>
-    <script>
+    <script data-cfasync="false" src="d3.min.js"></script>
+    <script data-cfasync="false">
         // 边栏切换
         document.querySelectorAll('.sidebar-section-title').forEach(title => {
             title.addEventListener('click', () => {
@@ -1638,7 +1631,7 @@
             if (o) o.classList.toggle('open');
         }
     </script>
-    <script>
+    <script data-cfasync="false">
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
             navigator.serviceWorker.register('/sw.js')
@@ -1651,6 +1644,6 @@
         });
     }
     </script>
-<script src="/pwa-analytics.js" defer></script>
+<script data-cfasync="false" src="/pwa-analytics.js" defer></script>
 </body>
 </html>
