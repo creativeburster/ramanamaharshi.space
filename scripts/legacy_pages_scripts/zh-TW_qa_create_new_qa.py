@@ -39,14 +39,51 @@ def generate_qa_files():
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="拉玛那知识库">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🙏%3C/text%3E%3C/svg%3E">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MYFWHFPSYB"></script>
-<script>
+<!-- Google Analytics -->
+<script data-cfasync="false" async src="https://www.googletagmanager.com/gtag/js?id=G-MYFWHFPSYB"></script>
+<script data-cfasync="false">
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    'analytics_storage': 'granted'
+  });
   gtag('js', new Date());
-
-  gtag('config', 'G-MYFWHFPSYB');
+  (function(){
+    try {
+      var ua = navigator.userAgent || '';
+      var sw = window.screen ? window.screen.width : 0;
+      var sh = window.screen ? window.screen.height : 0;
+      var res = sw + 'x' + sh;
+      var bs = {
+        '1280x1200': 1,
+        '1366x1366': 1,
+        '1280x1280': 1,
+        '1600x1600': 1,
+        '1280x1600': 1,
+        '1600x1200': 1,
+        '800x600': 1
+      };
+      var isBot = navigator.webdriver === true ||
+        /HeadlessChrome|PhantomJS|Playwright|Puppeteer|SlimerJS|CasperJS/i.test(ua) ||
+        bs[res] === 1 ||
+        (sw > 0 && sw === sh);
+      if (!isBot) {
+        var c = document.createElement('canvas');
+        var gl = c.getContext('webgl') || c.getContext('experimental-webgl');
+        if (gl) {
+          var d = gl.getExtension('WEBGL_debug_renderer_info');
+          if (d && /SwiftShader|llvmpipe|Software Rasterizer/i.test(gl.getParameter(d.UNMASKED_RENDERER_WEBGL) || '')) {
+            isBot = true;
+          }
+        }
+      }
+      if (isBot) {
+        window['ga-disable-G-MYFWHFPSYB'] = true;
+        return;
+      }
+    } catch (_) {}
+    gtag('config', 'G-MYFWHFPSYB');
+  })();
 </script>
 
 

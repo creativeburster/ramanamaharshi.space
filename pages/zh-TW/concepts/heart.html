@@ -40,7 +40,42 @@
         'analytics_storage': 'granted'
       });
       gtag('js', new Date());
-      gtag('config', 'G-MYFWHFPSYB');
+      (function(){
+        try {
+          var ua = navigator.userAgent || '';
+          var sw = window.screen ? window.screen.width : 0;
+          var sh = window.screen ? window.screen.height : 0;
+          var res = sw + 'x' + sh;
+          var bs = {
+            '1280x1200': 1,
+            '1366x1366': 1,
+            '1280x1280': 1,
+            '1600x1600': 1,
+            '1280x1600': 1,
+            '1600x1200': 1,
+            '800x600': 1
+          };
+          var isBot = navigator.webdriver === true ||
+            /HeadlessChrome|PhantomJS|Playwright|Puppeteer|SlimerJS|CasperJS/i.test(ua) ||
+            bs[res] === 1 ||
+            (sw > 0 && sw === sh);
+          if (!isBot) {
+            var c = document.createElement('canvas');
+            var gl = c.getContext('webgl') || c.getContext('experimental-webgl');
+            if (gl) {
+              var d = gl.getExtension('WEBGL_debug_renderer_info');
+              if (d && /SwiftShader|llvmpipe|Software Rasterizer/i.test(gl.getParameter(d.UNMASKED_RENDERER_WEBGL) || '')) {
+                isBot = true;
+              }
+            }
+          }
+          if (isBot) {
+            window['ga-disable-G-MYFWHFPSYB'] = true;
+            return;
+          }
+        } catch (_) {}
+        gtag('config', 'G-MYFWHFPSYB');
+      })();
     </script>
     <link rel="alternate" hreflang="zh-CN" href="https://ramanamaharshi.space/concepts/heart.html">
     <link rel="alternate" hreflang="zh-TW" href="https://ramanamaharshi.space/zh-TW/concepts/heart.html">
